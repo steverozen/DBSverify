@@ -9,7 +9,8 @@ CreateBAMSlice(
   CHROM,
   POS,
   padding = 10,
-  read.fn = CreateBAMSliceFileSamtools
+  read.fn = CreateBAMSliceFileSamtools,
+  ...
 )
 }
 \arguments{
@@ -22,9 +23,11 @@ CreateBAMSlice(
 \item{padding}{The number of basepairs on each side of \code{POS} to take.}
 
 \item{read.fn}{The function to use to get the BAM slice as a SAM file.}
+
+\item{...}{Additional arguments to read.fn}
 }
 \value{
-The SAM file contents as a \code{data.frame}
+The SAM file contents as a \code{data.frame}.
 }
 \description{
 Get a BAM slice as a \code{data.frame} possibly using different functions.

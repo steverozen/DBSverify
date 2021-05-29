@@ -2,22 +2,30 @@
 % Please edit documentation in R/CreateBAMSliceFileSamtools.R
 \name{CreateBAMSliceFileSamtools}
 \alias{CreateBAMSliceFileSamtools}
-\title{Get a BAM slice using the samtools executable}
+\title{Create a BAM slice as a SAM file using the samtools executable.}
 \usage{
-CreateBAMSliceFileSamtools(BAM.name, CHROM, POS, padding = 10)
+CreateBAMSliceFileSamtools(
+  BAM.name,
+  CHROM,
+  POS,
+  padding = 10,
+  save.file.path = NULL
+)
 }
 \arguments{
-\item{BAM.name}{The input BAM file name}
+\item{BAM.name}{The input BAM file name.}
 
-\item{CHROM}{The chromosome from which to slice}
+\item{CHROM}{The chromosome from which to slice.}
 
-\item{POS}{The position in \code{CHROM} from which to slice}
+\item{POS}{The position in \code{CHROM} from which to slice.}
 
 \item{padding}{The number of basepairs on each side of \code{POS} to take.}
+
+\item{save.file.path}{If not NULL, save the file to that file path.}
 }
 \value{
 The path of the SAM file that contains the BAM slice.
 }
 \description{
-Get a BAM slice using the samtools executable
+Create a BAM slice as a SAM file using the samtools executable.
 }

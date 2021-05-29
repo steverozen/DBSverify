@@ -4,7 +4,14 @@
 \alias{GetReadSupport}
 \title{Calculate the read support for putative DBS a given position in a BAM file}
 \usage{
-GetReadSupport(BAM.name, CHROM, POS, read.fn = CreateBAMSliceFileSamtools)
+GetReadSupport(
+  BAM.name,
+  CHROM,
+  POS,
+  REF,
+  ALT,
+  read.fn = CreateBAMSliceFileSamtools
+)
 }
 \arguments{
 \item{BAM.name}{The input BAM file name.}
