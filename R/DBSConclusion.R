@@ -4,6 +4,13 @@
 #' already processed by \code{\link{GetReadSupport}}  (so that the fields
 #' \code{vcf$NreadSupport} and \code{vcf$TreadSupport} are populated).
 #'
+#' @param germlineCutOff If this proportion of normal reads show one or the
+#'   other variant (or both variants), consider this a germline variant or
+#'   partial germline variant.
+#'
+#' @param max.non.mut.reads Tolerate this number of reads in the tumor
+#'   that do not support both mutated positions.
+#'
 #' @return A vcf with the field \code{DBSconclusion} populated.
 
 DBSConclusion <- function(vcf, germlineCutOff = 0.2, max.non.mut.reads = 1) {

@@ -1,4 +1,4 @@
-SummarizeReadSupport <- function(vcf, Nbam, Tbam) {
+SummarizeReadSupport <- function(vcf, Nbam.name, Tbam.name) {
   for(v in 1:nrow(vcf)){
 
     ## first create bam slices
@@ -12,10 +12,10 @@ SummarizeReadSupport <- function(vcf, Nbam, Tbam) {
     ALT   = vcf[v, "ALT"]
 
     vcf[v, "NreadSupport"] <-
-      GetReadSupport(BAM.name = Nbam, CHROM = CHROM, POS = POS, REF = REF, ALT = ALT)
+      GetReadSupport(BAM.name = Nbam.name, CHROM = CHROM, POS = POS, REF = REF, ALT = ALT)
 
     vcf[v, "TreadSupport"] <-
-      GetReadSupport(BAM.name = Tbam, CHROM = CHROM, POS = POS, REF = REF, ALT = ALT)
+      GetReadSupport(BAM.name = Tbam.name, CHROM = CHROM, POS = POS, REF = REF, ALT = ALT)
   }
   return(vcf)
 }

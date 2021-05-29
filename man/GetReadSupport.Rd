@@ -20,6 +20,10 @@ GetReadSupport(
 
 \item{POS}{The position in \code{CHROM} from which to slice.}
 
+\item{REF}{The reference variant}
+
+\item{ALT}{The alternate variant}
+
 \item{read.fn}{The function to use to get the BAM slice as a SAM file.}
 }
 \description{

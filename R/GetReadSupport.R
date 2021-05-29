@@ -2,7 +2,9 @@
 #'
 #' @inheritParams CreateBAMSlice
 #'
+#' @param REF The reference variant
 #'
+#' @param ALT The alternate variant
 
 GetReadSupport <- function(BAM.name, CHROM, POS, REF, ALT,
                            read.fn = CreateBAMSliceFileSamtools) {

@@ -10,6 +10,13 @@ DBSConclusion(vcf, germlineCutOff = 0.2, max.non.mut.reads = 1)
 \item{vcf}{An in memory DBS VCF (as a \code{data.frame})
 already processed by \code{\link{GetReadSupport}}  (so that the fields
 \code{vcf$NreadSupport} and \code{vcf$TreadSupport} are populated).}
+
+\item{germlineCutOff}{If this proportion of normal reads show one or the
+other variant (or both variants), consider this a germline variant or
+partial germline variant.}
+
+\item{max.non.mut.reads}{Tolerate this number of reads in the tumor
+that do not support both mutated positions.}
 }
 \value{
 A vcf with the field \code{DBSconclusion} populated.
