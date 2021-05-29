@@ -1,19 +1,15 @@
-test_that("Long test of input/HepG2_AA1_20uM_SL_cl1_SNVresult.vcf -- full set of DBSs")
-vcf.name <- "input/HepG2_AA1_20uM_SL_cl1_SNVresult.vcf"
+test_that("Long test of input/HepG2_AA1_20uM_SL_cl1_SNVresult.vcf -- full set of DBSs", {
+skip_if(Sys.getenv("DO_LONG_TEST") == "")
+xx <- ReadVCFAndBAMsAndProcess(
+  vcf.name  = "input/HepG2_AA1_20uM_SL_cl1_SNVresult.vcf",
+  Nbam.name = "input/HepG2_AA1_DBSlocs_Normal.bam",
+  Tbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
+  variant.caller = "strelka",
+  num.cores      = 1)
 
-vcf.list <-ICAMS::ReadAndSplitVCFs(vcf.name,
-                                   variant.caller = "strelka",
-                                   num.of.cores = 10,
-                                   max.vaf.diff = 1)
+new <- data.table::fread(xx$vcf.name)
+old <- data.table::fread(paste0(xx$vcf.name, ".regress"))
+unlink(xx$vcf.name)
+expect_equal(old, new)
 
-DBS.vcf <- vcf.list$DBS[[1]]
-
-evaluated.vcf <- VerifyDBSVcf(DBS.vcf,
-                              Nbam = "input/HepG2_AA1_DBSlocs_Normal.bam",
-                              Tbam = "input/HepG2_AA1_DBSlocs_Tumor.bam")
-
-outfile = "xxx2.vcf"
-write.table(evaluated.vcf, file = outfile, sep="\t", quote=F, row.names = F)
-new <- data.table::fread(outfile)
-old <- data.table::fread("input/HepG2_AA1_DBS_evaluated.vcf")
-all.equal(new, old)
+})
