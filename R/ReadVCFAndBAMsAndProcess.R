@@ -33,7 +33,9 @@ ReadVCFAndBAMsAndProcess <- function(vcf.name, Nbam.name,
                                      Tbam.name,
                                      variant.caller, num.cores = 10, outfile = NULL) {
 
-  # Add check for .bam.bai files here and in VerifyDBSVcf()
+  CheckBAM(Nbam.name)
+  CheckBAM(Tbam.name)
+  if (!file.exists(vcf.name)) stop("VCF file ", vcf.name, "does not exist")
 
   if (variant.caller %in% c("strelka", "mutect", "unknown")) {
     get.vaf.function <- NULL

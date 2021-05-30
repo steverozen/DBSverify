@@ -15,6 +15,10 @@
 #' @export
 
 VerifyDBSVcf <- function(vcf, Nbam.name, Tbam.name) {
+
+  CheckBAM(Nbam.name)
+  CheckBAM(Tbam.name)
+
   if (nrow(vcf) == 0) return(vcf)
 
   # debug(addID)
