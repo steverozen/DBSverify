@@ -1,4 +1,4 @@
 library(testthat)
-library(MNVverify)
+library(DBSverify)
 
-test_check("MNVverify")
+test_check("DBSverify")

@@ -15,7 +15,7 @@ SaveAllSlices <- function(vcf, bam.name, where.to.put.slices) {
       file.path(where.to.put.slices,
                 paste("...part of BAM name...", CHROM, POS, REF, ALT, sep = "-"))
     # Create saved BAM slices
-    CreateBAMSliceFileSamtools(BAM.name, CHROM, POS, padding = 10, save.file.path = file.name)
+    CreateBAMSliceFileSamtools(bam.name, CHROM, POS, padding = 10, save.file.path = file.name)
   }
 
 }
