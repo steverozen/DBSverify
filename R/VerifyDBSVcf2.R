@@ -30,19 +30,20 @@ VerifyDBSVcf2 <- function(vcf, Nbam.name, Tbam.name) {
   vcf$Format<-paste0("WtReads:pos1reads:pos2reads:MutReads")
 
   # create.dir based on root of nbam
-  # nbam.sices.dir <- create.dir(....root of nbam ....)
+  # nbam.slices.dir <- create.dir(....root of nbam ....)
   #   #use bioconductor Rsamtools
   # SaveAllSlices(vcf, Nbam.name, nbam.slices.dir)
 
   # create.dir based on root of tbam
-  # tbam.sices.dir <- create.dir(....root of nbam ....)
+  # tbam.slices.dir <- create.dir(....root of nbam ....)
 
   # SaveAllSlices(vcf, Tbam.name, tbam.slices.dir)
 
   # vcf2 <- SummarizeReadSupport2(
   #  vcf = vcf, Nbam.name = Nbam.name, Tbam.name = Tbam.name)
-  # maybe unlink slices
+  # maybe unlink slices unlink(nbam.slices.dir, recursive = TRUE)
+  # unlink(tbam.slices.dir, recursive = TRUE)
 
-  vcf3 <-DBSConclusion(vcf2)
-  return(vcf3)
+  # vcf3 <-DBSConclusion(vcf2)
+  # return(vcf3)
 }
