@@ -6,14 +6,16 @@
 #'
 #' @param POS The position in \code{CHROM} from which to slice.
 #'
-#' @param padding The number of basepairs on each side of \code{POS} to take.
+#' @param padding The number of base pairs on each side of \code{POS} to take.
 #'
-#' @param save.file.path If not NULL, save the file to that file path.
+#' @param save.file.path Where to save the sam file.
 #'
 #' @return The path of the SAM file that contains the BAM slice.
+#'
+#' @keywords internal
 
 CreateBAMSliceFileSamtools <-
-  function(BAM.name, CHROM, POS, padding = 10, save.file.path = NULL) {
+  function(BAM.name, CHROM, POS, padding = 10, save.file.path) {
     BAM.coord <- paste0(CHROM, ":", POS - padding, "-", POS + padding)
     if (is.null(save.file.path)) {
       save.file.path <- tempfile(pattern = "")

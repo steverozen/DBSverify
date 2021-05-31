@@ -4,7 +4,7 @@
 \alias{VerifyDBSVcf}
 \title{Check whether analysis of individual reads supports DBSs in a VCF.}
 \usage{
-VerifyDBSVcf(vcf, Nbam.name, Tbam.name)
+VerifyDBSVcf(vcf, Nbam.name, Tbam.name, N.slice.dir, T.slice.dir, padding = 10)
 }
 \arguments{
 \item{vcf}{An in-memory representation of a "variant call file", VCF, as a \code{data.frame}.}
@@ -12,6 +12,14 @@ VerifyDBSVcf(vcf, Nbam.name, Tbam.name)
 \item{Nbam.name}{The name of the BAM file for the normal sample.}
 
 \item{Tbam.name}{The name of the BAM file for the tumor sample.}
+
+\item{N.slice.dir}{The directory containing the slices of the normal BAM.}
+
+\item{T.slice.dir}{The directory containing the slices of the tumor BAM.}
+
+\item{padding}{The number of base pairs on either side of the first position
+of the DBS to include
+in the slices.}
 }
 \value{
 An in-memory VCF based on the input \code{vcf} with the additional columns

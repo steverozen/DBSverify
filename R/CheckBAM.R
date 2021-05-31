@@ -1,3 +1,5 @@
+#' @keywords internal
+
 CheckBAM <- function(bam.name) {
   if (!file.exists(bam.name)) {
     stop("BAM file ", bam.name, " does not exist" )

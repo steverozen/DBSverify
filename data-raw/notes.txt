@@ -1,0 +1,11 @@
+ReadVCFandBAMSAndProcess
+   ICAMS::ReadAndSplitVCFs
+   VerifyDBSVcf
+      GetAllBAMSlicesSamtools (normal)
+      GetAllBAMSlicesSamtools (tumor)
+       # Slices are created and saved, can analyze later
+      SummarizeReadSupportFromSlices
+        Slice2ReadSupport (normal)
+        SLice2ReadSupport (tumor) 
+      DBSConclusion
+   Write the evaluated vcf

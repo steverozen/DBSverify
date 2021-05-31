@@ -1,7 +1,7 @@
-#' Examines every row of DBS VCF already processed by \code{\link{GetReadSupport}} and decides which DBSs are real.
+#' Examines every row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are real.
 #'
 #' @param vcf An in memory DBS VCF (as a \code{data.frame})
-#' already processed by \code{\link{GetReadSupport}}  (so that the fields
+#' already processed by \code{\link{Slice2ReadSupport}}  (so that the fields
 #' \code{vcf$NreadSupport} and \code{vcf$TreadSupport} are populated).
 #'
 #' @param germlineCutOff If this proportion of normal reads show one or the

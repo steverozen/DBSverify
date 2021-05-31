@@ -2,13 +2,13 @@
 % Please edit documentation in R/DBSConclusion.R
 \name{DBSConclusion}
 \alias{DBSConclusion}
-\title{Examines every row of DBS VCF already processed by \code{\link{GetReadSupport}} and decides which DBSs are real.}
+\title{Examines every row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are real.}
 \usage{
 DBSConclusion(vcf, germlineCutOff = 0.2, max.non.mut.reads = 1)
 }
 \arguments{
 \item{vcf}{An in memory DBS VCF (as a \code{data.frame})
-already processed by \code{\link{GetReadSupport}}  (so that the fields
+already processed by \code{\link{Slice2ReadSupport}}  (so that the fields
 \code{vcf$NreadSupport} and \code{vcf$TreadSupport} are populated).}
 
 \item{germlineCutOff}{If this proportion of normal reads show one or the
@@ -22,5 +22,5 @@ that do not support both mutated positions.}
 A vcf with the field \code{DBSconclusion} populated.
 }
 \description{
-Examines every row of DBS VCF already processed by \code{\link{GetReadSupport}} and decides which DBSs are real.
+Examines every row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are real.
 }

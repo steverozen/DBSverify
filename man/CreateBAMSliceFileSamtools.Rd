@@ -4,13 +4,7 @@
 \alias{CreateBAMSliceFileSamtools}
 \title{Create a BAM slice as a SAM file using the samtools executable.}
 \usage{
-CreateBAMSliceFileSamtools(
-  BAM.name,
-  CHROM,
-  POS,
-  padding = 10,
-  save.file.path = NULL
-)
+CreateBAMSliceFileSamtools(BAM.name, CHROM, POS, padding = 10, save.file.path)
 }
 \arguments{
 \item{BAM.name}{The input BAM file name.}
@@ -19,9 +13,9 @@ CreateBAMSliceFileSamtools(
 
 \item{POS}{The position in \code{CHROM} from which to slice.}
 
-\item{padding}{The number of basepairs on each side of \code{POS} to take.}
+\item{padding}{The number of base pairs on each side of \code{POS} to take.}
 
-\item{save.file.path}{If not NULL, save the file to that file path.}
+\item{save.file.path}{Where to save the sam file.}
 }
 \value{
 The path of the SAM file that contains the BAM slice.
@@ -29,3 +23,4 @@ The path of the SAM file that contains the BAM slice.
 \description{
 Create a BAM slice as a SAM file using the samtools executable.
 }
+\keyword{internal}

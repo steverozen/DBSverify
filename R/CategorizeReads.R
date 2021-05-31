@@ -1,8 +1,21 @@
-# one variant
-# returns a named character vector, the names are the read names, the values are .... plus left/right half supporting read
-# Read supports only 2nd position"
-# 1] "Read does not overlap complete DBS" "WT read"                            "Mut read"
-#
+#' Categorizes the reads in one sam file.
+#'
+#' @param sam An in-memory represenation of a sam file as data.frame.
+#'
+#' @param POS The position in the sam at which the DBS starts.
+#'
+#' @param REF The reference allele.
+#'
+#' @param ALT The putative alternative allele.
+#'
+#' @return a named character vector, the names are the read names in the sam file.
+#'  Each element is one of
+#'  "Read supports only 1st position"
+#'  "Read supports only 2nd position",
+#   "Read does not overlap complete DBS",
+#'  "WT read"
+#'  "Mut read"
+
 CategorizeReads <-function(sam, POS, REF, ALT){
   tmp<-NULL
   # vcf.sub.v <- vcf[v, ]
