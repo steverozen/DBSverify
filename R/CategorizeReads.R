@@ -1,6 +1,6 @@
 #' Categorizes the reads in one sam file.
 #'
-#' @param sam An in-memory represenation of a sam file as data.frame.
+#' @param sam An in-memory version of a sam file as data.frame.
 #'
 #' @param POS The position in the sam at which the DBS starts.
 #'
@@ -15,6 +15,9 @@
 #   "Read does not overlap complete DBS",
 #'  "WT read"
 #'  "Mut read"
+#'
+#'  @keywords internal
+#'
 
 CategorizeReads <-function(sam, POS, REF, ALT){
   tmp<-NULL

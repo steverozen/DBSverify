@@ -1,6 +1,6 @@
 basic.test <- function(input.vcf.root) {
   vcf.name <- paste0("input/", input.vcf.root, ".vcf")
-  xx <- ReadVCFAndBAMsAndProcess(
+  xx <- ReadVCFAndBAMsAndVerifyDBSs(
     vcf.name         = vcf.name,
     Nbam.name        = "input/HepG2_AA1_DBSlocs_Normal.bam",
     Tbam.name        = "input/HepG2_AA1_DBSlocs_Tumor.bam",

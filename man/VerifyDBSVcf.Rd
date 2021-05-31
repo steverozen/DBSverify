@@ -23,11 +23,9 @@ in the slices.}
 }
 \value{
 An in-memory VCF based on the input \code{vcf} with the additional columns
-\code{ID}, \code{NreadSupport}, \code{TreadSupport}, and \code{DBSconclusion}.
-If \code{vcf} is empty, return it without adding columns.
-
-XXXXXX MORE MORE
+as described in \code{\link{ReadVCFAndBAMsAndVerifyDBSs}}.
 }
 \description{
 Check whether analysis of individual reads supports DBSs in a VCF.
 }
+\keyword{internal}

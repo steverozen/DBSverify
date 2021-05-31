@@ -10,7 +10,7 @@
 #'  If \code{variant.caller} is \code{"unknown"}, then the variant caller must have called
 #'  DBSs as such. For \code{"strelka"} and {"mutect"} DBS analysis is as in \code{ICAMS};
 #'  Strelka does not call DBSs, and DBSs are inferred from adjacent single base substitutions.
-#'  This is hte case for \code{"PCAWG"} as well.
+#'  This is the case for \code{"PCAWG"} as well.
 #'
 #' @param num.cores Number of cores to use while reading the VCF. Set this to 1 for testing
 #'  and on MS Windows.
@@ -18,7 +18,7 @@
 #' @param N.slice.dir Directory for the slices of the normal BAM.
 #'  Created if necessary.
 #'
-#' @param T.slice.dir Directory for the slices of the tumour BAM.
+#' @param T.slice.dir Directory for the slices of the tumor BAM.
 #'  Created if necessary. Must be different than \code{N.slice.dir}.
 #'
 #' @param unlink.slice.dir If \code{TRUE} unlink \code{N.slice.dir} and \code{T.slice.dir} before return.
@@ -43,15 +43,15 @@
 #' @export
 #'
 
-ReadVCFAndBAMsAndProcess <- function(vcf.name,
-                                     Nbam.name,
-                                     Tbam.name,
-                                     variant.caller,
-                                     num.cores        = 10,
-                                     N.slice.dir      = tempfile(),
-                                     T.slice.dir      = tempfile(),
-                                     unlink.slice.dir = TRUE,
-                                     outfile          = NULL) {
+ReadVCFAndBAMsAndVerifyDBSs <- function(vcf.name,
+                                       Nbam.name,
+                                       Tbam.name,
+                                       variant.caller,
+                                       num.cores        = 10,
+                                       N.slice.dir      = tempfile(),
+                                       T.slice.dir      = tempfile(),
+                                       unlink.slice.dir = TRUE,
+                                       outfile          = NULL) {
 
   CheckBAM(Nbam.name)
   CheckBAM(Tbam.name)

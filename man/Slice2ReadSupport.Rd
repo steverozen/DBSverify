@@ -20,3 +20,4 @@ Slice2ReadSupport(slice.dir, CHROM, POS, REF, ALT)
 \description{
 Calculate the support for a putative DBS from the SAM slice containing the overlapping reads.
 }
+\keyword{internal}

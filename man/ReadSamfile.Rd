@@ -2,7 +2,7 @@
 % Please edit documentation in R/ReadSamfile.R
 \name{ReadSamfile}
 \alias{ReadSamfile}
-\title{Read a "SAM file", discarding some reads that are uninterpretable for our purposes}
+\title{Read a "SAM file", discarding some reads that cannot be interpreted for our purposes}
 \usage{
 ReadSamfile(filename)
 }
@@ -20,3 +20,4 @@ SAM stands for "Sequence Alignment Map", a text file that
 represents aligned next-generation sequencing reads
 (https://en.wikipedia.org/wiki/SAM_(file_format))
 }
+\keyword{internal}

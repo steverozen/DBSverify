@@ -12,6 +12,8 @@
 #'   that do not support both mutated positions.
 #'
 #' @return A vcf with the field \code{DBSconclusion} populated.
+#'
+#' @keywords internal
 
 DBSConclusion <- function(vcf, germlineCutOff = 0.2, max.non.mut.reads = 1) {
   if (nrow(vcf) == 0) return(vcf)

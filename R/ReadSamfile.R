@@ -1,4 +1,4 @@
-#' Read a "SAM file", discarding some reads that are uninterpretable for our purposes
+#' Read a "SAM file", discarding some reads that cannot be interpreted for our purposes
 #'
 #' SAM stands for "Sequence Alignment Map", a text file that
 #' represents aligned next-generation sequencing reads
@@ -10,6 +10,8 @@
 #' columns, with \code{colnames} as specified in
 #' https://en.wikipedia.org/wiki/SAM_(file_format)
 #' and one row per read.
+#'
+#' @keywords internal
 
 ReadSamfile <- function(filename) {
   df <- utils::read.csv(

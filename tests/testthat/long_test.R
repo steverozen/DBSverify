@@ -2,7 +2,7 @@ test_that("Long test of input/HepG2_AA1.vcf -- full set of 636 DBSs", {
   # skip_if(Sys.getenv("DO_LONG_TEST") == "")
   Sys.time()
   stime <- system.time(
-    xx <- ReadVCFAndBAMsAndProcess(
+    xx <- ReadVCFAndBAMsAndVerifyDBSs(
       vcf.name  = "input/HepG2_AA1.vcf",
       Nbam.name = "input/HepG2_AA1_DBSlocs_Normal.bam",
       Tbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",

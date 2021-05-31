@@ -9,6 +9,8 @@
 #' @param REF The reference variant.
 #'
 #' @param ALT The alternate variant.
+#'
+#' @keywords internal
 
 Slice2ReadSupport <- function(slice.dir, CHROM, POS, REF, ALT) {
 

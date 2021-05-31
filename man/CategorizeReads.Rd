@@ -7,7 +7,7 @@
 CategorizeReads(sam, POS, REF, ALT)
 }
 \arguments{
-\item{sam}{An in-memory represenation of a sam file as data.frame.}
+\item{sam}{An in-memory version of a sam file as data.frame.}
 
 \item{POS}{The position in the sam at which the DBS starts.}
 
@@ -22,6 +22,8 @@ Each element is one of
 "Read supports only 2nd position",
 "WT read"
 "Mut read"
+
+@keywords internal
 }
 \description{
 Categorizes the reads in one sam file.

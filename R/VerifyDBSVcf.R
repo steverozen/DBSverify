@@ -15,12 +15,9 @@
 #'  in the slices.
 #'
 #' @return An in-memory VCF based on the input \code{vcf} with the additional columns
-#'   \code{ID}, \code{NreadSupport}, \code{TreadSupport}, and \code{DBSconclusion}.
-#'   If \code{vcf} is empty, return it without adding columns.
+#'   as described in \code{\link{ReadVCFAndBAMsAndVerifyDBSs}}.
 #'
-#'   XXXXXX MORE MORE
-#'
-#' @export
+#' @keywords internal
 
 VerifyDBSVcf <- function(vcf, Nbam.name, Tbam.name, N.slice.dir, T.slice.dir, padding = 10) {
 

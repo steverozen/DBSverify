@@ -1,13 +1,29 @@
 Package: DBSverify
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Analyze Next Generation Sequencing Data to Verify Somatic Double-BaseSubstituion (DBS) Calls
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Steven George",
+           family = "Rozen",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "steverozen@gmail.com",
+           comment = c(ORCID = "0000-0002-4288-0056"))
+    person(given = "Arnoud",
+           family = "Boot",
+           role = c("aut", "cre"),
+           email = "arnoud.boot@duke-nus.edu.sg")
+Description: DBSverify stands for "Doublet Base Substitution verify". 
+             The main function is ReadVCFAndBAMsAndVerifyDBS. This reads 
+             a VCF (variant call format) file for somatic DBS mutations and
+             and examines the supporting reads in the source tumor and
+             normal BAM files to assess wither each DBS is likely real,
+             i.e. arose at one time on a single chromosome. This is
+             as opposed to being two adjacent single base mutations on
+             homologous chromosomes, or adjacent mutations that occurred
+             on the same chromosome but a different times. Many somatic
+             mutation callers do call DBSs at all, and those that
+             do sometime make obvious errors, such as calling DBSs that
+             consist of a germline SNP next to a somatic single base 
+             mutation.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -18,4 +34,6 @@ Imports:
     ICAMS,
     data.table
 Suggests: 
+    spelling,
     testthat
+Language: en-US

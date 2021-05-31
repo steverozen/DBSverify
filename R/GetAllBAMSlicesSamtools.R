@@ -4,7 +4,8 @@
 #'
 #' @param bam.name The file name (path) to the BAM file to slice.
 #'
-#' @param padding How many base pairs on each of a position to keep in the BAM slices.
+#' @param padding How many base pairs on each side of the first base of the DBS
+#'    to to keep in the BAM slices.
 #'
 #' @param where.to.put.slices If \code{NULL}, create a temporary directory to store
 #'    the slices.  Otherwise, a character string that specifies a directory in

@@ -24,3 +24,4 @@ A vcf with the field \code{DBSconclusion} populated.
 \description{
 Examines every row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are real.
 }
+\keyword{internal}
