@@ -15,7 +15,8 @@ VerifyDBSVcf(vcf, Nbam.name, Tbam.name, N.slice.dir, T.slice.dir, padding = 10)
 
 \item{N.slice.dir}{The directory containing the slices of the normal BAM.}
 
-\item{T.slice.dir}{The directory containing the slices of the tumor BAM.}
+\item{T.slice.dir}{The directory containing the slices of the tumor BAM.
+Must be different than \code{N.slice.dir}.}
 
 \item{padding}{The number of base pairs on either side of the first position
 of the DBS to include
