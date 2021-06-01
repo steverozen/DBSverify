@@ -8,7 +8,8 @@
 #'
 #' @param N.slice.dir The directory containing the slices of the normal BAM.
 #'
-#' @param T.slice.dir The directory containing the slices of the tumor BAM.
+#' @param T.slice.dir The directory containing the slices of the tumor BAM. Must
+#'    be different than \code{N.slice.dir}.
 #'
 #' @param padding The number of base pairs on either side of the first position
 #'  of the DBS to include
@@ -23,6 +24,10 @@ VerifyDBSVcf <- function(vcf, Nbam.name, Tbam.name, N.slice.dir, T.slice.dir, pa
 
   CheckBAM(Nbam.name)
   CheckBAM(Tbam.name)
+  if (N.slice.dir == T.slice.dir) {
+    stop("T.slice.dir and N.slice.dir must be different; got ",
+         N.slice.dir)
+  }
 
   if (nrow(vcf) == 0) return(vcf)
 

@@ -55,6 +55,11 @@ ReadVCFAndBAMsAndVerifyDBSs <- function(vcf.name,
 
   CheckBAM(Nbam.name)
   CheckBAM(Tbam.name)
+  if (N.slice.dir == T.slice.dir) {
+    stop("T.slice.dir and N.slice.dir must be different; got ",
+         N.slice.dir)
+  }
+
   if (!file.exists(vcf.name)) stop("VCF file ", vcf.name, "does not exist")
 
   if (variant.caller %in% c("strelka", "mutect", "unknown")) {

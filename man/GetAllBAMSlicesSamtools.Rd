@@ -2,7 +2,7 @@
 % Please edit documentation in R/GetAllBAMSlicesSamtools.R
 \name{GetAllBAMSlicesSamtools}
 \alias{GetAllBAMSlicesSamtools}
-\title{Get and optionally save all slices of BAM as specified by positions in a VCF table.}
+\title{Get and save all slices of BAM as specified by positions in a VCF table.}
 \usage{
 GetAllBAMSlicesSamtools(
   vcf,
@@ -28,5 +28,5 @@ A character string that specifies the directory the containing the
 BAM slices. The slices are stored as SAM files.
 }
 \description{
-Get and optionally save all slices of BAM as specified by positions in a VCF table.
+Get and save all slices of BAM as specified by positions in a VCF table.
 }

@@ -1,4 +1,4 @@
-#' Get and optionally save all slices of BAM as specified by positions in a VCF table.
+#' Get and save all slices of BAM as specified by positions in a VCF table.
 #'
 #' @param vcf A VCF (Variant Call Format) "file" as a data.table or similar.
 #'
