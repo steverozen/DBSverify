@@ -57,3 +57,17 @@ test_that(
       num.cores      = 1),
     regexp = "BAM file"
   ))
+
+test_that(
+  "N.slice.dir == T.slice.dir",
+  expect_error(
+    xx <- ReadVCFAndBAMsAndVerifyDBSs(
+      vcf.name = "input/6-54496940.vcf",
+      Nbam.name = "input/HepG2_AA1_DBSlocs_Normal.bam",
+      Tbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
+      variant.caller = "strelka",
+      T.slice.dir = "tmp.dir",
+      N.slice.dir = "tmp.dir",
+      num.cores      = 1),
+    regexp = "must be different"
+  ))
