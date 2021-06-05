@@ -11,6 +11,9 @@
 #' @param T.slice.dir The directory containing the slices of the tumor BAM. Must
 #'    be different than \code{N.slice.dir}.
 #'
+#' @param verbose If > 0 print a message when starting the number of slices
+#'    generated every \code{verbose} slices.
+#'
 #' @param padding The number of base pairs on either side of the first position
 #'  of the DBS to include
 #'  in the slices.
@@ -20,7 +23,13 @@
 #'
 #' @keywords internal
 
-VerifyDBSVcf <- function(vcf, Nbam.name, Tbam.name, N.slice.dir, T.slice.dir, padding = 10) {
+VerifyDBSVcf <- function(vcf,
+                         Nbam.name,
+                         Tbam.name,
+                         N.slice.dir,
+                         T.slice.dir,
+                         padding = 10,
+                         verbose = 0) {
 
   CheckBAM(Nbam.name)
   CheckBAM(Tbam.name)
@@ -40,12 +49,14 @@ VerifyDBSVcf <- function(vcf, Nbam.name, Tbam.name, N.slice.dir, T.slice.dir, pa
   GetAllBAMSlicesSamtools(vcf                 = vcf,
                           bam.name            = Nbam.name,
                           padding             = padding,
-                          where.to.put.slices = N.slice.dir)
+                          where.to.put.slices = N.slice.dir,
+                          verbose             = verbose)
 
   GetAllBAMSlicesSamtools(vcf                 = vcf,
                           bam.name            = Tbam.name,
                           padding             = padding,
-                          where.to.put.slices = T.slice.dir)
+                          where.to.put.slices = T.slice.dir,
+                          verbose             = verbose)
 
   vcf2 <- SummarizeReadSupportFromSlices(vcf, N.slice.dir, T.slice.dir)
 

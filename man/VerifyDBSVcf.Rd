@@ -4,7 +4,15 @@
 \alias{VerifyDBSVcf}
 \title{Check whether analysis of individual reads supports DBSs in a VCF.}
 \usage{
-VerifyDBSVcf(vcf, Nbam.name, Tbam.name, N.slice.dir, T.slice.dir, padding = 10)
+VerifyDBSVcf(
+  vcf,
+  Nbam.name,
+  Tbam.name,
+  N.slice.dir,
+  T.slice.dir,
+  padding = 10,
+  verbose = 0
+)
 }
 \arguments{
 \item{vcf}{An in-memory representation of a "variant call file", VCF, as a \code{data.frame}.}
@@ -21,6 +29,9 @@ be different than \code{N.slice.dir}.}
 \item{padding}{The number of base pairs on either side of the first position
 of the DBS to include
 in the slices.}
+
+\item{verbose}{If > 0 print a message when starting the number of slices
+generated every \code{verbose} slices.}
 }
 \value{
 An in-memory VCF based on the input \code{vcf} with the additional columns
