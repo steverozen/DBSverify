@@ -16,6 +16,10 @@ Slice2ReadSupport <- function(slice.dir, CHROM, POS, REF, ALT) {
 
   sam <- ReadSamfile(file.path(slice.dir,paste0(CHROM, "-", POS, ".sam")))
 
+  if (nrow(sam) == 0) {
+    return("0:0:0:0")
+  }
+
   eval <- CategorizeReads(sam = sam, POS = POS, REF = REF, ALT = ALT)
 
   read.support <-paste0(sum(eval == "WT read"),":",
