@@ -11,13 +11,17 @@
 #'    the slices.  Otherwise, a character string that specifies a directory in
 #'    which to store the BAM slices. This is directory is created if necessary.
 #'
+#' @param verbose If > 0 print a message when starting the number of slices
+#'    generated every \code{verbose} slices.
+#'
 #' @return A character string that specifies the directory the containing the
 #'   BAM slices. The slices are stored as SAM files.
 
 GetAllBAMSlicesSamtools <- function(vcf,
                                     bam.name,
                                     padding             = 10,
-                                    where.to.put.slices = tempfile()) {
+                                    where.to.put.slices = tempfile(),
+                                    verbose             = 0) {
   if (!dir.exists(where.to.put.slices)) {
     if (file.exists(where.to.put.slices)) {
       stop(where.to.put.slices, " exists as a file; needs to be a directory")
@@ -30,6 +34,10 @@ GetAllBAMSlicesSamtools <- function(vcf,
       bam.name, "\n", as.character(Sys.time()),"\n",
       file = file.path(where.to.put.slices, "README.txt"))
 
+  if (verbose > 0) {
+    message("Creating BAM slices for BAM ", bam.name)
+  }
+
   for(v in 1:nrow(vcf)){
 
     CHROM <- vcf[v, "CHROM"]
@@ -39,6 +47,10 @@ GetAllBAMSlicesSamtools <- function(vcf,
 
     slice.filename <- file.path(where.to.put.slices,
                                 paste0(CHROM, "-", POS, ".sam"))
+    if ((verbose > 0) && ((v %% verbose) == 0)) {
+      message(v, ": ", slice.filename)
+    }
+
     CreateBAMSliceFileSamtools(bam.name,
                                CHROM,
                                POS,

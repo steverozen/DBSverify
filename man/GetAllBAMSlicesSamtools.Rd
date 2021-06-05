@@ -8,7 +8,8 @@ GetAllBAMSlicesSamtools(
   vcf,
   bam.name,
   padding = 10,
-  where.to.put.slices = tempfile()
+  where.to.put.slices = tempfile(),
+  verbose = 0
 )
 }
 \arguments{
@@ -22,6 +23,9 @@ to to keep in the BAM slices.}
 \item{where.to.put.slices}{If \code{NULL}, create a temporary directory to store
 the slices.  Otherwise, a character string that specifies a directory in
 which to store the BAM slices. This is directory is created if necessary.}
+
+\item{verbose}{If > 0 print a message when starting the number of slices
+generated every \code{verbose} slices.}
 }
 \value{
 A character string that specifies the directory the containing the
