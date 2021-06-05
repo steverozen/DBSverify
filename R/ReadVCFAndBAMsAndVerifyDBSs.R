@@ -6,11 +6,22 @@
 #'
 #' @param Tbam.name The name of the BAM file for the tumor sample corresponding to \code{vcf.name}.
 #'
-#' @param variant.caller One of \code{"strelka"}, \code{"mutect"}, \code{"PCAWG"}, or \code{"unknown"}.
+#' @param variant.caller One of \code{"strelka"}, \code{"mutect"}, \code{"PCAWG"},
+#'  "HMF", or \code{"unknown"}.
 #'  If \code{variant.caller} is \code{"unknown"}, then the variant caller must have called
-#'  DBSs as such. For \code{"strelka"} and {"mutect"} DBS analysis is as in \code{ICAMS};
-#'  Strelka does not call DBSs, and DBSs are inferred from adjacent single base substitutions.
-#'  This is the case for \code{"PCAWG"} as well.
+#'  DBSs as such. For \code{"strelka"} and {"mutect"}.
+#'  \code{"PCAWG"} indicates the format in the consensus VCFs from the PCAWG project.
+#'  \code{"HMF"} indicates the format used by the Hartwig Medical Foundation
+#'  variant caller.
+#'  For \code{"mutect"} and \code{"HMF"}, only the DBSs called by the variant caller
+#'  are analyzed. Adjacent SBS are never merged.
+#'  For \code{"strelka"} adjacent SBSs are always merged.
+#'  For \code{"unknown"} adjacent SBSs are merged if and only if
+#'  \code{always.merge.SBS = TRUE}.
+#'  DBS analysis is done by \code{\link[ICAMS]{ReadAndSplitVCFs}}.
+#'
+#' @param always.merge.SBS Merge adjacent SBS into DBSs
+#'  if \code{variant.caller = "uknown"}. Otherwise silently ignored.
 #'
 #' @param num.cores Number of cores to use while reading the VCF. Set this to 1 for testing
 #'  and on MS Windows.
@@ -21,7 +32,8 @@
 #' @param T.slice.dir Directory for the slices of the tumor BAM.
 #'  Created if necessary. Must be different than \code{N.slice.dir}.
 #'
-#' @param unlink.slice.dir If \code{TRUE} unlink \code{N.slice.dir} and \code{T.slice.dir} before return.
+#' @param unlink.slice.dir If \code{TRUE} unlink \code{N.slice.dir}
+#'  and \code{T.slice.dir} before return.
 #'
 #' @param outfile If not \code{NULL} then write the "evaluated" VCF to \code{outfile};
 #'  otherwise write it to \code{paste0(vcf.name, "_evaluated.vcf")}.
@@ -30,13 +42,39 @@
 #'    generated every \code{verbose} slices.
 #'
 #' @details Creates a new VCF file.
-#'  The additional information in this VCF files is described in \code{\link{VerifyDBSVcf}}.
+#'  This VCF file has no data rows if there were no DBSs to analyze.
+#'  Otherwise, this VCF contains the additional columns
+#'
+#'  1. \code{Format} contains the fixed string \code{"WtReads:pos1reads:pos2reads:MutReads"}.
+#'
+#'  1. \code{NreadSupport} With regard to the two positions of the DBS in
+#'     the normal BAM, a string with 4 numbers separated by ":", with the numbers
+#'     indicating respectively:
+#'
+#'     * the number of reads that are reference sequence at
+#'     both positions of the DBS,
+#'
+#'     * the number of reads that that have the alternative
+#'     allele only at the 1st position of the DBS,
+#'
+#'     * the number of reads that
+#'     have the alternative allele only at the second position of the DBS, and
+#'
+#'     * the number
+#'     of reads that have the alternative alleles at both positions of the DBS.
+#'
+#'  1. \code{TreadSupport} Information analogous to that in \code{NreadSupport}, for the
+#'     tumor BAM.
+#'
+#'  1. \code{DBSconclusion} A string that describes whether the DBSs is
+#'     believable (\code{"True DBS"}), and if not, a string that describes
+#'     why not.
 #'
 #' @return Invisibly, a list with the elements
 #'
-#' 1. The name of the VCF file created
+#' 1. The name of the VCF file created.
 #'
-#' 1. The in-memory representation of the VCF as a \code{data.table}
+#' 1. The in-memory representation of the VCF as a \code{data.table}.
 #'
 #' 1. The directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
 #'
@@ -50,6 +88,7 @@ ReadVCFAndBAMsAndVerifyDBSs <- function(input.vcf.name,
                                         Nbam.name,
                                         Tbam.name,
                                         variant.caller,
+                                        always.merge.SBS = FALSE,
                                         num.cores        = 10,
                                         N.slice.dir      = tempfile(),
                                         T.slice.dir      = tempfile(),
@@ -70,18 +109,31 @@ ReadVCFAndBAMsAndVerifyDBSs <- function(input.vcf.name,
     stop("VCF file ", input.vcf.name, "does not exist")
   }
 
-  if (variant.caller %in% c("strelka", "mutect", "unknown")) {
+  if (variant.caller %in% c("strelka", "mutect", "unknown", "HMF")) {
     get.vaf.function <- NULL
+
+    if (variant.caller == "HMF") {
+      variant.caller == "unknown"
+      always.merge.SBS <- FALSE
+    } else if (variant.caller == "mutect") {
+      always.merge.SBS <- FALSE
+    } else if (variant.caller == "strelka") {
+      always.merge.SBS <- TRUE
+    }
+
   } else if (variant.caller == "PCAWG") {
     variant.caller <- "unknown"
     get.vaf.function <- GetPCAWGVAF
+  } else {
+    stop("Unknown variant caller: ", variant.caller)
   }
 
   vcf.list <-ICAMS::ReadAndSplitVCFs(input.vcf.name,
-                                     variant.caller = variant.caller,
-                                     num.of.cores   = num.cores,
+                                     variant.caller   = variant.caller,
+                                     num.of.cores     = num.cores,
                                      get.vaf.function = get.vaf.function,
-                                     max.vaf.diff   = 1)
+                                     max.vaf.diff     = 1,
+                                     always.merge.SBS = always.merge.SBS)
 
   DBS.vcf <- vcf.list$DBS[[1]]
 
