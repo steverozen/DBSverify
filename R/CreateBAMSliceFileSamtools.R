@@ -20,7 +20,16 @@ CreateBAMSliceFileSamtools <-
     if (is.null(save.file.path)) {
       save.file.path <- tempfile(pattern = "")
     }
-    system(paste0("samtools view -h ", BAM.name, " ",
-                  BAM.coord, " > ", save.file.path), wait = T)
+    status <- system2("samtools",
+                      c("view", "-h", BAM.name, BAM.coord),
+                      stdout = save.file.path,
+                      wait = TRUE)
+    if (status == 127) stop("samtools: command not found")
+    if (status != 0) stop("samtools returned error status ", status)
+
+    if (FALSE) {
+      system(paste0("samtools view -h ", BAM.name, " ",
+                    BAM.coord, " > ", save.file.path), wait = T)
+    }
     return(save.file.path)
   }
