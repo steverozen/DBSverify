@@ -7,8 +7,10 @@ ReadVCFAndBAMsAndVerifyDBS
 Strelka
 VCF
 bam
+detectably
 germline
 github
+gzip'ed
 https
 mutect
 nd
