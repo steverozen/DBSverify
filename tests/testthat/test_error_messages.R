@@ -2,7 +2,7 @@ test_that(
   "No normal BAM index",
   expect_error(
     xx <- ReadVCFAndBAMsAndVerifyDBSs(
-      vcf.name = "input/6-54496940.vcf",
+      input.vcf.name = "input/6-54496940.vcf",
       Nbam.name = "input/bam_no_bai.bam",
       Tbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
       variant.caller = "strelka",
@@ -14,7 +14,7 @@ test_that(
   "No tumor BAM index",
   expect_error(
     xx <- ReadVCFAndBAMsAndVerifyDBSs(
-      vcf.name = "input/6-54496940.vcf",
+      input.vcf.name = "input/6-54496940.vcf",
       Nbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
       Tbam.name = "input/bam_no_bai.bam",
       variant.caller = "strelka",
@@ -26,7 +26,7 @@ test_that(
   "No VCF file",
   expect_error(
     xx <- ReadVCFAndBAMsAndVerifyDBSs(
-      vcf.name = "nope",
+      input.vcf.name = "nope",
       Nbam.name = "input/HepG2_AA1_DBSlocs_Normal.bam",
       Tbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
       variant.caller = "strelka",
@@ -38,7 +38,7 @@ test_that(
   "No normal BAM file",
   expect_error(
     xx <- ReadVCFAndBAMsAndVerifyDBSs(
-      vcf.name = "input/6-54496940.vcf",
+      input.vcf.name = "input/6-54496940.vcf",
       Nbam.name = "nope",
       Tbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
       variant.caller = "strelka",
@@ -50,7 +50,7 @@ test_that(
   "No tumor BAM file",
   expect_error(
     xx <- ReadVCFAndBAMsAndVerifyDBSs(
-      vcf.name = "input/6-54496940.vcf",
+      input.vcf.name = "input/6-54496940.vcf",
       Nbam.name = "input/HepG2_AA1_DBSlocs_Normal.bam",
       Tbam.name = "nope",
       variant.caller = "strelka",
@@ -62,7 +62,7 @@ test_that(
   "N.slice.dir == T.slice.dir",
   expect_error(
     xx <- ReadVCFAndBAMsAndVerifyDBSs(
-      vcf.name = "input/6-54496940.vcf",
+      input.vcf.name = "input/6-54496940.vcf",
       Nbam.name = "input/HepG2_AA1_DBSlocs_Normal.bam",
       Tbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
       variant.caller = "strelka",
