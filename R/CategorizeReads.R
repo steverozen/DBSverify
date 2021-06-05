@@ -21,9 +21,7 @@
 
 CategorizeReads <-function(sam, POS, REF, ALT){
   tmp<-NULL
-  # vcf.sub.v <- vcf[v, ]
-  # stopifnot(nrow(vcf.sub.v) == 1)
-  # vcf.pos <- vcf.sub.v$POS
+  if (nrow(sam) == 0) { stop("Do not call CategorizeReads when nrow(sam) == 0")}
   for(r in 1:nrow(sam)){ # every row is a read
     ## check whether the entire DBS is covered by the read
     readRange<-c(as.numeric(sam$POS[r]),as.numeric(sam$POS[r])+nchar(sam$SEQ[r])-1)
