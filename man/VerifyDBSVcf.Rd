@@ -35,7 +35,7 @@ generated every \code{verbose} slices.}
 }
 \value{
 An in-memory VCF based on the input \code{vcf} with the additional columns
-as described in \code{\link{ReadVCFAndBAMsAndVerifyDBSs}}.
+as described in \code{\link{Read_DBS_VCF_and_BAMs_to_verfiy_DBSs}}.
 }
 \description{
 Check whether analysis of individual reads supports DBSs in a VCF.

@@ -1,13 +1,12 @@
-test_that("Long test of input/HepG2_AA1.vcf -- full set of 636 DBSs", {
+test_that("Long test of Read_SBS_VCF_and_BAMs_to_verify_DBSs on input/HepG2_AA1.vcf -- full set of 636 DBSs", {
   skip_if(Sys.getenv("DO_LONG_TEST") == "")
   Sys.time()
   stime <- system.time(
-    xx <- ReadVCFAndBAMsAndVerifyDBSs(
-      input.vcf.name   = "input/HepG2_AA1.vcf",
+    xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
+      input.vcf   = "input/HepG2_AA1.vcf",
       Nbam.name        = "input/HepG2_AA1_DBSlocs_Normal.bam",
       Tbam.name        = "input/HepG2_AA1_DBSlocs_Tumor.bam",
       variant.caller   = "strelka",
-      num.cores        = 1,
       N.slice.dir      = "long.test.tmp.N.slice.dir",
       T.slice.dir      = "long.test.tmp.T.slice.dir",
       unlink.slice.dir = FALSE)

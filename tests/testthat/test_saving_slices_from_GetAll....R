@@ -1,10 +1,9 @@
-test_that("Test ReadVCFAndBAMsAndVerifyDBSs BAM slices in tempdir()", {
-  xx <- ReadVCFAndBAMsAndVerifyDBSs(
-      input.vcf.name   = "input/nine.vcf",
+test_that("Test Read_SBS_VCF_and_BAMs_to_verfiy_DBSs BAM slices in tempdir()", {
+  xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
+      input.vcf        = "input/nine.vcf",
       Nbam.name        = "input/HepG2_AA1_DBSlocs_Normal.bam",
       Tbam.name        = "input/HepG2_AA1_DBSlocs_Tumor.bam",
       variant.caller   = "strelka",
-      num.cores        = 1,
       unlink.slice.dir = FALSE)
     new <- data.table::fread(xx$evaluated.vcf.name)
     old <- data.table::fread(paste0(xx$evaluated.vcf.name, ".regress"))
@@ -14,13 +13,12 @@ test_that("Test ReadVCFAndBAMsAndVerifyDBSs BAM slices in tempdir()", {
     RegressSAMDirectory(old.dir = "input/nine.regress", new.dir = xx$T.slice.dir)
 })
 
-test_that("Test ReadVCFAndBAMsAndVerifyDBSs saving BAM slices in sepcified folder", {
-  xx <- ReadVCFAndBAMsAndVerifyDBSs(
-    input.vcf.name   = "input/nine.vcf",
+test_that("Read_SBS_VCF_and_BAMs_to_verfiy_DBSs saving BAM slices in sepcified folder", {
+  xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
+    input.vcf        = "input/nine.vcf",
     Nbam.name        = "input/HepG2_AA1_DBSlocs_Normal.bam",
     Tbam.name        = "input/HepG2_AA1_DBSlocs_Tumor.bam",
     variant.caller   = "strelka",
-    num.cores        = 1,
     N.slice.dir      = "tmp.test.N.slice.dir",
     T.slice.dir      = "tmp.test.T.slice.dir",
     unlink.slice.dir = FALSE)

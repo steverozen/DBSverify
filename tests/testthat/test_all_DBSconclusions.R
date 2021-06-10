@@ -1,11 +1,10 @@
 basic.test <- function(input.vcf.root) {
   vcf.name <- paste0("input/", input.vcf.root, ".vcf")
-  xx <- ReadVCFAndBAMsAndVerifyDBSs(
-    input.vcf.name   = vcf.name,
+  xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
+    input.vcf        = vcf.name,
     Nbam.name        = "input/HepG2_AA1_DBSlocs_Normal.bam",
     Tbam.name        = "input/HepG2_AA1_DBSlocs_Tumor.bam",
     variant.caller   = "strelka",
-    num.cores        = 1,
     unlink.slice.dir = TRUE)
   new <- data.table::fread(xx$evaluated.vcf.name)
   old <- data.table::fread(paste0(xx$evaluated.vcf.name, ".regress"))
