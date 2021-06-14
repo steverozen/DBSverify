@@ -18,7 +18,7 @@ do sometime make obvious errors, such as calling
 DBSs that consist of a germline SNP next to a somatic
 single base mutation.
 
-To install
+To install this superseded branch:
 
-remotes::install_github("steverozen/DBSverify", ref = "v0.2-branch")
+remotes::install_github("steverozen/DBSverify", ref = "v0.1-branch")
 
