@@ -4,8 +4,6 @@ files = c(
   "~/collab.vcf/0009b464-b376-4fbc-8a56-da538269a02f.MUSE_1-0rc-vcf.20151216.somatic.snv_mnv.vcf.gz",
   "~/collab.vcf/0009b464-b376-4fbc-8a56-da538269a02f.svcp_1-0-4.20150204.somatic.snv_mnv.vcf.gz",
   "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv//0009b464-b376-4fbc-8a56-da538269a02f.consensus.snv_mnv.vcf.gz"
-
-
 )
 
 library(dplyr)
@@ -68,6 +66,43 @@ dim(all.dbs)
 table(all.dbs$num.support, !is.na(all.dbs$REF), dnn = c("num.caller.supporting", "called.by.pcawg"))
 
 
+VCF_to_BED <- function(in.vcf, out.bed, padding = 10) {
+  stopifnot(data.table::is.data.table(in.vcf) || tibble::is_tibble(in.vcf))
+  bed.table <- in.vcf[ , 1:2, drop = FALSE]
+  bed.table$start <- in.vcf[ , 2] - (padding + 1)
+  bed.table$end   <- in.vcf[ , 2] + padding
+  bed.table <- bed.table[ , -2]
+  data.table::fwrite(data.table::as.data.table(bed.table), out.bed, sep = "\t", col.names = FALSE)
+  return(invisible(bed.table))
+}
+
+
+## Stuff to give to Willie on 14 Jun
+one.sup.dbs  <- VCF_to_BED(all.dbs[all.dbs$num.support == 1, ], "one.support.dbs.bed")
+two.sup.dbs  <- VCF_to_BED(all.dbs[all.dbs$num.support == 2, ], "two.support.dbs.bed")
+high.sup.dbs <- VCF_to_BED(all.dbs[all.dbs$num.support > 2, ],  "high.support.dbs.bed")
+
+test.case <- which(samp.sheet$aliquot_id == "0009b464-b376-4fbc-8a56-da538269a02f")
+
+samp.sheet[test.case, ]$icgc_donor_id
+#"DO46416"
+
+# from other .R file
+
+donor.pairs[["DO46416"]]
+
+# $SP101724
+# Object ID                            File Name ICGC Donor Specimen ID            Specimen Type Size (bytes)
+# 1: 2c9d90f1-5c46-5f3f-8a7f-771b36414cf2 bf5b874240ec430239013f4292d4151c.bam    DO46416    SP101724 Recurrent tumour - other 117118114996
+
+# $SP101728
+# Object ID                            File Name ICGC Donor Specimen ID          Specimen Type Size (bytes)
+# 1: 9ec1f43b-379c-58cd-85fe-3d09439058f1 7441677a3aed0864a23b17b84c0a28c9.bam    DO46416    SP101728 Normal - blood derived 134788648263
+
+## From here down is an investigation of SBSs calls and their relationship to DBS calls.
+## Very few odd cases, so we just went with DBSs calls (as synthesized from individual caller SBS calls; i.e.
+## for each caller we generated DBS calls, and then proceeded from there.)
+
 sbs.foo <- ICAMS::ReadAndSplitVCFs(files = files, variant.caller = "unknown", always.merge.SBS = FALSE )
 
 
@@ -92,6 +127,9 @@ all.sbs <- full_join(sbs$mutect,
 all <- full_join(all.dbs, all.sbs)
 
 alls <- (all %>% arrange(CHROM, POS))
+
+sup.2.and.pcawg <- which(is.na(alls$REF) & alls$num.support == 2)
+sup.2.and.pcawg<- sort(c(sup.2.and.pcawg + 1, sup.2.and.pcawg))
 
 dbsidx <- which(!is.na(alls$num.support))
 
@@ -121,5 +159,3 @@ which(pfoo$CHROM == 15 & pfoo$POS == 40527159)
 pfoo <- dbs.foo$DBS[[5]]
 which(pfoo$CHROM == 15 & pfoo$POS == 40527158)
 which(pfoo$CHROM == 15 & pfoo$POS == 40527159)
-
-
