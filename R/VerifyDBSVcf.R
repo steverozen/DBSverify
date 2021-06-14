@@ -19,7 +19,7 @@
 #'  in the slices.
 #'
 #' @return An in-memory VCF based on the input \code{vcf} with the additional columns
-#'   as described in \code{\link{Read_DBS_VCF_and_BAMs_to_verfiy_DBSs}}.
+#'   as described in \code{\link{Read_DBS_VCF_and_BAMs_to_verify_DBSs}}.
 #'
 #' @keywords internal
 

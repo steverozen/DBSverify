@@ -5,7 +5,7 @@
 #'  Merging adjacent SBS is done by \code{\link[ICAMS]{ReadAndSplitVCFs}}.
 #'  Do not use this for callers that
 #'
-#' @inheritParams Read_DBS_VCF_and_BAMs_to_verfiy_DBSs
+#' @inheritParams Read_DBS_VCF_and_BAMs_to_verify_DBSs
 #'
 #' @details Creates a new VCF file.
 #'  This VCF file has no data rows if there were no DBSs to analyze.
@@ -78,7 +78,7 @@ Read_SBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
   } else {
     stop("Unknown variant caller for merging SBSs into DBSs",
          variant.caller,
-         "\nDid you want to use Read_DBS_VCF_and_BAMs_to_verfiy_DBSs")
+         "\nDid you want to use Read_DBS_VCF_and_BAMs_to_verify_DBSs")
   }
 
   if (mode(input.vcf) == "character") {
@@ -108,7 +108,7 @@ Read_SBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
   }
 
   eval.out <-
-    Read_DBS_VCF_and_BAMs_to_verfiy_DBSs(input.vcf        = input.vcf,
+    Read_DBS_VCF_and_BAMs_to_verify_DBSs(input.vcf        = input.vcf,
                                          Nbam.name        = Nbam.name,
                                          Tbam.name        = Tbam.name,
                                          N.slice.dir      = N.slice.dir,

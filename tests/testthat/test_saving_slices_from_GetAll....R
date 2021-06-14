@@ -1,4 +1,4 @@
-test_that("Test Read_SBS_VCF_and_BAMs_to_verfiy_DBSs BAM slices in tempdir()", {
+test_that("Test Read_SBS_VCF_and_BAMs_to_verify_DBSs BAM slices in tempdir()", {
   xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
       input.vcf        = "input/nine.vcf",
       Nbam.name        = "input/HepG2_AA1_DBSlocs_Normal.bam",
@@ -13,7 +13,7 @@ test_that("Test Read_SBS_VCF_and_BAMs_to_verfiy_DBSs BAM slices in tempdir()", {
     RegressSAMDirectory(old.dir = "input/nine.regress", new.dir = xx$T.slice.dir)
 })
 
-test_that("Read_SBS_VCF_and_BAMs_to_verfiy_DBSs saving BAM slices in sepcified folder", {
+test_that("Read_SBS_VCF_and_BAMs_to_verify_DBSs saving BAM slices in sepcified folder", {
   xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
     input.vcf        = "input/nine.vcf",
     Nbam.name        = "input/HepG2_AA1_DBSlocs_Normal.bam",

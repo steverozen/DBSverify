@@ -15,7 +15,7 @@ test_that("No read support at all from SBS VCF", {
 })
 
 test_that("No read support at all from DBS VCF", {
-  xx <- DBSverify::Read_DBS_VCF_and_BAMs_to_verfiy_DBSs(
+  xx <- DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
     input.vcf = "input/1-30-DBS.vcf",
     Nbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
     Tbam.name = "input/HepG2_AA1_DBSlocs_Normal.bam",

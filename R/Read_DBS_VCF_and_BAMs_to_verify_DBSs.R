@@ -73,7 +73,7 @@
 #' @export
 #'
 
-Read_DBS_VCF_and_BAMs_to_verfiy_DBSs <- function(input.vcf,
+Read_DBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
                                                  Nbam.name,
                                                  Tbam.name,
                                                  N.slice.dir      = tempfile(),
