@@ -20,5 +20,5 @@ single base mutation.
 
 To install
 
-remotes::install_github("steverozen/DBSverify", ref = "v0.1-branch")
+remotes::install_github("steverozen/DBSverify", ref = "v0.2-branch")
 
