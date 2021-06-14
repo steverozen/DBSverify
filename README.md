@@ -27,5 +27,5 @@ verify the candidate DBSs using *Read_SBS_VCF_and_BAMs_to_verify_DBSs*.
 
 To install
 
-remotes::install_github("steverozen/DBSverify", ref = "master")
+remotes::install_github("steverozen/DBSverify", ref = "v0.2-branch")
 
