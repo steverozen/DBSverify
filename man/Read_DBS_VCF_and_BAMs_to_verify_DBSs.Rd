@@ -50,8 +50,8 @@ Invisibly, a list with the elements
 \enumerate{
 \item The name of the DBS-only VCF file created.
 \item The in-memory representation of the DBS VCF as a \code{data.table}.
-\item The directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
-\item The directory with the tumor sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
+\item The name of the directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
+\item The name of the directory with the tumor sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
 }
 }
 \description{
@@ -81,7 +81,8 @@ of reads that have the alternative alleles at both positions of the DBS.
 \item \code{TreadSupport} Information analogous to that in \code{NreadSupport}, for the
 tumor BAM.
 \item \code{DBSconclusion} A string that describes whether the DBSs is
-believable (\code{"True DBS"}), and if not, a string that describes
+believable (\code{"True DBS"}), or if the DBS is not
+believable, a string that describes
 why not.
 }
 }

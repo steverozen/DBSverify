@@ -56,7 +56,8 @@
 #'     tumor BAM.
 #'
 #'  1. \code{DBSconclusion} A string that describes whether the DBSs is
-#'     believable (\code{"True DBS"}), and if not, a string that describes
+#'     believable (\code{"True DBS"}), or if the DBS is not
+#'     believable, a string that describes
 #'     why not.
 #'
 #' @return Invisibly, a list with the elements
@@ -65,9 +66,9 @@
 #'
 #' 1. The in-memory representation of the DBS VCF as a \code{data.table}.
 #'
-#' 1. The directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
+#' 1. The name of the directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
 #'
-#' 1. The directory with the tumor sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
+#' 1. The name of the directory with the tumor sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
 #'
 #' @md
 #' @export
@@ -85,8 +86,8 @@ Read_DBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
 
   CheckBAM(Nbam.name)
   CheckBAM(Tbam.name)
-  TestBAMAndSamtools(Nbam.name)
-  TestBAMAndSamtools(Tbam.name)
+  # TestBAMAndSamtools(Nbam.name) # generates spurious warnings when working with minibams
+  # TestBAMAndSamtools(Tbam.name)
   if (N.slice.dir == T.slice.dir) {
     stop("T.slice.dir and N.slice.dir must be different; got ",
          N.slice.dir)
