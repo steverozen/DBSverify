@@ -14,6 +14,9 @@
 
 Slice2ReadSupport <- function(slice.dir, CHROM, POS, REF, ALT) {
 
+  stopifnot(!is.na(REF))
+  stopifnot(!is.na(ALT))
+
   sam <- ReadSamfile(file.path(slice.dir,paste0(CHROM, "-", POS, ".sam")))
 
   if (nrow(sam) == 0) {

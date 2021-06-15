@@ -44,7 +44,7 @@ CategorizeReads <-function(sam, POS, REF, ALT){
       ## check whether the sequence of the read matches the DBS
       pos1eval<-substr(readSeq,1,1) == substr(REF,1,1)
       pos2eval<-substr(readSeq,2,2) == substr(REF,2,2)
-      if(pos1eval == T & pos2eval == T){
+      if(pos1eval && pos2eval){
         tmp<-c(tmp,"WT read")
         names(tmp)[length(tmp)]<-sam$QNAME[r]
       } else {
