@@ -99,6 +99,87 @@ donor.pairs[["DO46416"]]
 # Object ID                            File Name ICGC Donor Specimen ID          Specimen Type Size (bytes)
 # 1: 9ec1f43b-379c-58cd-85fe-3d09439058f1 7441677a3aed0864a23b17b84c0a28c9.bam    DO46416    SP101728 Normal - blood derived 134788648263
 
+
+merge.callers <- function(row) {
+  row <- unlist(row)
+  ref <- row[c("REF_mt", "REF_dk", "REF_ms", "REF_sa")]
+  alt <- row[c("ALT_mt", "ALT_dk", "ALT_ms", "ALT_sa")]
+  ref.ok <- which(!is.na(ref))
+  alt.ok <- which(!is.na(alt))
+  ref2 <- unique(ref[ref.ok])
+  alt2 <- unique(alt[alt.ok])
+  stopifnot(length(ref2) == 1)
+  stopifnot(length(alt2) == 1)
+  rr <- c(row[c("CHROM", "POS")], REF = ref2, ALT = alt2, num.support = length(ref.ok), pcawg.call = !is.na(row["REF"]))
+  return(rr)
+}
+
+
+## Test 3 kinds of unioned DBSs -- only one caller supported, two caller supported, and 3 or 4 caller supported
+setwd("~/mvv/test.minibams/")
+
+tmp.vcf <- all.dbs[all.dbs$num.support == 1, ]
+# tmp.vcf <- tmp.vcf[1:10, ]
+tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
+colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers")
+data.table::fwrite(tmp2.vcf, "tmp.vcf", sep = "\t")
+one.sup <-
+  DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
+  input.vcf = "tmp.vcf",
+  Nbam.name = "SP101728_oneSupport.bam",
+  Tbam.name = "SP101724_oneSupport.bam",
+  N.slice.dir = "one.support.N.slice.dir",
+  T.slice.dir = "one.support.T.slice.dir",
+  unlink.slice.dir = FALSE,
+  verbose = 1,
+  outfile = "one.support.eval.vcf"
+)
+
+# Test with something like
+fisher.test(matrix(c(40,0,35,3), ncol = 2), alternative = "g")
+
+tmp.vcf <- all.dbs[all.dbs$num.support == 2, ]
+tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
+colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
+data.table::fwrite(tmp2.vcf, "two.tmp.vcf", sep = "\t")
+data.table::fwrite(foo, "foo.vcf", sep = "\t")
+two.sup <-
+  DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
+    input.vcf = "foo.vcf", # "two.tmp.vcf",
+    Nbam.name = "SP101728_twoSupport.bam",
+    Tbam.name = "SP101724_twoSupport.bam",
+    N.slice.dir = "two.support.N.slice.dir",
+    T.slice.dir = "two.support.T.slice.dir",
+    unlink.slice.dir = FALSE,
+    verbose = 1,
+    outfile = "foo.two.support.eval.vcf"
+  )
+
+# Investigate? 8:126314418
+# " 4 67785957
+
+tmp.vcf <- all.dbs[all.dbs$num.support > 2, ]
+tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
+colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
+data.table::fwrite(tmp2.vcf, "high.tmp.vcf", sep = "\t")
+high.sup <-
+  DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
+    input.vcf = "high.tmp.vcf",
+    Nbam.name = "SP101728_highSupport.bam",
+    Tbam.name = "SP101724_highSupport.bam",
+    N.slice.dir = "high.support.N.slice.dir",
+    T.slice.dir = "high.support.T.slice.dir",
+    unlink.slice.dir = FALSE,
+    verbose = 1,
+    outfile = "high.support.eval.vcf"
+  )
+
+
+
+
+setwd("~/DBSverify/")
+
+
 ## From here down is an investigation of SBSs calls and their relationship to DBS calls.
 ## Very few odd cases, so we just went with DBSs calls (as synthesized from individual caller SBS calls; i.e.
 ## for each caller we generated DBS calls, and then proceeded from there.)
