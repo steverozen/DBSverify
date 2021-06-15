@@ -1,3 +1,4 @@
+# Fusing info on BAMs and VCF files so we know which VCF file goes with which BAM files and BAM object ids
 # For info on downloaded data see notes-on-icgc.txt
 
 
@@ -75,11 +76,13 @@ samp.sheet <- data.table::fread("data-raw/pcawg_sample_sheet.v1.4.2016-09-14.tsv
 
 samp.sheet <- samp.sheet[samp.sheet$library_strategy == "WGS", ]
 
-jj <- dplyr::inner_join(samp.sheet, tumor.normal.pair, by  = c("icgc_specimen_id" = "N_Specimen ID"))
+jj <- dplyr::inner_join(samp.sheet, tumor.normal.pair, by  = c("icgc_specimen_id" = "T_Specimen ID"))
+# xjj <- dplyr::inner_join(samp.sheet, tumor.normal.pair, by  = c("icgc_specimen_id" = "N_Specimen ID"))
 
 data.table::fwrite(jj, "collaboratory_bams_full.csv")
 
 ## Simplify the columns
-jjj <- jj[ , c("aliquot_id", "icgc_donor_id", "icgc_specimen_id", "T_Object ID", "T_File Name", "N_Object ID", "N_File Name")]
+jjj <- jj[ , c("aliquot_id", "icgc_donor_id", "icgc_specimen_id", "T_Object ID", "T_File Name", "N_Specimen ID", "N_Object ID", "N_File Name")]
+colnames(jjj)[3] <- "T_Specimen ID"
 
-data.table::fwrite(jj, "collaboratory_bams.csv")
+data.table::fwrite(jjj, "collaboratory_bams.csv")
