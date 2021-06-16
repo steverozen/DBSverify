@@ -16,6 +16,7 @@
 
 CreateBAMSliceFileSamtools <-
   function(BAM.name, CHROM, POS, padding = 10, save.file.path) {
+    POS <- as.numeric(POS) # In case it was a character string.
     BAM.coord <- paste0(CHROM, ":", POS - padding, "-", POS + padding)
     if (is.null(save.file.path)) {
       save.file.path <- tempfile(pattern = "")

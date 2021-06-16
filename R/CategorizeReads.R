@@ -20,6 +20,7 @@
 #'
 
 CategorizeReads <-function(sam, POS, REF, ALT){
+  POS <- as.numeric(POS) # In case it is a character string
   tmp<-NULL
   if (nrow(sam) == 0) { stop("Do not call CategorizeReads when nrow(sam) == 0")}
   for(r in 1:nrow(sam)){ # every row is a read
