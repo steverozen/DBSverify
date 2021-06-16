@@ -7,7 +7,8 @@
 #'
 #' @inheritParams Read_DBS_VCF_and_BAMs_to_verify_DBSs
 #'
-#' @details Creates a new VCF file.
+#' @details Note: argument \code{input.vcf} must be a file path.
+#'  This function creates a new VCF file.
 #'  This VCF file has no data rows if there were no DBSs to analyze.
 #'  Otherwise, this VCF contains the additional columns
 #'
@@ -81,7 +82,7 @@ Read_SBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
          "\nDid you want to use Read_DBS_VCF_and_BAMs_to_verify_DBSs")
   }
 
-  if (mode(input.vcf) == "character") {
+  if (mode(input.vcf) == "character" && is.null(dim(input.vcf))) {
     # Interpret this as a file path
     input.vcf.name <- input.vcf
 
@@ -105,6 +106,9 @@ Read_SBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
     if (is.null(outfile)) {
       outfile <- paste0(input.vcf.name, "_evaluated.vcf")
     }
+  } else {
+    stop("Argument input.vcf to Read_SBS_VCF_and_BAMs_to_verify_DBSs ",
+         "must be a file path")
   }
 
   eval.out <-

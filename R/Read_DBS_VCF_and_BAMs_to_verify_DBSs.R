@@ -93,7 +93,7 @@ Read_DBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
          N.slice.dir)
   }
 
-  if (mode(input.vcf) == "character") {
+  if (mode(input.vcf) == "character" && is.null(dim(input.vcf))) {
     # Interpret this as a file path
     input.vcf.name <- input.vcf
     vcf.list <-ICAMS::ReadAndSplitVCFs(input.vcf.name,
@@ -111,6 +111,12 @@ Read_DBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
       outfile <- paste0(input.vcf.name, "_evaluated.vcf")
     }
   } else {
+    if (is.null(ncol(input.vcf))) {
+      stop("The argument input.vcf does not have any columns; looks like a scalar")
+    }
+    if (is.array(input.vcf)) {
+      input.vcf <- data.frame(input.vcf)
+    }
     if (is.null(outfile)) {
       stop("Please provide a value for argument outfile")
     }

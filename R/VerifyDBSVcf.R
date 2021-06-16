@@ -58,9 +58,23 @@ VerifyDBSVcf <- function(vcf,
                           where.to.put.slices = T.slice.dir,
                           verbose             = verbose)
 
+  if (verbose > 0) {
+    message("Starting SummarizeReadSupportFromSices: ", as.character(Sys.time()))
+  }
+
   vcf2 <- SummarizeReadSupportFromSlices(vcf, N.slice.dir, T.slice.dir)
 
+  if (verbose > 0) {
+    message("Starting DBS conclusions: ", as.character(Sys.time()))
+  }
+
+
   vcf3 <-DBSConclusion(vcf2)
+
+  if (verbose > 0) {
+    message("Done with DBS conclusions: ", as.character(Sys.time()))
+  }
+
 
   return(vcf3)
 }

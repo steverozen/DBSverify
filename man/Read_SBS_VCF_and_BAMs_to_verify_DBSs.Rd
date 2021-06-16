@@ -58,7 +58,8 @@ Invisibly, a list with the elements
 Agressively merge SBSs into DBSs then determine whether sequencing reads in fact support DBSs.
 }
 \details{
-Creates a new VCF file.
+Note: argument \code{input.vcf} must be a file path.
+This function creates a new VCF file.
 This VCF file has no data rows if there were no DBSs to analyze.
 Otherwise, this VCF contains the additional columns
 \enumerate{

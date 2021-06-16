@@ -9,6 +9,7 @@ test_that("Long test of Read_SBS_VCF_and_BAMs_to_verify_DBSs on input/HepG2_AA1.
       variant.caller   = "strelka",
       N.slice.dir      = "long.test.tmp.N.slice.dir",
       T.slice.dir      = "long.test.tmp.T.slice.dir",
+      verbose          = 1,
       unlink.slice.dir = FALSE)
   )
   Sys.time()
