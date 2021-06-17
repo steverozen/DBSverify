@@ -82,9 +82,9 @@ one.sup.dbs  <- VCF_to_BED(all.dbs[all.dbs$num.support == 1, ], "one.support.dbs
 two.sup.dbs  <- VCF_to_BED(all.dbs[all.dbs$num.support == 2, ], "two.support.dbs.bed")
 high.sup.dbs <- VCF_to_BED(all.dbs[all.dbs$num.support > 2, ],  "high.support.dbs.bed")
 
-test.case <- which(samp.sheet$aliquot_id == "0009b464-b376-4fbc-8a56-da538269a02f")
+# test.case <- which(samp.sheet$aliquot_id == "0009b464-b376-4fbc-8a56-da538269a02f")
 
-samp.sheet[test.case, ]$icgc_donor_id
+# samp.sheet[test.case, ]$icgc_donor_id
 #"DO46416"
 
 # from other .R file
@@ -121,7 +121,7 @@ setwd("~/mvv/test.minibams/")
 tmp.vcf <- all.dbs[all.dbs$num.support == 1, ]
 # tmp.vcf <- tmp.vcf[1:10, ]
 tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
-colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers")
+colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "pcawg.called")
 data.table::fwrite(tmp2.vcf, "tmp.vcf", sep = "\t")
 one.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
@@ -132,27 +132,26 @@ one.sup <-
   T.slice.dir = "one.support.T.slice.dir",
   unlink.slice.dir = FALSE,
   verbose = 1,
-  outfile = "one.support.eval.vcf"
+  outfile = "old.one.support.eval.vcf"
 )
 
 # Test with something like
-fisher.test(matrix(c(40,0,35,3), ncol = 2), alternative = "g")
+# fisher.test(matrix(c(40,0,35,3), ncol = 2), alternative = "g")
 
 tmp.vcf <- all.dbs[all.dbs$num.support == 2, ]
 tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
 colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
 data.table::fwrite(tmp2.vcf, "two.tmp.vcf", sep = "\t")
-data.table::fwrite(foo, "foo.vcf", sep = "\t")
 two.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
-    input.vcf = "foo.vcf", # "two.tmp.vcf",
+    input.vcf = "two.tmp.vcf",
     Nbam.name = "SP101728_twoSupport.bam",
     Tbam.name = "SP101724_twoSupport.bam",
     N.slice.dir = "two.support.N.slice.dir",
     T.slice.dir = "two.support.T.slice.dir",
     unlink.slice.dir = FALSE,
     verbose = 1,
-    outfile = "foo.two.support.eval.vcf"
+    outfile = "old.two.support.eval.vcf"
   )
 
 # Investigate? 8:126314418
@@ -171,11 +170,8 @@ high.sup <-
     T.slice.dir = "high.support.T.slice.dir",
     unlink.slice.dir = FALSE,
     verbose = 1,
-    outfile = "high.support.eval.vcf"
+    outfile = "old.high.support.eval.vcf"
   )
-
-
-
 
 setwd("~/DBSverify/")
 
