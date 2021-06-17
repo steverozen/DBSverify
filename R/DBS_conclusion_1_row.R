@@ -57,6 +57,9 @@ DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.non.mut.reads = 
     return("Adjacent SBSs")
   }
 
-  stop("Should not get here")
+  return(paste("Should not get here",
+               row["NreadSupport"],
+               row["TreadSupport"]))
+
 
 }
