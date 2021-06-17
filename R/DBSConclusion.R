@@ -20,7 +20,7 @@ DBSConclusion <- function(vcf, germlineCutOff = 0.2, max.non.mut.reads = 1) {
 
   rr <- apply(X = vcf,
               MARGIN = 1,
-              FUN = DBS_conclusion_1_row,
+              FUN = xDBS_conclusion_1_row,
               germlineCutOff = germlineCutOff,
               max.non.mut.reads = max.non.mut.reads)
 

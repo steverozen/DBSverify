@@ -77,7 +77,7 @@ xDBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.non.mut.reads =
                ncol = 2),
         alt = "g")$p.value
       if (pp > p.cutoff) {
-        return("Proporiton of tumor reads with DBS to low")
+        return("Proporiton of tumor reads with DBS too low")
       } else {
         return("True DBS")
       }

@@ -115,7 +115,7 @@ merge.callers <- function(row) {
 }
 
 
-## Test 3 kinds of unioned DBSs -- only one caller supported, two caller supported, and 3 or 4 caller supported
+## Test 3 kinds of unioned DBSs -- only one caller supported, two caller supported, and 3 or 4 callers supported
 setwd("~/mvv/test.minibams/")
 
 tmp.vcf <- all.dbs[all.dbs$num.support == 1, ]
@@ -123,7 +123,7 @@ tmp.vcf <- all.dbs[all.dbs$num.support == 1, ]
 tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
 colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "pcawg.called")
 data.table::fwrite(tmp2.vcf, "tmp.vcf", sep = "\t")
-one.sup <-
+new.one.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
   input.vcf = "tmp.vcf",
   Nbam.name = "SP101728_oneSupport.bam",
@@ -132,7 +132,7 @@ one.sup <-
   T.slice.dir = "one.support.T.slice.dir",
   unlink.slice.dir = FALSE,
   verbose = 1,
-  outfile = "old.one.support.eval.vcf"
+  outfile = "new.one.support.eval.vcf"
 )
 
 # Test with something like
