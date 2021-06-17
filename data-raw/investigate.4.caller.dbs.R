@@ -135,6 +135,11 @@ new.one.sup <-
   outfile = "new.one.support.eval.vcf"
 )
 
+
+old.new <- dplyr::full_join(old.one.sup$evaluated.vcf,
+                            new.one.sup$evaluated.vcf,
+                            by = c("CHROM" = "CHROM", "POS" = "POS"))
+xold.new <- old.new[ , c("CHROM", "POS", "NreadSupport.x", "TreadSupport.x", "NreadSupport.y", "TreadSupport.y", "DBSconclusion.x", "DBSconclusion.y")]
 # Test with something like
 # fisher.test(matrix(c(40,0,35,3), ncol = 2), alternative = "g")
 
