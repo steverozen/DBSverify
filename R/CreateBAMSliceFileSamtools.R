@@ -28,9 +28,5 @@ CreateBAMSliceFileSamtools <-
     if (status == 127) stop("samtools: command not found")
     if (status != 0) stop("samtools returned error status ", status)
 
-    if (FALSE) {
-      system(paste0("samtools view -h ", BAM.name, " ",
-                    BAM.coord, " > ", save.file.path), wait = T)
-    }
     return(save.file.path)
   }
