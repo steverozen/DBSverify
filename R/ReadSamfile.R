@@ -35,23 +35,69 @@ ReadSamfile <- function(filename, check.CIGAR = TRUE) {
     c("QNAME", "FLAG", "CHROM", "POS", "MAPQ", "CIGAR", "Mate_CHROM",
       "Mate_POS", "InsertSize", "SEQ", "QUAL")
 
+  df.n <- nrow(df)
+  if (Sys.getenv("TRACEDBS") != "") {
+    message("\nReadSamfile: filename = ", filename)
+    message("ReadSamfile: starting with ", df.n, " reads")
+  }
+
   # remove weird rows if required
   df <- df[!is.na(suppressWarnings(as.numeric(df$FLAG))), ]
+  if (Sys.getenv("TRACEDBS") != "") {
+    message("ReadSamfile: ",
+            df.n - nrow(df),
+            " reads removed because FLAG could not interpreted as a number")
+  }
+  df.n <- nrow(df)
 
   # Include only reads with FLAG < 256
   # Higher values mark reads that
   # - failed vendor QC
   # - have multiple alignments
   # - are marked as duplicates
+  bad.flag <- which(as.numeric(df$FLAG) >= 256)
+  if (Sys.getenv("TRACEDBS") != "") {
+    message("ReadSamfile: ",
+            length(bad.flag),
+            " reads with bad FLAGs removed")
+    if (length(bad.flag) > 0) {
+      message("bad FLAGs: ",
+              paste(df[bad.flag, "FLAG"], collapse = ", "))
+    }
+  }
   df <- df[as.numeric(df$FLAG) < 256, ]
 
   # Keep only reads that have a pair on the same chromosome.
   df <- df[df$Mate_CHROM == "=", ]
+  if (Sys.getenv("TRACEDBS") != "") {
+    message("ReadSamfile: ",
+            df.n - nrow(df),
+            " reads removed pair was on another chromosome")
+  }
+  df.n <- nrow(df)
 
   df <- df[df$MAPQ >= 30, ]
+  if (Sys.getenv("TRACEDBS") != "") {
+    message("ReadSamfile: ",
+            df.n - nrow(df),
+            " reads removed because MAPQ < 30")
+  }
+  df.n <- nrow(df)
 
   if (check.CIGAR) {
-    df <- df[grep("^\\d+M$", df$CIGAR), ]
+    cigar.good <- grep("^\\d+M$", df$CIGAR)
+    cigar.bad <- df[-cigar.good, ]
+    df <- df[cigar.good, ]
+    if (Sys.getenv("TRACEDBS") != "") {
+      message("ReadSamfile: ",
+              df.n - nrow(df),
+              " reads removed because CIGAR string was not \\d+M")
+      message("Bad CIGARs: ", paste(cigar.bad$CIGAR, collapse = ", "))
+    }
+  }
+  df.n <- nrow(df)
+  if (Sys.getenv("TRACEDBS") != "") {
+    message("ReadSamfile: returning ", df.n, " reads")
   }
 
   return(df)
