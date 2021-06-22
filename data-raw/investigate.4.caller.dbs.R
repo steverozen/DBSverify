@@ -122,10 +122,10 @@ tmp.vcf <- all.dbs[all.dbs$num.support == 1, ]
 # tmp.vcf <- tmp.vcf[1:10, ]
 tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
 colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "pcawg.called")
-data.table::fwrite(tmp2.vcf, "tmp.vcf", sep = "\t")
-new.one.sup <-
+data.table::fwrite(tmp2.vcf, "new.tmp.vcf", sep = "\t") ####################################
+nn.one.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
-  input.vcf = "tmp.vcf",
+  input.vcf = "new.tmp.vcf",
   Nbam.name = "SP101728_oneSupport.bam",
   Tbam.name = "SP101724_oneSupport.bam",
   N.slice.dir = "one.support.N.slice.dir",
@@ -136,18 +136,18 @@ new.one.sup <-
 )
 
 
-old.new <- dplyr::full_join(old.one.sup$evaluated.vcf,
-                            new.one.sup$evaluated.vcf,
+old.new <- dplyr::full_join(n.one.sup$evaluated.vcf,
+                            nn.one.sup$evaluated.vcf,
                             by = c("CHROM" = "CHROM", "POS" = "POS"))
 xold.new <- old.new[ , c("CHROM", "POS", "NreadSupport.x", "TreadSupport.x", "NreadSupport.y", "TreadSupport.y", "DBSconclusion.x", "DBSconclusion.y")]
-# Test with something like
+w# Test with something like
 # fisher.test(matrix(c(40,0,35,3), ncol = 2), alternative = "g")
 
 tmp.vcf <- all.dbs[all.dbs$num.support == 2, ]
 tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
 colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
 data.table::fwrite(tmp2.vcf, "two.tmp.vcf", sep = "\t")
-two.sup <-
+new.two.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
     input.vcf = "two.tmp.vcf",
     Nbam.name = "SP101728_twoSupport.bam",
@@ -156,7 +156,7 @@ two.sup <-
     T.slice.dir = "two.support.T.slice.dir",
     unlink.slice.dir = FALSE,
     verbose = 1,
-    outfile = "old.two.support.eval.vcf"
+    outfile = "new.two.support.eval.vcf"
   )
 
 # Investigate? 8:126314418
@@ -165,17 +165,17 @@ two.sup <-
 tmp.vcf <- all.dbs[all.dbs$num.support > 2, ]
 tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
 colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
-data.table::fwrite(tmp2.vcf, "high.tmp.vcf", sep = "\t")
-high.sup <-
+data.table::fwrite(tmp2.vcf, "new.high.tmp.vcf", sep = "\t")
+new.high.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
-    input.vcf = "high.tmp.vcf",
+    input.vcf = "new.high.tmp.vcf",
     Nbam.name = "SP101728_highSupport.bam",
     Tbam.name = "SP101724_highSupport.bam",
     N.slice.dir = "high.support.N.slice.dir",
     T.slice.dir = "high.support.T.slice.dir",
     unlink.slice.dir = FALSE,
     verbose = 1,
-    outfile = "old.high.support.eval.vcf"
+    outfile = "new.high.support.eval.vcf"
   )
 
 setwd("~/DBSverify/")
