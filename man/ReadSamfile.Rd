@@ -19,8 +19,17 @@ https://en.wikipedia.org/wiki/SAM_(file_format)
 and one row per read.
 }
 \description{
+Read a "SAM file", discarding some reads that cannot be interpreted for our purposes
+}
+\details{
 SAM stands for "Sequence Alignment Map", a text file that
 represents aligned next-generation sequencing reads
-(https://en.wikipedia.org/wiki/SAM_(file_format))
+(https://en.wikipedia.org/wiki/SAM_(file_format)).
+Only keep reads that statisfy certain conditions:
+\itemize{
+\item Mate pair maps to same chromosome
+\item Mapping quality >= 30
+\item "FLAG" < 256
+}
 }
 \keyword{internal}

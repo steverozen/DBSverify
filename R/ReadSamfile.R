@@ -1,13 +1,21 @@
 #' Read a "SAM file", discarding some reads that cannot be interpreted for our purposes
 #'
+#' @details
 #' SAM stands for "Sequence Alignment Map", a text file that
 #' represents aligned next-generation sequencing reads
-#' (https://en.wikipedia.org/wiki/SAM_(file_format))
+#' (https://en.wikipedia.org/wiki/SAM_(file_format)).
+#' Only keep reads that statisfy certain conditions:
+#'
+#' * Mate pair maps to same chromosome
+#' * Mapping quality >= 30
+#' * "FLAG" < 256
 #'
 #' @param filename The name of the SAM file to read.
 #'
 #' @param check.CIGAR Include only reads for which the CIGAR string
 #'  is only \code{\\d+M} (one or more digits followed M, and nothing else before or after).
+#'  This means there are no insertions or deleitons in the read
+#'  versus the reference and there is no soft clipping.
 #'
 #' @return A \code{data.frame} with \code{colnames} for the first 11
 #' columns, with \code{colnames} as specified in
