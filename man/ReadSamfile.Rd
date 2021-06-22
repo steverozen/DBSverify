@@ -4,10 +4,13 @@
 \alias{ReadSamfile}
 \title{Read a "SAM file", discarding some reads that cannot be interpreted for our purposes}
 \usage{
-ReadSamfile(filename)
+ReadSamfile(filename, check.CIGAR = TRUE)
 }
 \arguments{
 \item{filename}{The name of the SAM file to read.}
+
+\item{check.CIGAR}{Include only reads for which the CIGAR string
+is only \code{\\d+M} (one or more digits followed M, and nothing else before or after).}
 }
 \value{
 A \code{data.frame} with \code{colnames} for the first 11

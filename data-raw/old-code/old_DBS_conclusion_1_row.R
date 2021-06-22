@@ -13,12 +13,11 @@
 #'
 #' @return A character string indicating the conclusion about the putative DBS.
 
-xDBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.non.mut.reads = 1) {
+old_DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.non.mut.reads = 1) {
   wt   <- 1
   pos1 <- 2
   pos2 <- 3
   dbs  <- 4
-  p.cutoff <- 0.05
   N.read.counts <-
     as.numeric(unlist(strsplit(row["NreadSupport"], ":", fixed = TRUE)))
 
@@ -26,7 +25,6 @@ xDBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.non.mut.reads =
   if (ss == 0) {
     return("No high quality normal reads")
   }
-
   N.read.prop   <- N.read.counts / ss
 
   T.read.counts <-
@@ -46,45 +44,16 @@ xDBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.non.mut.reads =
     return("Germline DBS")
   }
 
-  if (N.read.counts[dbs] > 1) {
-    return("> 1 normal read with DBS")
-  }
-
-  if (ss < 5) {
-    return("< 5 high quality normal reads")
+  if ((sum(T.read.counts[c(pos1,pos2)]) <= max.non.mut.reads) &&
+      T.read.counts[dbs] > 0) {
+    return("True DBS")
   }
 
   if (sum(T.read.counts[c(pos1, pos2, dbs)]) == 0) {
     return("Neither position supported")
   }
 
-  # It could be e.g. 0:1:0 for pos1 pos2 dbs
-
-  if ((sum(T.read.counts[c(pos1,pos2)]) <= max.non.mut.reads)) {
-    if (T.read.counts[dbs] == 0) {
-      return("0 tumor reads support the DBS")
-    }
-    if (T.read.counts[dbs] == 1) {
-      return("Only 1 tumor read supports the DBS")
-    }
-    if (N.read.counts[dbs] == 0) {
-      return("True DBS")
-    }
-    if (N.read.counts[dbs] == 1) {
-      pp <- stats::fisher.test(
-        matrix(c(N.read.counts[wt], 1,
-                 T.read.counts[wt], T.read.counts[dbs]),
-               ncol = 2),
-        alt = "g")$p.value
-      if (pp > p.cutoff) {
-        return("Proportion of tumor reads with DBS too low")
-      } else {
-        return("True DBS")
-      }
-    }
-  }
-
-   if (sum(T.read.counts[c(pos1, pos2)]) > 1) { # 1 should be max.non.mut.reads
+  if (sum(T.read.counts[c(pos1, pos2)]) > 1) {
     return("Adjacent SBSs")
   }
 

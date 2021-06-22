@@ -8,24 +8,26 @@
 #'   other variant (or both variants), consider this a germline variant or
 #'   partial germline variant.
 #'
-#' @param max.non.mut.reads Tolerate this number of reads in the tumor
-#'   that do not support both mutated positions.
+#' @param max.half.support.T.reads Do not tolerate more than this number of reads in the tumor
+#'   that support one but not both mutated positions.
 #'
 #' @return A character string indicating the conclusion about the putative DBS.
 
-DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.non.mut.reads = 1) {
+DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.half.support.T.reads = 1) {
   wt   <- 1
   pos1 <- 2
   pos2 <- 3
   dbs  <- 4
+  p.cutoff <- 0.05
   N.read.counts <-
     as.numeric(unlist(strsplit(row["NreadSupport"], ":", fixed = TRUE)))
 
-  ss <- sum(N.read.counts)
-  if (ss == 0) {
+  xx <- sum(N.read.counts)
+  if (xx == 0) {
     return("No high quality normal reads")
   }
-  N.read.prop   <- N.read.counts / ss
+
+  N.read.prop   <- N.read.counts / xx
 
   T.read.counts <-
     as.numeric(unlist(strsplit(row["TreadSupport"], ":", fixed = TRUE)))
@@ -44,22 +46,45 @@ DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.non.mut.reads = 
     return("Germline DBS")
   }
 
-  if ((sum(T.read.counts[c(pos1,pos2)]) <= max.non.mut.reads) &&
-      T.read.counts[dbs] > 0) {
-    return("True DBS")
+  if (N.read.counts[dbs] > 1) {
+    return("> 1 normal read with DBS")
+  }
+
+  if (xx < 5) {
+    return("< 5 high quality normal reads")
   }
 
   if (sum(T.read.counts[c(pos1, pos2, dbs)]) == 0) {
     return("Neither position supported")
   }
 
-  if (sum(T.read.counts[c(pos1, pos2)]) > 1) {
+  if (sum(T.read.counts[c(pos1, pos2)]) > max.half.support.T.reads) {
     return("Adjacent SBSs")
+  } else {
+    if (T.read.counts[dbs] == 0) {
+      return("0 tumor reads support the DBS")
+    }
+    if (T.read.counts[dbs] == 1) {
+      return("Only 1 tumor read supports the DBS")
+    }
+    if (N.read.counts[dbs] == 0) {
+      return("True DBS")
+    }
+    if (N.read.counts[dbs] == 1) {
+      pp <- stats::fisher.test(
+        matrix(c(N.read.counts[wt], 1,
+                 T.read.counts[wt], T.read.counts[dbs]),
+               ncol = 2),
+        alt = "g")$p.value
+      if (pp > p.cutoff) {
+        return("Failed Fisher test")
+      } else {
+        return("True DBS")
+      }
+    }
   }
 
   return(paste("Should not get here",
                row["NreadSupport"],
                row["TreadSupport"]))
-
-
 }

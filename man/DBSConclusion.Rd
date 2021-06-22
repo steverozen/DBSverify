@@ -4,7 +4,7 @@
 \alias{DBSConclusion}
 \title{Examines every row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are real.}
 \usage{
-DBSConclusion(vcf, germlineCutOff = 0.2, max.non.mut.reads = 1)
+DBSConclusion(vcf, germlineCutOff = 0.2, max.half.support.T.reads = 1)
 }
 \arguments{
 \item{vcf}{An in memory DBS VCF (as a \code{data.frame})
@@ -15,8 +15,8 @@ already processed by \code{\link{Slice2ReadSupport}}  (so that the fields
 other variant (or both variants), consider this a germline variant or
 partial germline variant.}
 
-\item{max.non.mut.reads}{Tolerate this number of reads in the tumor
-that do not support both mutated positions.}
+\item{max.half.support.T.reads}{Do not tolerate more than this number of reads in the tumor
+that support one but not both mutated positions.}
 }
 \value{
 A vcf with the field \code{DBSconclusion} populated.

@@ -8,21 +8,21 @@
 #'   other variant (or both variants), consider this a germline variant or
 #'   partial germline variant.
 #'
-#' @param max.non.mut.reads Tolerate this number of reads in the tumor
-#'   that do not support both mutated positions.
+#' @param max.half.support.T.reads Do not tolerate more than this number of reads in the tumor
+#'   that support one but not both mutated positions.
 #'
 #' @return A vcf with the field \code{DBSconclusion} populated.
 #'
 #' @keywords internal
 
-DBSConclusion <- function(vcf, germlineCutOff = 0.2, max.non.mut.reads = 1) {
+DBSConclusion <- function(vcf, germlineCutOff = 0.2, max.half.support.T.reads = 1) {
   if (nrow(vcf) == 0) return(vcf)
 
   rr <- apply(X = vcf,
               MARGIN = 1,
-              FUN = xDBS_conclusion_1_row,
+              FUN = DBS_conclusion_1_row,
               germlineCutOff = germlineCutOff,
-              max.non.mut.reads = max.non.mut.reads)
+              max.half.support.T.reads =  max.half.support.T.reads)
 
   vcf$DBSconclusion <- unlist(rr)
 
