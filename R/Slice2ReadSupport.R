@@ -17,18 +17,18 @@ Slice2ReadSupport <- function(slice.dir, CHROM, POS, REF, ALT) {
   stopifnot(!is.na(REF))
   stopifnot(!is.na(ALT))
 
-  sam <- ReadSamfile(file.path(slice.dir,paste0(CHROM, "-", POS, ".sam")))
+  sam.df <- ReadSamfile(file.path(slice.dir,paste0(CHROM, "-", POS, ".sam")))
 
-  if (nrow(sam) == 0) {
+  if (nrow(sam.df) == 0) {
     return("0:0:0:0")
   }
 
-  eval <- CategorizeReads(sam = sam, POS = POS, REF = REF, ALT = ALT)
+  categories <- CategorizeReads(sam = sam.df, POS = POS, REF = REF, ALT = ALT)
 
-  read.support <-paste0(sum(eval == "WT read"),":",
-                        sum(eval == "Read supports only 1st position"),":",
-                        sum(eval == "Read supports only 2nd position"),":",
-                        sum(eval == "Mut read"))
+  read.support <-paste0(sum(categories == "WT read"),":",
+                        sum(categories == "Read supports only 1st position"),":",
+                        sum(categories == "Read supports only 2nd position"),":",
+                        sum(categories == "Mut read"))
 
   return(read.support)
 
