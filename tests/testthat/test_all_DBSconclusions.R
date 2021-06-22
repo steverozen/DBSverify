@@ -1,4 +1,4 @@
-basic.test <- function(input.vcf.root) {
+basic.test <- function(input.vcf.root, unlink.me = TRUE) {
   vcf.name <- paste0("input/", input.vcf.root, ".vcf")
   xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
     input.vcf        = vcf.name,
@@ -8,7 +8,7 @@ basic.test <- function(input.vcf.root) {
     unlink.slice.dir = TRUE)
   new <- data.table::fread(xx$evaluated.vcf.name)
   old <- data.table::fread(paste0(xx$evaluated.vcf.name, ".regress"))
-  unlink(xx$evaluated.vcf.name)
+  if (unlink.me) unlink(xx$evaluated.vcf.name)
   expect_equal(old, new)
 }
 
@@ -18,31 +18,31 @@ basic.test <- function(input.vcf.root) {
 #  Originally HepG2_AA1_20uM_SL_cl1_SNVresult.vcf
 
 test_that("True DBS",
-          basic.test("1-74823446"))
+          basic.test("1-74823446")) #ok
 
-test_that("Adjacent SBSs - 1st pos only in some reads, DBS in other reads",
-          basic.test("1-116218637"))
+test_that("True DBS, requires discarding some reads",
+          basic.test("1-116218637")) # ok
 
 test_that("Adjacent SBSs - opposite alleles",
-          basic.test("5-100759123"))
+          basic.test("5-100759123")) # ok
 
-test_that("1st position overlaps germline SNP",
-          basic.test("6-54496940"))
+test_that("Neither position supported",
+          basic.test("6-54496940")) # ok
 
-test_that("Germline DBS",
-          basic.test("6-98489243"))
+test_that("True DBS",
+          basic.test("6-98489243")) # ok
 
-test_that("Adjacent SBSs",
-          basic.test("7-131714192")) # Tumor reads supporting DBS and only supporting position 2 in germline and tumor
+test_that("True DBS",
+          basic.test("7-131714192")) # bad
 
-test_that("Adjacent SBSs",
-          basic.test("8-106268966")) # This actually only has reads supporting 1 position
+test_that("Neither position supported",
+          basic.test("8-106268966")) # ok Investigate -- lots of reads discarded because of CIGAR
 
 test_that("Adjacent SBSs - 2nd pos only in some reads, DBS in other reads",
-          basic.test("10-59377023"))
+          basic.test("10-59377023")) # ok
 
 test_that("2nd position overlaps germline SNP",
-          basic.test("15-94501219"))
+          basic.test("15-94501219")) # bad
 
 
 
