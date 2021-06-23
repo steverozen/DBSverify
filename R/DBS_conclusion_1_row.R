@@ -67,10 +67,13 @@ DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.half.support.T.r
     if (T.read.counts[dbs] == 1) {
       return("Only 1 tumor read supports the DBS")
     }
+    # At thiis point T.read.counts[dbs] > 1)
     if (N.read.counts[dbs] == 0) {
       return("True DBS")
     }
     if (N.read.counts[dbs] == 1) {
+      # Could the DBS reads just be the same noise
+      # as in the normal?
       pp <- stats::fisher.test(
         matrix(c(N.read.counts[wt], 1,
                  T.read.counts[wt], T.read.counts[dbs]),

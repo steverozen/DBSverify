@@ -140,7 +140,7 @@ old.new <- dplyr::full_join(n.one.sup$evaluated.vcf,
                             nn.one.sup$evaluated.vcf,
                             by = c("CHROM" = "CHROM", "POS" = "POS"))
 xold.new <- old.new[ , c("CHROM", "POS", "NreadSupport.x", "TreadSupport.x", "NreadSupport.y", "TreadSupport.y", "DBSconclusion.x", "DBSconclusion.y")]
-w# Test with something like
+# Test with something like
 # fisher.test(matrix(c(40,0,35,3), ncol = 2), alternative = "g")
 
 tmp.vcf <- all.dbs[all.dbs$num.support == 2, ]
