@@ -31,15 +31,15 @@ DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.half.support.T.r
 
   T.read.counts <-
     as.numeric(unlist(strsplit(row["TreadSupport"], ":", fixed = TRUE)))
-  if (N.read.prop[pos1] >= germlineCutOff &&
-      N.read.prop[pos2] >= germlineCutOff) {
-    return("DBS overlaps 2 germline SNPs")
-  }
+  #if (N.read.prop[pos1] >= germlineCutOff &&
+  #    N.read.prop[pos2] >= germlineCutOff) {
+  #  return("DBS overlaps germline SNPs")
+  # }
   if (N.read.prop[pos1] >= germlineCutOff) {
-    return("1st position overlaps germline SNP")
+    return("DBS overlaps germline SNP")
   }
   if (N.read.prop[pos2] >= germlineCutOff) {
-    return("2nd position overlaps germline SNP")
+    return("DBS overlaps germline SNP")
   }
 
   if (N.read.prop[dbs] >= germlineCutOff) {
