@@ -8,7 +8,8 @@ all.dbs <-  join_PCAWG_callers(
 all.dbs <-  merge_PCAWG_callers(
   aliquot.id = a.id1,
   indiv.vcf.dir = "~/collab.vcf/",
-  pcawg.vcf.dir = "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv/")
+  pcawg.vcf.dir = "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv/",
+  out.dir = "~/mvv/foo/")
 
 all.dbs <-  join_PCAWG_callers(
   aliquot.id = "0009b464-b376-4fbc-8a56-da538269a02f",

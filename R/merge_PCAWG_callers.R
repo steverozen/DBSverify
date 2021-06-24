@@ -1,7 +1,7 @@
 
-merge_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir) {
+merge_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir, out.dir = ".") {
   joined.dbs <-  join_PCAWG_callers(
-    aliquot.id    = a.id1,
+    aliquot.id    = aliquot.id,
     indiv.vcf.dir = indiv.vcf.dir,
     pcawg.vcf.dir = pcawg.vcf.dir)
 
@@ -18,11 +18,13 @@ merge_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir) {
     c("#CHROM", "POS", "REF", "ALT", "num.callers")
 
   # This function writes the bed file
-  bed <- VCF_to_BED(merged.dbs,
-                    out.bed = paste0(aliquot.id, "_merged_PCAWG_DBS.bed"))
+  bed <- VCF_to_BED(
+    merged.dbs,
+    out.bed = file.path(out.dir, paste0(aliquot.id, "_merged_PCAWG_DBS.bed")))
 
   data.table::fwrite(merged.dbs,
-                     paste0(aliquot.id, "_merged_PCAWG_DBS.vcf"),
+                     file.path(out.dir,
+                               paste0(aliquot.id, "_merged_PCAWG_DBS.vcf")),
                      sep = "\t")
 
   return(invisible(merged.dbs))

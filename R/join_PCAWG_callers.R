@@ -2,23 +2,32 @@ join_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir) {
 
 
   input.vcfs <- dir(indiv.vcf.dir,
-                    pattern = "0009b464-b376-4fbc-8a56-da538269a02f",
+                    pattern = aliquot.id,
                     full.names = TRUE)
-  if (length(input.vcfs) != 8) {
+
+  # ignore possible index files
+
+  input.vcfs <-
+    grep("(\\.idx$)|(\\.tbi$)", input.vcfs, value = TRUE, invert = TRUE)
+
+  if (length(input.vcfs) != 4) {
     stop("Not enough input VCFs for aliquot id", aliquot.id)
   }
 
-  br <- grep("(\\.idx$)|(\\.tbi$)",
-             grep("\\.broad", input.vcfs, value = TRUE), value = TRUE, invert = TRUE)
-  dk <- grep("(\\.idx$)|(\\.tbi$)",
-             grep("\\.dkfz", input.vcfs, value = TRUE), value = TRUE, invert = TRUE)
-  mu <- grep("(\\.idx$)|(\\.tbi$)",
-             grep("\\.MUSE", input.vcfs, value = TRUE), value = TRUE, invert = TRUE)
-  sv <- grep("(\\.idx$)|(\\.tbi$)",
-             grep("\\.svcp", input.vcfs, value = TRUE), value = TRUE, invert = TRUE)
+  br <- grep("\\.broad", input.vcfs, value = TRUE)
+  dk <- grep("\\.dkfz", input.vcfs, value = TRUE)
+  mu <- grep("\\.MUSE", input.vcfs, value = TRUE)
+  sv <- grep("\\.svcp", input.vcfs, value = TRUE)
 
-  pc <-     file.path(pcawg.vcf.dir,
-                      paste0(aliquot.id, ".consensus.snv_mnv.vcf.gz"))
+  pc.path <- dir(pcawg.vcf.dir,
+                 pattern = aliquot.id,
+                 full.names = TRUE)
+
+  pc <- grep("(\\.idx$)|(\\.tbi$)", pc.path, value = TRUE, invert = TRUE)
+
+  if (length(pc) != 1) {
+    stop("Cannot find PCAWG consensus VCF file")
+  }
 
   dbs.foo <- ICAMS::ReadAndSplitVCFs(files = c(br, dk, mu, sv, pc), variant.caller = "unknown", always.merge.SBS = TRUE )
 
