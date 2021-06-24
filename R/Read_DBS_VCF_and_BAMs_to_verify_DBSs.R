@@ -127,6 +127,7 @@ if (verbose > 0) {
     message("Tumor BAM                ", Tbam.name)
   }
 
+  input.vcf <- Remove_non_canonical_chromosomes(input.vcf, verbose)
   if (nrow(input.vcf) == 0) { message("No DBSs found") }
 
   evaluated.vcf <- VerifyDBSVcf(input.vcf,

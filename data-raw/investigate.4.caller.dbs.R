@@ -49,13 +49,12 @@ donor.pairs[["DO46416"]]
 
 
 ## Test 3 kinds of unioned DBSs -- only one caller supported, two caller supported, and 3 or 4 callers supported
-setwd("~/mvv/test.minibams/")
 
 tmp.vcf <- all.dbs[all.dbs$num.support == 1, ]
 # tmp.vcf <- tmp.vcf[1:10, ]
 tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge_DBS_calls_one_row, suffix.list = c("_mt", "_dk", "_ms", "_sa", "")))
-colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "pcawg.called")
-data.table::fwrite(tmp2.vcf, "new.tmp.vcf", sep = "\t") ####################################
+colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers")
+data.table::fwrite(tmp2.vcf, "new.tmp.vcf", sep = "\t")
 nn.one.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
   input.vcf = "new.tmp.vcf",
@@ -75,14 +74,14 @@ nn.one.sup <-
 # fisher.test(matrix(c(40,0,35,3), ncol = 2), alternative = "g")
 
 tmp.vcf <- all.dbs[all.dbs$num.support == 2, ]
-t(apply(tmp.vcf, MARGIN = 1, FUN = merge_DBS_calls_one_row, suffix.list = c("_mt", "_dk", "_ms", "_sa", "")))
-colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
+tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge_DBS_calls_one_row, suffix.list = c("_mt", "_dk", "_ms", "_sa", "")))
+colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers")
 data.table::fwrite(tmp2.vcf, "two.tmp.vcf", sep = "\t")
 new.two.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
     input.vcf = "two.tmp.vcf",
-    Nbam.name = "SP101728_twoSupport.bam",
-    Tbam.name = "SP101724_twoSupport.bam",
+    Nbam.name = "~/mvv/test.minibams/SP101728_twoSupport.bam",
+    Tbam.name = "~/mvv/test.minibams/SP101724_twoSupport.bam",
     N.slice.dir = "two.support.N.slice.dir",
     T.slice.dir = "two.support.T.slice.dir",
     unlink.slice.dir = FALSE,
@@ -95,7 +94,7 @@ new.two.sup <-
 
 tmp.vcf <- all.dbs[all.dbs$num.support > 2, ]
 t(apply(tmp.vcf, MARGIN = 1, FUN = merge_DBS_calls_one_row, suffix.list = c("_mt", "_dk", "_ms", "_sa", "")))
-colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
+colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers")
 data.table::fwrite(tmp2.vcf, "new.high.tmp.vcf", sep = "\t")
 new.high.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
