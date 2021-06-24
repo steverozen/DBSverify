@@ -1,3 +1,21 @@
+a.id1 <- "0009b464-b376-4fbc-8a56-da538269a02f"
+
+all.dbs <-  join_PCAWG_callers(
+  aliquot.id = a.id1,
+  indiv.vcf.dir = "~/collab.vcf/",
+  pcawg.vcf.dir = "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv/")
+
+all.dbs <-  merge_PCAWG_callers(
+  aliquot.id = a.id1,
+  indiv.vcf.dir = "~/collab.vcf/",
+  pcawg.vcf.dir = "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv/")
+
+all.dbs <-  join_PCAWG_callers(
+  aliquot.id = "0009b464-b376-4fbc-8a56-da538269a02f",
+  indiv.vcf.dir = "~/collab.vcf/",
+  pcawg.vcf.dir = "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv/")
+
+# Original test files
 files = c(
   "~/collab.vcf/0009b464-b376-4fbc-8a56-da538269a02f.broad-mutect-v3.20160222.somatic.snv_mnv.vcf.gz",
   "~/collab.vcf/0009b464-b376-4fbc-8a56-da538269a02f.dkfz-snvCalling_1-0-132-1-hpc.1510221050.somatic.snv_mnv.vcf.gz",
@@ -6,81 +24,10 @@ files = c(
   "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv//0009b464-b376-4fbc-8a56-da538269a02f.consensus.snv_mnv.vcf.gz"
 )
 
-library(dplyr)
-library(tibble)
-
-dbs.foo <- ICAMS::ReadAndSplitVCFs(files = files, variant.caller = "unknown", always.merge.SBS = TRUE )
-
-pfoo <- dbs.foo$DBS[[5]]
-which(pfoo$CHROM == 15 & pfoo$POS == 40527158)
-
-pfoo <- tibble(dbs.foo$DBS[[5]])
-which(pfoo$CHROM == 15 & pfoo$POS == 40527158)
-
-dbs <- list(mutect=tibble(dbs.foo$DBS[[1]][ , 1:4]),
-            dkfz  =tibble(dbs.foo$DBS[[2]][ , 1:4]),
-            muse  =tibble(dbs.foo$DBS[[3]][ , 1:4]),
-            sanger=tibble(dbs.foo$DBS[[4]][ , 1:4]),
-            pcawg =tibble(dbs.foo$DBS[[5]]))
-
-pfoo <- dbs$pcawg
-which(pfoo$CHROM == 15 & pfoo$POS == 40527158)
-which(dbs$pcawg$CHROM == 15 & dbs$pcawg$POS == 40527158)
-
-colnames(dbs$mutect)[3:4] <- paste0(colnames(dbs$mutect)[3:4], "_mt")
-colnames(dbs$dkfz)[3:4] <- paste0(colnames(dbs$dkfz)[3:4], "_dk")
-colnames(dbs$muse)[3:4] <- paste0(colnames(dbs$muse)[3:4], "_ms")
-colnames(dbs$sanger)[3:4] <- paste0(colnames(dbs$sanger)[3:4], "_sa")
-
-all.dbs <- full_join(dbs$mutect,
-                     full_join(dbs$dkfz,
-                               full_join(dbs$muse,
-                                         full_join(dbs$sanger, dbs$pcawg))))
-
-one.row <- function(x) {
-  return(sum(!is.na(x[3:10]))/2)
-}
-
-# debug(one.row)
-
-dnc <- function(df, col) {
-  ii <- which(colnames(df) == col)
-  if (length(ii) > 0) {
-    df <- df[ , -ii]
-  }
-  return(df)
-}
-
-all.dbs <- dnc(all.dbs, "VAF")
-all.dbs <- dnc(all.dbs, "read.depth")
-all.dbs <- dnc(all.dbs, "remark.for.DBS")
-all.dbs <- dnc(all.dbs, "ID")
-all.dbs <- dnc(all.dbs, "INFO")
-all.dbs <- dnc(all.dbs, "FORMAT")
-all.dbs <- dnc(all.dbs, "AOCS-117-9-AOCS-117-13")
-
-
-all.dbs$num.support <- apply(all.dbs, FUN = one.row, MARGIN = 1)
-
-dim(all.dbs)
-table(all.dbs$num.support, !is.na(all.dbs$REF), dnn = c("num.caller.supporting", "called.by.pcawg"))
-
-
-VCF_to_BED <- function(in.vcf, out.bed, padding = 10) {
-  stopifnot(data.table::is.data.table(in.vcf) || tibble::is_tibble(in.vcf))
-  bed.table <- in.vcf[ , 1:2, drop = FALSE]
-  bed.table$start <- in.vcf[ , 2] - (padding + 1)
-  bed.table$end   <- in.vcf[ , 2] + padding
-  bed.table <- bed.table[ , -2]
-  data.table::fwrite(data.table::as.data.table(bed.table), out.bed, sep = "\t", col.names = FALSE)
-  return(invisible(bed.table))
-}
-
-
 ## Stuff to give to Willie on 14 Jun
-one.sup.dbs  <- VCF_to_BED(all.dbs[all.dbs$num.support == 1, ], "one.support.dbs.bed")
-two.sup.dbs  <- VCF_to_BED(all.dbs[all.dbs$num.support == 2, ], "two.support.dbs.bed")
-high.sup.dbs <- VCF_to_BED(all.dbs[all.dbs$num.support > 2, ],  "high.support.dbs.bed")
+# one.sup.dbs  <- VCF_to_BED(all.dbs[all.dbs$num.support == 1, ], "one.support.dbs.bed")
+# two.sup.dbs  <- VCF_to_BED(all.dbs[all.dbs$num.support == 2, ], "two.support.dbs.bed")
+# high.sup.dbs <- VCF_to_BED(all.dbs[all.dbs$num.support > 2, ],  "high.support.dbs.bed")
 
 # test.case <- which(samp.sheet$aliquot_id == "0009b464-b376-4fbc-8a56-da538269a02f")
 
@@ -100,34 +47,19 @@ donor.pairs[["DO46416"]]
 # 1: 9ec1f43b-379c-58cd-85fe-3d09439058f1 7441677a3aed0864a23b17b84c0a28c9.bam    DO46416    SP101728 Normal - blood derived 134788648263
 
 
-merge.callers <- function(row) {
-  row <- unlist(row)
-  ref <- row[c("REF_mt", "REF_dk", "REF_ms", "REF_sa")]
-  alt <- row[c("ALT_mt", "ALT_dk", "ALT_ms", "ALT_sa")]
-  ref.ok <- which(!is.na(ref))
-  alt.ok <- which(!is.na(alt))
-  ref2 <- unique(ref[ref.ok])
-  alt2 <- unique(alt[alt.ok])
-  stopifnot(length(ref2) == 1)
-  stopifnot(length(alt2) == 1)
-  rr <- c(row[c("CHROM", "POS")], REF = ref2, ALT = alt2, num.support = length(ref.ok), pcawg.call = !is.na(row["REF"]))
-  return(rr)
-}
-
-
 ## Test 3 kinds of unioned DBSs -- only one caller supported, two caller supported, and 3 or 4 callers supported
 setwd("~/mvv/test.minibams/")
 
 tmp.vcf <- all.dbs[all.dbs$num.support == 1, ]
 # tmp.vcf <- tmp.vcf[1:10, ]
-tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
+tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge_DBS_calls_one_row, suffix.list = c("_mt", "_dk", "_ms", "_sa", "")))
 colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "pcawg.called")
 data.table::fwrite(tmp2.vcf, "new.tmp.vcf", sep = "\t") ####################################
 nn.one.sup <-
   DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
   input.vcf = "new.tmp.vcf",
-  Nbam.name = "SP101728_oneSupport.bam",
-  Tbam.name = "SP101724_oneSupport.bam",
+  Nbam.name = "~/mvv/test.minibams/SP101728_oneSupport.bam",
+  Tbam.name = "~/mvv/test.minibams/SP101724_oneSupport.bam",
   N.slice.dir = "one.support.N.slice.dir",
   T.slice.dir = "one.support.T.slice.dir",
   unlink.slice.dir = FALSE,
@@ -136,38 +68,13 @@ nn.one.sup <-
 )
 
 
-join_old_and_new_vcf <- function(old, new) {
-  if (colnames(old)[1] == "#CHROM") {
-    old.new <- dplyr::full_join(
-      old,
-      new,
-      by = c("#CHROM" = "#CHROM", "POS" = "POS"))
-    xold.new <- old.new[ ,
-
-                         c("#CHROM", "POS", "NreadSupport.x", "TreadSupport.x", "NreadSupport.y", "TreadSupport.y", "DBSconclusion.x", "DBSconclusion.y")]
-
-  } else if (colnames(old)[1] == "CHROM") {
-    old.new <- dplyr::full_join(
-      old,
-      new,
-      by = c("CHROM" = "CHROM", "POS" = "POS"))
-    xold.new <-
-      old.new[ , c("CHROM", "POS",
-        "NreadSupport.x", "TreadSupport.x",
-        "NreadSupport.y", "TreadSupport.y",
-        "DBSconclusion.x", "DBSconclusion.y")]
-  } else {
-    stop("First column name is not CHROM or #CHROM")
-  }
-  return(xold.new)
-}
 
 
 # Test with something like
 # fisher.test(matrix(c(40,0,35,3), ncol = 2), alternative = "g")
 
 tmp.vcf <- all.dbs[all.dbs$num.support == 2, ]
-tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
+t(apply(tmp.vcf, MARGIN = 1, FUN = merge_DBS_calls_one_row, suffix.list = c("_mt", "_dk", "_ms", "_sa", "")))
 colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
 data.table::fwrite(tmp2.vcf, "two.tmp.vcf", sep = "\t")
 new.two.sup <-
@@ -186,7 +93,7 @@ new.two.sup <-
 # " 4 67785957
 
 tmp.vcf <- all.dbs[all.dbs$num.support > 2, ]
-tmp2.vcf <- t(apply(tmp.vcf, MARGIN = 1, FUN = merge.callers))
+t(apply(tmp.vcf, MARGIN = 1, FUN = merge_DBS_calls_one_row, suffix.list = c("_mt", "_dk", "_ms", "_sa", "")))
 colnames(tmp2.vcf) <- c("#CHROM", "POS", "REF", "ALT", "num.callers", "called.by.pcawg")
 data.table::fwrite(tmp2.vcf, "new.high.tmp.vcf", sep = "\t")
 new.high.sup <-
