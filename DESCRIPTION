@@ -35,5 +35,7 @@ Imports:
     data.table
 Suggests: 
     spelling,
-    testthat
+    testthat,
+    dplyr,
+    tibble
 Language: en-US
