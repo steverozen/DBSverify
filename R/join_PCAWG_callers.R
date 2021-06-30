@@ -61,22 +61,16 @@ join_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir) {
     return(sum(!is.na(x[3:10]))/2)
   }
 
-  # Function to delete columns by name
-  dnc <- function(df, col) {
-    ii <- which(colnames(df) == col)
-    if (length(ii) > 0) {
-      df <- df[ , -ii]
-    }
-    return(df)
-  }
-
-  all.dbs <- dnc(all.dbs, "VAF")
-  all.dbs <- dnc(all.dbs, "read.depth")
-  all.dbs <- dnc(all.dbs, "remark.for.DBS")
-  all.dbs <- dnc(all.dbs, "ID")
-  all.dbs <- dnc(all.dbs, "INFO")
-  all.dbs <- dnc(all.dbs, "FORMAT")
-  all.dbs <- dnc(all.dbs, "AOCS-117-9-AOCS-117-13")
+  all.dbs <- remove_named_column(
+    all.dbs,
+    c("VAF", "read.depth", "remark.for.DBS", "ID", "INFO", "FORMAT",
+      "AOCS-117-9-AOCS-117-13"))
+  # all.dbs <- removed_named_column(all.dbs, "read.depth")
+  # all.dbs <- remove_named_column(all.dbs, "remark.for.DBS")
+  # all.dbs <- remove_named_column(all.dbs, "ID")
+  # all.dbs <- remove_named_column(all.dbs, "INFO")
+  # all.dbs <- remove_named_column(all.dbs, "FORMAT")
+  # all.dbs <- remove_named_column(all.dbs, "AOCS-117-9-AOCS-117-13")
 
   all.dbs$num.support <- apply(all.dbs, FUN = one.row, MARGIN = 1)
 
