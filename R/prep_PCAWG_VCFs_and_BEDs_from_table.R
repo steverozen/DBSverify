@@ -1,4 +1,4 @@
-prep_VCFs_and_BEDs_from_table <- function(table.name,
+prep_PCAWG_VCFs_and_BEDs_from_table <- function(table.name,
                                           out.dir = "~/mvv/short_collab_test_2/",
                                           indiv.vcf.dir = "~/collab.vcf/",
                                           pcawg.vcf.dir = "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv/"
@@ -15,9 +15,13 @@ prep_VCFs_and_BEDs_from_table <- function(table.name,
 }
 
 if (FALSE) {
-  prep_VCFs_and_BEDs_from_table(
+
+
+  prep_PCAWG_VCFs_and_BEDs_from_table(
     "./data-raw/short_collaboratory_bams.csv",
-    out.dir = "~/mvv/short_collab_test_2",
+    out.dir = "~/mvv/short_test3",
     indiv.vcf.dir = "~/collab.vcf/",
     pcawg.vcf.dir = "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv/")
+
+
 }
