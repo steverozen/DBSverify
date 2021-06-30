@@ -31,11 +31,17 @@ join_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir) {
 
   dbs.foo <- ICAMS::ReadAndSplitVCFs(files = c(br, dk, mu, sv, pc), variant.caller = "unknown", always.merge.SBS = TRUE )
 
-  dbs <- list(mutect = tibble::tibble(dbs.foo$DBS[[1]][ , 1:4]),
-              dkfz   = tibble::tibble(dbs.foo$DBS[[2]][ , 1:4]),
-              muse   = tibble::tibble(dbs.foo$DBS[[3]][ , 1:4]),
-              sanger = tibble::tibble(dbs.foo$DBS[[4]][ , 1:4]),
-              pcawg  = tibble::tibble(dbs.foo$DBS[[5]]))
+  mutect.vcf <- Remove_non_canonical_chromosomes(dbs.foo$DBS[[1]][ , 1:4])
+  dkfz.vcf   <- Remove_non_canonical_chromosomes(dbs.foo$DBS[[2]][ , 1:4])
+  muse.vcf   <- Remove_non_canonical_chromosomes(dbs.foo$DBS[[3]][ , 1:4])
+  sanger.vcf <- Remove_non_canonical_chromosomes(dbs.foo$DBS[[4]][ , 1:4])
+  pcawg.vcf  <- Remove_non_canonical_chromosomes(dbs.foo$DBS[[5]])
+
+  dbs <- list(mutect = tibble::tibble(mutect.vcf),
+              dkfz   = tibble::tibble(dkfz.vcf),
+              muse   = tibble::tibble(muse.vcf),
+              sanger = tibble::tibble(sanger.vcf),
+              pcawg  = tibble::tibble(pcawg.vcf))
 
   # Mark the column names so we know which column came from which caller
   colnames(dbs$mutect)[3:4] <- paste0(colnames(dbs$mutect)[3:4], "_mt")
@@ -73,9 +79,6 @@ join_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir) {
   all.dbs <- dnc(all.dbs, "AOCS-117-9-AOCS-117-13")
 
   all.dbs$num.support <- apply(all.dbs, FUN = one.row, MARGIN = 1)
-
-
-
 
   return(all.dbs)
 }
