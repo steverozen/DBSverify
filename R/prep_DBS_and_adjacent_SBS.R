@@ -7,6 +7,7 @@ prep_DBS_and_adjacent_SBS <- function(vcf.name) {
 
   sbs.vcf.file <- tempfile()
   colnames(sbs.vcf)[1] <- "#CHROM"
+  sbs.vcf <- remove_named_column(sbs.vcf, "VAF")
 
   data.table::fwrite(data.table::as.data.table(sbs.vcf),
                      sbs.vcf.file,
@@ -19,10 +20,12 @@ prep_DBS_and_adjacent_SBS <- function(vcf.name) {
                                        always.merge.SBS = TRUE)
 
   new.dbs <- new.split$DBS[[1]]
+  new.dbs <- remove_named_column(new.dbs, "VAF")
 
-  colnames(new.dbs)[3:ncol(new.dbs)] <- paste(colnames(new.dbs)[3:ncol(new.dbs)], "_ad")
+  colnames(new.dbs)[3:ncol(new.dbs)] <-
+    paste(colnames(new.dbs)[3:ncol(new.dbs)], "ad", sep = "_")
 
-  dplyer::join(dbs.vcf, new.dbs)
+  j1 <- dplyr::full_join(dbs.vcf, new.dbs)
 
   return(0)
 
@@ -34,4 +37,11 @@ if (FALSE) {
     "~/mvv/UTUC-test-case/AA_UTUC_Taiwan_T11_Mutect2_somatic_PASS.vcf")
 
   prep_DBS_and_adjacent_SBS("~/mvv/HMF_test.vcf")
-}
+
+  debug(prep_DBS_and_adjacent_SBS)
+  # 717 DBS in original inpout
+  # 8 more from adjacent SBSs
+  prep_DBS_and_adjacent_SBS("~/mvv/HMF-VCFs/CPCT02020306T.purple.somatic.vcf.gz")
+
+
+  }
