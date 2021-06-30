@@ -65,6 +65,12 @@ Read_SBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
   CheckBAM(Tbam.name)
   TestBAMAndSamtools(Nbam.name)
   TestBAMAndSamtools(Tbam.name)
+
+  if (!is.null(outfile)) {
+    cat("test", file = outfile)
+    unlink(outfile)
+  }
+
   if (N.slice.dir == T.slice.dir) {
     stop("T.slice.dir and N.slice.dir must be different; got ",
          N.slice.dir)
