@@ -1,0 +1,4 @@
+Error in data.table::fread(table.name) : 
+  File './data-raw/collaboratory_bams_2021_07_13.csv' does not exist or is non-readable. getwd()=='/home/gmssgr/DBSverify/data-raw'
+Calls: <Anonymous> -> prep_PCAWG_VCFs_and_BEDs_from_table -> <Anonymous>
+Execution halted

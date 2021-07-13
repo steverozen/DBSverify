@@ -3,7 +3,7 @@
 # The VCFs and BED files are protected data.
 PCAWG_prep_all_Collaboratory_VCFs_and_BEDs <- function() {
   out.vcf.dir <- "~/mvv/PCAWG_all_Collaboratory_VCFs_and_BEDs"
-  tt          <-  "./data-raw/collaboratory_bams_2021_07_13.csv"
+  tt          <-  "~/DBSverify/data-raw/collaboratory_bams_2021_07_13.csv"
   prep_PCAWG_VCFs_and_BEDs_from_table(
     tt,
     out.dir = out.vcf.dir,
