@@ -4,7 +4,7 @@ prep_PCAWG_VCFs_and_BEDs_from_table <- function(table.name,
                                           pcawg.vcf.dir = "~/pcawg.vcf/final_consensus_12aug_passonly/snv_mnv/"
                                           ) {
   tt <- data.table::fread(table.name)
-
+  message("prep_PCAWG_VCFs_and_BEDs_from_table: ", nrow(tt), " rows to process")
   for (aliquot.id in tt$aliquot_id) {
     merge_PCAWG_callers(
       aliquot.id    = aliquot.id,

@@ -32,7 +32,8 @@ join_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir, verbose
 
   pcawg.all <- ICAMS::ReadAndSplitVCFs(files            = pc,
                                        variant.caller   = "unknown",
-                                       always.merge.SBS = TRUE )
+                                       filter.status    = NULL,
+                                       always.merge.SBS = TRUE)
   pcawg.vcf  <- Remove_non_canonical_chromosomes(pcawg.all$DBS[[1]])
   rm(pc, pcawg.all)
   if (verbose) message("nrow(pcawg.vcf) = ", nrow(pcawg.vcf))
@@ -45,6 +46,7 @@ join_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir, verbose
   mutect.vcf <- Remove_non_canonical_chromosomes(other.all$DBS[[1]][ , 1:4])
   if (verbose) message("nrow(mutect.vcf) = ", nrow(mutect.vcf))
   dkfz.vcf   <- Remove_non_canonical_chromosomes(other.all$DBS[[2]][ , 1:4])
+  if (verbose) message("nrow(dkvz.vcf) = ", nrow(dkfz.vcf))
   muse.vcf   <- Remove_non_canonical_chromosomes(other.all$DBS[[3]][ , 1:4])
   sanger.vcf <- Remove_non_canonical_chromosomes(other.all$DBS[[4]][ , 1:4])
   rm(other.all, br, dk, mu, sv)
