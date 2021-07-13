@@ -21,12 +21,15 @@ merge_PCAWG_callers <- function(aliquot.id,
   colnames(merged.dbs) <-
     c("#CHROM", "POS", "REF", "ALT", "num.callers", "which.callers")
 
-  if (verbose) message("starting to write bed file")
+  if (verbose) message("Writing bed file")
   bed <- VCF_to_BED(
     merged.dbs,
     out.bed = file.path(out.dir, paste0(aliquot.id, "_merged_PCAWG_DBS.bed")))
 
-  if (verbose) message("starting to write vcf file")
+  if (verbose) {
+    message("Writing vcf file: ", nrows(merged.dbs), " rows")
+  }
+
 
   data.table::fwrite(merged.dbs,
                      file.path(out.dir,
