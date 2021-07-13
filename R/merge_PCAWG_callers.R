@@ -27,7 +27,7 @@ merge_PCAWG_callers <- function(aliquot.id,
     out.bed = file.path(out.dir, paste0(aliquot.id, "_merged_PCAWG_DBS.bed")))
 
   if (verbose) {
-    message("Writing vcf file: ", nrows(merged.dbs), " rows")
+    message("Writing vcf file: ", nrow(merged.dbs), " rows")
   }
 
 
