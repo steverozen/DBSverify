@@ -1,3 +1,5 @@
+# Function for checking differences in VCF files
+
 join_old_and_new_vcf <- function(old, new) {
   if (colnames(old)[1] == "#CHROM") {
     old.new <- dplyr::full_join(
