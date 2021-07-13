@@ -1,6 +1,6 @@
 Package: DBSverify
 Title: Analyze Next Generation Sequencing Data to Verify Somatic Double-BaseSubstituion (DBS) Calls
-Version: 0.3.0001
+Version: 0.4
 Authors@R: 
     person(given = "Steven George",
            family = "Rozen",
