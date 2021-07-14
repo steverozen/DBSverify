@@ -1,4 +1,4 @@
-merge_PCAWG_DBS_calls_one_row <- function(row) {
+PCAWG_merge_DBS_calls_one_row <- function(row) {
   suffix.list <- c("_mt", "_dk", "_ms", "_sa", "_pcawg")
   row <- unlist(row)
   REF.cols <- paste("REF", suffix.list, sep = "")
