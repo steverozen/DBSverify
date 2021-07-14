@@ -14,7 +14,7 @@ PCAWG_join_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir, verbose
   if (length(input.vcfs) != 4) {
     message("Not enough input VCFs for aliquot id", aliquot.id)
     # Data frame with 0 rows
-    retun(data.frame(1)[-1, , drop = FALSE])
+    return(data.frame(1)[-1, , drop = FALSE])
   }
 
   br <- grep("\\.broad", input.vcfs, value = TRUE)

@@ -1,5 +1,5 @@
 
-merge_PCAWG_callers <- function(aliquot.id,
+PCAWG_merge_callers <- function(aliquot.id,
                                 indiv.vcf.dir,
                                 pcawg.vcf.dir,
                                 out.dir = ".",
@@ -19,7 +19,7 @@ merge_PCAWG_callers <- function(aliquot.id,
     t(apply(
       joined.dbs,
       MARGIN = 1,
-      FUN = merge_PCAWG_DBS_calls_one_row))
+      FUN = PCAWG_merge_DBS_calls_one_row))
 
   merged.dbs <- data.table::data.table(merged.dbs)
   colnames(merged.dbs) <-
