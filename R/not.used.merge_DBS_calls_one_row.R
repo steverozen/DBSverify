@@ -1,4 +1,4 @@
-merge_DBS_calls_one_row <- function(row, suffix.list) {
+not.used.merge_DBS_calls_one_row <- function(row, suffix.list) {
   row <- unlist(row)
   REF.cols <- paste("REF", suffix.list, sep = "")
   ALT.cols <- paste("ALT", suffix.list, sep = "")
