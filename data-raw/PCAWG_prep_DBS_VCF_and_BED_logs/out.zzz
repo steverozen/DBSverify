@@ -1,0 +1,5234 @@
+prep_PCAWG_VCFs_and_BEDs_from_table: 954 rows to process
+aliquot.id = 60413de1-6cd2-4f74-8180-3bdd394d6d16
+nrow(pcawg.vcf) = 13981
+nrow(mutect.vcf) = 14712
+nrow(dkvz.vcf) = 13959
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 15426 rows
+aliquot.id = 9fc5b5c7-3973-42b4-8710-454de0cb5b50
+nrow(pcawg.vcf) = 4023
+nrow(mutect.vcf) = 4266
+nrow(dkvz.vcf) = 4062
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 4607 rows
+aliquot.id = bcefbf6a-80ff-4825-9d3a-492e2dceb35d
+nrow(pcawg.vcf) = 1809
+nrow(mutect.vcf) = 1899
+nrow(dkvz.vcf) = 1801
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1989 rows
+aliquot.id = f07b9192-c86f-4ee4-a3b5-feb9c5098bf4
+nrow(pcawg.vcf) = 1653
+nrow(mutect.vcf) = 1706
+nrow(dkvz.vcf) = 1599
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1808 rows
+aliquot.id = 72108583-5320-46ec-945f-5ff173d7dc15
+nrow(pcawg.vcf) = 2285
+nrow(mutect.vcf) = 2303
+nrow(dkvz.vcf) = 1908
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 2512 rows
+aliquot.id = e2b2357c-da6f-4ca3-9c07-a22f0423e8fe
+nrow(pcawg.vcf) = 2786
+nrow(mutect.vcf) = 2919
+nrow(dkvz.vcf) = 2750
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 3065 rows
+aliquot.id = 39c476fd-273b-4136-874c-53352f1be008
+nrow(pcawg.vcf) = 1392
+nrow(mutect.vcf) = 1467
+nrow(dkvz.vcf) = 1398
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1552 rows
+aliquot.id = 76a0d9c9-5e69-44e8-9ed2-6d2e387803fc
+nrow(pcawg.vcf) = 1919
+nrow(mutect.vcf) = 1954
+nrow(dkvz.vcf) = 1583
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 2105 rows
+aliquot.id = 16d5519e-ecb9-4fc8-81f1-e0e4adf722a8
+nrow(pcawg.vcf) = 2728
+nrow(mutect.vcf) = 2825
+nrow(dkvz.vcf) = 2466
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 2996 rows
+aliquot.id = 5c3def3a-b515-41f6-8157-681b963534e7
+nrow(pcawg.vcf) = 11148
+nrow(mutect.vcf) = 11387
+nrow(dkvz.vcf) = 9428
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12117 rows
+aliquot.id = 08b5d0e4-4661-460e-a9f7-f2e687414711
+nrow(pcawg.vcf) = 1118
+nrow(mutect.vcf) = 1189
+nrow(dkvz.vcf) = 1123
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1249 rows
+aliquot.id = 58d3e932-b4a3-4cac-a6ac-73160e354a15
+nrow(pcawg.vcf) = 87
+nrow(mutect.vcf) = 86
+nrow(dkvz.vcf) = 88
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 114 rows
+aliquot.id = 108749d2-5c62-4ef1-92df-aec6941ba53b
+nrow(pcawg.vcf) = 1525
+nrow(mutect.vcf) = 1628
+nrow(dkvz.vcf) = 1522
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1709 rows
+aliquot.id = 1d4a091d-fe65-49c0-8810-5a95243b108a
+nrow(pcawg.vcf) = 2697
+nrow(mutect.vcf) = 2828
+nrow(dkvz.vcf) = 2585
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 2966 rows
+aliquot.id = 98e8f23c-5970-4fce-9551-4b11a772fe1b
+nrow(pcawg.vcf) = 11652
+nrow(mutect.vcf) = 12140
+nrow(dkvz.vcf) = 11377
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12717 rows
+aliquot.id = a6e24c2a-26b9-409c-bbcd-a8fcdd1e437c
+nrow(pcawg.vcf) = 200
+nrow(mutect.vcf) = 201
+nrow(dkvz.vcf) = 203
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 268 rows
+aliquot.id = 561fd34c-7c7d-4df0-bbfc-3d31147ca562
+nrow(pcawg.vcf) = 1411
+nrow(mutect.vcf) = 1475
+nrow(dkvz.vcf) = 1385
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1542 rows
+aliquot.id = 7ba70717-d65e-4a45-af79-60a976770526
+nrow(pcawg.vcf) = 1298
+nrow(mutect.vcf) = 1319
+nrow(dkvz.vcf) = 1169
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1416 rows
+aliquot.id = c95a2b1b-726c-4608-9fff-d57b6f1aa75a
+nrow(pcawg.vcf) = 1336
+nrow(mutect.vcf) = 1375
+nrow(dkvz.vcf) = 1247
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1472 rows
+aliquot.id = f24688a9-7952-49d8-ba80-2bbad472379c
+nrow(pcawg.vcf) = 1314
+nrow(mutect.vcf) = 1363
+nrow(dkvz.vcf) = 1280
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1422 rows
+aliquot.id = 5912d4b3-2d5d-4b98-b967-1b4ff177097a
+nrow(pcawg.vcf) = 290
+nrow(mutect.vcf) = 305
+nrow(dkvz.vcf) = 172
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 332 rows
+aliquot.id = 6d4a548a-7e30-4b6b-9a13-72827eed439c
+nrow(pcawg.vcf) = 1785
+nrow(mutect.vcf) = 1833
+nrow(dkvz.vcf) = 1331
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1958 rows
+aliquot.id = 25103371-28ac-4f43-b0e2-2d376d0dcb84
+nrow(pcawg.vcf) = 3844
+nrow(mutect.vcf) = 4063
+nrow(dkvz.vcf) = 3857
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 4305 rows
+aliquot.id = 28839c75-90a8-493f-b658-8c63e0ebd324
+nrow(pcawg.vcf) = 2936
+nrow(mutect.vcf) = 3068
+nrow(dkvz.vcf) = 2791
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 3200 rows
+aliquot.id = 22d67778-61fc-4f15-95b8-7e7c6cc7112b
+nrow(pcawg.vcf) = 1695
+nrow(mutect.vcf) = 1759
+nrow(dkvz.vcf) = 1694
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1861 rows
+aliquot.id = 63762458-902a-4329-a823-703b54cb5f9d
+nrow(pcawg.vcf) = 4157
+nrow(mutect.vcf) = 4211
+nrow(dkvz.vcf) = 3926
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 4613 rows
+aliquot.id = 51893d3f-e7f3-43f9-9fd0-c0f25ae96804
+nrow(pcawg.vcf) = 6157
+nrow(mutect.vcf) = 6493
+nrow(dkvz.vcf) = 6146
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 6788 rows
+aliquot.id = bcf76f1a-7109-422d-94c9-5e8364895fa0
+nrow(pcawg.vcf) = 30
+nrow(mutect.vcf) = 36
+nrow(dkvz.vcf) = 47
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 78 rows
+aliquot.id = eeddf701-93f9-4f10-85cb-9dce1760bae8
+nrow(pcawg.vcf) = 257
+nrow(mutect.vcf) = 276
+nrow(dkvz.vcf) = 271
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 314 rows
+aliquot.id = deb9fbb6-656b-41ce-8299-554efc2379bd
+nrow(pcawg.vcf) = 9785
+nrow(mutect.vcf) = 10225
+nrow(dkvz.vcf) = 9767
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 10724 rows
+aliquot.id = 25e20393-752b-4796-9001-0e22ee04c586
+nrow(pcawg.vcf) = 1172
+nrow(mutect.vcf) = 1262
+nrow(dkvz.vcf) = 1186
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1337 rows
+aliquot.id = b42d183c-bc9c-4652-9e56-10c54c5ee96e
+nrow(pcawg.vcf) = 1881
+nrow(mutect.vcf) = 2065
+nrow(dkvz.vcf) = 1768
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 2183 rows
+aliquot.id = 142b6dbf-c943-4a7d-8ab6-13a975f48d7a
+nrow(pcawg.vcf) = 605
+nrow(mutect.vcf) = 1046
+nrow(dkvz.vcf) = 579
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1102 rows
+aliquot.id = 7117854b-6f0a-4a43-b66c-506a3e29377d
+nrow(pcawg.vcf) = 1036
+nrow(mutect.vcf) = 1122
+nrow(dkvz.vcf) = 1026
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 1209 rows
+aliquot.id = 8ca665f8-fe78-48bf-8c0f-c606d92885d4
+nrow(pcawg.vcf) = 3655
+nrow(mutect.vcf) = 3830
+nrow(dkvz.vcf) = 3599
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 4026 rows
+aliquot.id = 681e2301-2057-40e4-ab63-934775d63faa
+nrow(pcawg.vcf) = 1993
+nrow(mutect.vcf) = 2114
+nrow(dkvz.vcf) = 2012
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 2235 rows
+aliquot.id = a84915de-6562-4836-86f9-f2a05598296e
+nrow(pcawg.vcf) = 2051
+nrow(mutect.vcf) = 2155
+nrow(dkvz.vcf) = 2024
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 2271 rows
+aliquot.id = 34d7b6cc-cfcf-4178-b075-f4d129ab18f7
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 13
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = 1ff155dd-deb4-44e0-b3a2-e4875b618435
+nrow(pcawg.vcf) = 41
+nrow(mutect.vcf) = 52
+nrow(dkvz.vcf) = 40
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 81 rows
+aliquot.id = fb8b5ff5-4164-4276-b75b-b0ee6bda7329
+nrow(pcawg.vcf) = 42
+nrow(mutect.vcf) = 45
+nrow(dkvz.vcf) = 47
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 87 rows
+aliquot.id = 0f9e70b3-24cf-4d76-af7b-84ace66ec5a7
+nrow(pcawg.vcf) = 44
+nrow(mutect.vcf) = 55
+nrow(dkvz.vcf) = 45
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 97 rows
+aliquot.id = f35f7712-d5c6-47f6-98ed-704edbbc1e19
+nrow(pcawg.vcf) = 40
+nrow(mutect.vcf) = 56
+nrow(dkvz.vcf) = 48
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 105 rows
+aliquot.id = 469eddf2-6e02-46bf-820f-6296a2b776e2
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 7
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = e2e6a409-b64d-463c-ac3b-e7987a3124f0
+nrow(pcawg.vcf) = 42
+nrow(mutect.vcf) = 55
+nrow(dkvz.vcf) = 52
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 97 rows
+aliquot.id = 7625877a-7a2b-466f-944b-9e56689ad47b
+nrow(pcawg.vcf) = 29
+nrow(mutect.vcf) = 41
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 81 rows
+aliquot.id = ca137611-533a-4d20-a85d-8e4c3a1eab2d
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 58
+nrow(dkvz.vcf) = 24
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 93 rows
+aliquot.id = 1fdab6a6-7346-4229-aa8d-5dbd258f0c60
+nrow(pcawg.vcf) = 41
+nrow(mutect.vcf) = 53
+nrow(dkvz.vcf) = 46
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 106 rows
+aliquot.id = 9650640f-154d-4696-aa96-3611c6fcee7b
+nrow(pcawg.vcf) = 39
+nrow(mutect.vcf) = 63
+nrow(dkvz.vcf) = 49
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 105 rows
+aliquot.id = bcc819eb-f4d8-4ddc-9fdc-a6307fb6741b
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 63 rows
+aliquot.id = 9fb6b7be-0084-48f7-a256-6d170e72e97f
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 12
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 65 rows
+aliquot.id = f6c811ff-f22e-490b-9b23-b527d20e6e6d
+nrow(pcawg.vcf) = 69
+nrow(mutect.vcf) = 73
+nrow(dkvz.vcf) = 68
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 107 rows
+aliquot.id = a330a96e-9897-4605-b5f1-5b5ef45cd365
+nrow(pcawg.vcf) = 62
+nrow(mutect.vcf) = 64
+nrow(dkvz.vcf) = 64
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 88 rows
+aliquot.id = e45f3391-2e74-4767-817a-280cebac7c57
+nrow(pcawg.vcf) = 27
+nrow(mutect.vcf) = 32
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = efec3225-de07-4559-9a90-95223495cc61
+nrow(pcawg.vcf) = 51
+nrow(mutect.vcf) = 56
+nrow(dkvz.vcf) = 56
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 76 rows
+aliquot.id = e4aaca83-3ae9-47f6-a975-c144767ad705
+nrow(pcawg.vcf) = 67
+nrow(mutect.vcf) = 72
+nrow(dkvz.vcf) = 68
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 111 rows
+aliquot.id = 745b8756-0eab-423f-8cde-e0ff1aaa6596
+nrow(pcawg.vcf) = 47
+nrow(mutect.vcf) = 52
+nrow(dkvz.vcf) = 60
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 82 rows
+aliquot.id = 6f981023-4269-4e8e-a4ab-2c92bb27273c
+nrow(pcawg.vcf) = 87
+nrow(mutect.vcf) = 88
+nrow(dkvz.vcf) = 90
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 109 rows
+aliquot.id = 7fdd07a4-4a27-40c3-af92-a0074e6391f5
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 32 rows
+aliquot.id = e6f7344b-951f-4f3f-b140-7bf53164c462
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = bbb2cf2f-8f32-43d4-846c-d1020e6329ec
+nrow(pcawg.vcf) = 26
+nrow(mutect.vcf) = 27
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 54 rows
+aliquot.id = efbec43c-0c16-4006-abe8-c3ec2ec42c05
+nrow(pcawg.vcf) = 82
+nrow(mutect.vcf) = 79
+nrow(dkvz.vcf) = 84
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 118 rows
+aliquot.id = a3135834-3af0-4e98-bc6f-ad8ddf33db80
+nrow(pcawg.vcf) = 139
+nrow(mutect.vcf) = 139
+nrow(dkvz.vcf) = 139
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 180 rows
+aliquot.id = 2b4feb84-89e4-4c38-8561-5ffab02c8132
+nrow(pcawg.vcf) = 55
+nrow(mutect.vcf) = 59
+nrow(dkvz.vcf) = 65
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 88 rows
+aliquot.id = 4e913899-eeb8-4630-ba9d-41a81ced8069
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 29 rows
+aliquot.id = d392ded3-afc8-4c79-b278-40245f18f2f8
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 24
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 32 rows
+aliquot.id = 86f23897-dba0-4e89-8381-d174eaa6fcc1
+nrow(pcawg.vcf) = 52
+nrow(mutect.vcf) = 52
+nrow(dkvz.vcf) = 55
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 79 rows
+aliquot.id = 42465bbd-289b-4e96-98fe-76809c5e1520
+nrow(pcawg.vcf) = 84
+nrow(mutect.vcf) = 87
+nrow(dkvz.vcf) = 97
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 118 rows
+aliquot.id = 6c31d730-1734-44ac-92b3-760981528723
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = 6821446e-8e76-46fe-b0b9-47feb46d2585
+nrow(pcawg.vcf) = 30
+nrow(mutect.vcf) = 35
+nrow(dkvz.vcf) = 50
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 63 rows
+aliquot.id = 941fcb56-e059-403d-aab1-0692a3ecc45e
+nrow(pcawg.vcf) = 47
+nrow(mutect.vcf) = 51
+nrow(dkvz.vcf) = 44
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 70 rows
+aliquot.id = cd9efdef-a7fb-49e5-9515-63606ae8bbfc
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 24
+nrow(dkvz.vcf) = 25
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = b97941dd-9844-4db2-9e25-42c725f47d70
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 32 rows
+aliquot.id = e84debc4-b47d-48ed-a0d0-2859f0ebf987
+nrow(pcawg.vcf) = 56
+nrow(mutect.vcf) = 56
+nrow(dkvz.vcf) = 50
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 68 rows
+aliquot.id = f988e698-9b34-45ce-ba4c-74e06e9cae4a
+nrow(pcawg.vcf) = 59
+nrow(mutect.vcf) = 59
+nrow(dkvz.vcf) = 76
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 90 rows
+aliquot.id = 2a8d63eb-0174-4213-9214-413f391f512c
+nrow(pcawg.vcf) = 61
+nrow(mutect.vcf) = 65
+nrow(dkvz.vcf) = 75
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 96 rows
+aliquot.id = 0d0793c1-df1b-4db1-ba36-adcb960cc0f5
+nrow(pcawg.vcf) = 120
+nrow(mutect.vcf) = 122
+nrow(dkvz.vcf) = 125
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 153 rows
+aliquot.id = 53bcbb68-addd-47fc-9910-cd1d3f38197d
+nrow(pcawg.vcf) = 52
+nrow(mutect.vcf) = 51
+nrow(dkvz.vcf) = 49
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 73 rows
+aliquot.id = 669f0e01-28f6-4ed8-bdb5-73f84ea28f78
+nrow(pcawg.vcf) = 96
+nrow(mutect.vcf) = 102
+nrow(dkvz.vcf) = 89
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 121 rows
+aliquot.id = c767254e-b289-4904-a80f-050cf01ff8ba
+nrow(pcawg.vcf) = 136
+nrow(mutect.vcf) = 146
+nrow(dkvz.vcf) = 152
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 202 rows
+aliquot.id = 51b25b37-f75c-4380-a0f6-5273e0b7ee33
+nrow(pcawg.vcf) = 86
+nrow(mutect.vcf) = 94
+nrow(dkvz.vcf) = 85
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 114 rows
+aliquot.id = 12874085-a596-41ae-b4cd-817cb1ebb278
+nrow(pcawg.vcf) = 58
+nrow(mutect.vcf) = 61
+nrow(dkvz.vcf) = 63
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 80 rows
+aliquot.id = 9aecfc8f-62ea-4acf-aa00-d1f0fe6c6556
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = b75b2663-dcc6-411c-bfcc-574aa33cf388
+nrow(pcawg.vcf) = 71
+nrow(mutect.vcf) = 72
+nrow(dkvz.vcf) = 68
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 90 rows
+aliquot.id = 2b40a733-7a63-4bb8-a953-95a4ee28f962
+nrow(pcawg.vcf) = 73
+nrow(mutect.vcf) = 82
+nrow(dkvz.vcf) = 90
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 116 rows
+aliquot.id = cf6c7066-6611-43ec-aef1-295a976cce5b
+nrow(pcawg.vcf) = 130
+nrow(mutect.vcf) = 135
+nrow(dkvz.vcf) = 135
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 186 rows
+aliquot.id = d2e4dc23-992d-4e44-add4-2972718083cb
+nrow(pcawg.vcf) = 64
+nrow(mutect.vcf) = 65
+nrow(dkvz.vcf) = 73
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 88 rows
+aliquot.id = d4bf6034-aeae-48a6-907b-10e2cc904015
+nrow(pcawg.vcf) = 140
+nrow(mutect.vcf) = 144
+nrow(dkvz.vcf) = 137
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 174 rows
+aliquot.id = 37522f18-77b2-4414-8df8-3c2c8048adba
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 48
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 59 rows
+aliquot.id = 6ce42746-88aa-485f-a1c4-1759aad95914
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = acd510de-b732-4a1a-8b72-6d22e763540b
+nrow(pcawg.vcf) = 93
+nrow(mutect.vcf) = 100
+nrow(dkvz.vcf) = 95
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 133 rows
+aliquot.id = 25f73b03-4ba8-47ba-ad80-6ccb82105c98
+nrow(pcawg.vcf) = 69
+nrow(mutect.vcf) = 72
+nrow(dkvz.vcf) = 86
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 111 rows
+aliquot.id = d9e66fc5-9018-4568-b388-c5eb756f7823
+nrow(pcawg.vcf) = 74
+nrow(mutect.vcf) = 86
+nrow(dkvz.vcf) = 91
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 109 rows
+aliquot.id = 5b560f4c-d2a3-43fa-b394-abef78bdefc1
+nrow(pcawg.vcf) = 28
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 42
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 63 rows
+aliquot.id = 8b28f6d2-4b7d-493b-826e-b119a4fb0cb4
+nrow(pcawg.vcf) = 97
+nrow(mutect.vcf) = 101
+nrow(dkvz.vcf) = 97
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 125 rows
+aliquot.id = 0009b464-b376-4fbc-8a56-da538269a02f
+nrow(pcawg.vcf) = 221
+nrow(mutect.vcf) = 230
+nrow(dkvz.vcf) = 178
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 270 rows
+aliquot.id = 6fffe0cf-bb38-4e77-88ab-a256bd7fbbce
+nrow(pcawg.vcf) = 190
+nrow(mutect.vcf) = 200
+nrow(dkvz.vcf) = 138
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 229 rows
+aliquot.id = d8c2b4b2-e12b-43d2-bafc-87b29f027797
+nrow(pcawg.vcf) = 228
+nrow(mutect.vcf) = 237
+nrow(dkvz.vcf) = 212
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 293 rows
+aliquot.id = f26b1f44-12de-43ba-85bb-bc61741a5a88
+nrow(pcawg.vcf) = 114
+nrow(mutect.vcf) = 108
+nrow(dkvz.vcf) = 93
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 136 rows
+aliquot.id = 0ead45d8-d785-4404-8319-2ef951e02e03
+nrow(pcawg.vcf) = 203
+nrow(mutect.vcf) = 216
+nrow(dkvz.vcf) = 147
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 266 rows
+aliquot.id = bc9b66f5-fcb8-4545-ab2d-438bb810edc0
+nrow(pcawg.vcf) = 233
+nrow(mutect.vcf) = 243
+nrow(dkvz.vcf) = 191
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 267 rows
+aliquot.id = da43386c-47f8-4e03-b6ca-8b94e13792e7
+nrow(pcawg.vcf) = 175
+nrow(mutect.vcf) = 182
+nrow(dkvz.vcf) = 160
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 211 rows
+aliquot.id = 504cdfc5-6721-43ef-b31e-fdf52f0cd9cd
+nrow(pcawg.vcf) = 100
+nrow(mutect.vcf) = 103
+nrow(dkvz.vcf) = 75
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 128 rows
+aliquot.id = f858d813-f3c5-4ad9-8c20-9f231d6624d8
+nrow(pcawg.vcf) = 94
+nrow(mutect.vcf) = 104
+nrow(dkvz.vcf) = 95
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 156 rows
+aliquot.id = 8888e808-594b-4c76-b2e4-62aa56736f7c
+nrow(pcawg.vcf) = 207
+nrow(mutect.vcf) = 214
+nrow(dkvz.vcf) = 192
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 251 rows
+aliquot.id = c2ec7f57-8510-4bbf-a2e9-dbd9ce8dcad1
+nrow(pcawg.vcf) = 95
+nrow(mutect.vcf) = 100
+nrow(dkvz.vcf) = 102
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 143 rows
+aliquot.id = 9e6806c4-d331-4025-abee-2f576e3bf182
+nrow(pcawg.vcf) = 242
+nrow(mutect.vcf) = 246
+nrow(dkvz.vcf) = 231
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 317 rows
+aliquot.id = 5d922e48-aa70-454d-9417-c9af686feebc
+nrow(pcawg.vcf) = 14
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 34 rows
+aliquot.id = 4679f37a-4f09-449b-a1d8-1f02847996da
+nrow(pcawg.vcf) = 54
+nrow(mutect.vcf) = 58
+nrow(dkvz.vcf) = 62
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 85 rows
+aliquot.id = 1659bae5-3140-4d05-891c-81b48277b2fc
+nrow(pcawg.vcf) = 32
+nrow(mutect.vcf) = 34
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = 3c2b1509-1eb9-4b79-9569-57810f291499
+nrow(pcawg.vcf) = 26
+nrow(mutect.vcf) = 30
+nrow(dkvz.vcf) = 40
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 60 rows
+aliquot.id = f1504811-8363-41e6-b43c-62452b1262d3
+nrow(pcawg.vcf) = 59
+nrow(mutect.vcf) = 58
+nrow(dkvz.vcf) = 59
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 93 rows
+aliquot.id = 3a6bce45-0431-49d8-82df-b1d9a738e5a6
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 58 rows
+aliquot.id = 01df36af-3617-40fc-9892-f54ce433cf71
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = dce54d09-9827-4fe2-abe1-c5b7d528ba7f
+nrow(pcawg.vcf) = 56
+nrow(mutect.vcf) = 63
+nrow(dkvz.vcf) = 73
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 98 rows
+aliquot.id = ae82fead-2671-4335-a342-67bb69935ad9
+nrow(pcawg.vcf) = 26
+nrow(mutect.vcf) = 36
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 64 rows
+aliquot.id = bbe59385-5f83-43f6-a485-517c860bef6f
+nrow(pcawg.vcf) = 70
+nrow(mutect.vcf) = 85
+nrow(dkvz.vcf) = 132
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 243 rows
+aliquot.id = dbbd54db-4470-4df6-b5be-3e175c7133b0
+nrow(pcawg.vcf) = 96
+nrow(mutect.vcf) = 105
+nrow(dkvz.vcf) = 103
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 154 rows
+aliquot.id = 123c9d1c-72ba-4d82-8e57-d5caa52a40ba
+nrow(pcawg.vcf) = 41
+nrow(mutect.vcf) = 41
+nrow(dkvz.vcf) = 55
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 80 rows
+aliquot.id = 89dad92e-5b3f-479a-a6da-a94ee7df7f8a
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 26
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 33 rows
+aliquot.id = 09508a0d-ebe0-4fa1-b7b2-1710814181cd
+nrow(pcawg.vcf) = 81
+nrow(mutect.vcf) = 81
+nrow(dkvz.vcf) = 88
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 115 rows
+aliquot.id = f6189828-eeaa-4d21-b163-53bf3d47a640
+nrow(pcawg.vcf) = 72
+nrow(mutect.vcf) = 80
+nrow(dkvz.vcf) = 72
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 108 rows
+aliquot.id = 03c3c692-8a86-4843-85ae-e045f0fa6f88
+nrow(pcawg.vcf) = 68
+nrow(mutect.vcf) = 74
+nrow(dkvz.vcf) = 71
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 107 rows
+aliquot.id = 748d3ff3-8699-4519-8e0f-26b6a0581bff
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 16
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 30 rows
+aliquot.id = bbbc531a-dd41-40b7-ae59-e35508aea0c7
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 35 rows
+aliquot.id = 05070acd-3ec1-44bb-9c32-26d3a483a72a
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 28 rows
+aliquot.id = ee8ba991-8c96-476e-b096-49f3aaaffc2f
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 37 rows
+aliquot.id = ee5d5e7d-78cf-4a29-a9ee-56aa3da877dd
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 24
+nrow(dkvz.vcf) = 38
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = a2238b5f-0513-487a-9b1b-7bef85ebf336
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = 7fcd8af9-4d73-4c97-95cc-b30b09f21bb2
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 26
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 34 rows
+aliquot.id = 8454fe53-869d-41c8-b0c8-a7929d00eec3
+nrow(pcawg.vcf) = 116
+nrow(mutect.vcf) = 128
+nrow(dkvz.vcf) = 132
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 166 rows
+aliquot.id = cafe9603-a804-48fb-9217-e2d1c3c346c5
+nrow(pcawg.vcf) = 37
+nrow(mutect.vcf) = 38
+nrow(dkvz.vcf) = 53
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 82 rows
+aliquot.id = b37d6283-6f95-4975-a794-f3d5c4bbc7b3
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 40 rows
+aliquot.id = 20d1b88b-3ff6-4201-a748-6a993500c652
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 32 rows
+aliquot.id = 3c86ba21-7b11-4ec7-9d20-a2325197c676
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 57 rows
+aliquot.id = 4db9e471-0068-4ec6-9bcb-33ef5fdec33e
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 38 rows
+aliquot.id = 84a6ea88-eeb8-4060-a90c-e4abac013ad4
+nrow(pcawg.vcf) = 93
+nrow(mutect.vcf) = 97
+nrow(dkvz.vcf) = 62
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 117 rows
+aliquot.id = 1447c8cb-25d4-4092-8919-4df08f898d2d
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 49 rows
+aliquot.id = 5b41e033-6df8-411e-a13b-59eeb8afbf9b
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 44 rows
+aliquot.id = 1e181878-c640-4e91-a620-3fc4b08a4de1
+nrow(pcawg.vcf) = 53
+nrow(mutect.vcf) = 66
+nrow(dkvz.vcf) = 67
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 116 rows
+aliquot.id = cfe0bf13-2ff4-4164-9b6a-cd3615bf3ddc
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 24
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 40 rows
+aliquot.id = 21b1a37f-e91e-4ce1-83cf-bb89b8d0fb35
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 2102558b-87b0-447b-bb9a-e4ae9df8b75e
+nrow(pcawg.vcf) = 25
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 43
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 63 rows
+aliquot.id = 75fac59c-3346-4c5a-bb9f-fb67fec8d13b
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 40 rows
+aliquot.id = 654dba9f-cfe5-4121-97c7-868613cdef53
+nrow(pcawg.vcf) = 27
+nrow(mutect.vcf) = 30
+nrow(dkvz.vcf) = 43
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 66 rows
+aliquot.id = 1a841850-fca0-48ab-8c78-db0bd5a64435
+nrow(pcawg.vcf) = 31
+nrow(mutect.vcf) = 39
+nrow(dkvz.vcf) = 60
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 94 rows
+aliquot.id = b7008a98-5aa0-4cc9-9bee-af2a422266db
+nrow(pcawg.vcf) = 35
+nrow(mutect.vcf) = 40
+nrow(dkvz.vcf) = 44
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 62 rows
+aliquot.id = 7f42e118-aab6-438a-9e84-e7451fe12d7e
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 43
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 33070975-0f35-4518-9ffb-4c6170c32534
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 24
+nrow(dkvz.vcf) = 31
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 46 rows
+aliquot.id = 68ba1105-569a-4209-9b45-0e2d64931806
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 40 rows
+aliquot.id = 1f81a1b0-8089-44ef-87b5-b3359a407ad2
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = ec646623-6d33-4fbd-888e-89f55d82eb11
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 51
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 73 rows
+aliquot.id = 12f038e1-00af-4c64-a2e0-9e63323492ef
+nrow(pcawg.vcf) = 48
+nrow(mutect.vcf) = 52
+nrow(dkvz.vcf) = 61
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 89 rows
+aliquot.id = edac1323-2497-45e6-9148-e9c955292ba2
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 31
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 64 rows
+aliquot.id = 1c9fbe26-1447-4335-aaab-06d6bb3e2741
+nrow(pcawg.vcf) = 14
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = e56b0990-ff67-47c1-b9ad-87ef1d4aa2ae
+nrow(pcawg.vcf) = 31
+nrow(mutect.vcf) = 39
+nrow(dkvz.vcf) = 38
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 73 rows
+aliquot.id = 3bfbc33d-804b-4bb3-97ac-97563d77b13d
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 60 rows
+aliquot.id = 33061bf5-9b99-4735-a810-f2d5eeef6873
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 63 rows
+aliquot.id = 7410c00d-ed0b-48dc-a4bf-eb76ac613980
+nrow(pcawg.vcf) = 35
+nrow(mutect.vcf) = 39
+nrow(dkvz.vcf) = 50
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 81 rows
+aliquot.id = 9c399826-087f-44b9-98c0-bd881646b0f4
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 24
+nrow(dkvz.vcf) = 26
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 49 rows
+aliquot.id = f1d9124e-dfa2-415e-b8b8-dd872fd3e2cb
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 36
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 56 rows
+aliquot.id = 3e4d0e50-8cf4-4eb0-a00a-ccf0484ecc2f
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 16
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 55 rows
+aliquot.id = b5dd0bc9-6c1c-4272-b920-744de37d0aee
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 42
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 66 rows
+aliquot.id = 53534b3c-cd15-4d68-a9b1-6902bb234c45
+nrow(pcawg.vcf) = 90
+nrow(mutect.vcf) = 92
+nrow(dkvz.vcf) = 117
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 168 rows
+aliquot.id = 0cf9bbc2-cbd5-4b64-8d90-cfa416307b39
+nrow(pcawg.vcf) = 28
+nrow(mutect.vcf) = 30
+nrow(dkvz.vcf) = 36
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = f7702c0c-9636-4700-a8ae-7a58afd9fa71
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 28 rows
+aliquot.id = 92dc0e0c-842f-40de-9c39-486b491ea80a
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 42
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 85 rows
+aliquot.id = bb8176a7-ea7c-42d7-a85a-cec1ca386f2e
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 31
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 41 rows
+aliquot.id = 1168944c-5451-4a18-8758-88bf5723bdd9
+nrow(pcawg.vcf) = 92
+nrow(mutect.vcf) = 91
+nrow(dkvz.vcf) = 98
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 149 rows
+aliquot.id = cf072bfe-3191-4a71-9e0b-decaa28365e1
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 33
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 62 rows
+aliquot.id = 9c857452-c81d-4b9e-87a8-5b41f4394f7c
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 33
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 56 rows
+aliquot.id = 25cf7449-8c5b-403e-aa75-e2af158598e8
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = b47aa163-eec9-4225-940b-4373e78152e2
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 29 rows
+aliquot.id = 72a5e569-99d4-47bc-be1b-6296a5025080
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 33 rows
+aliquot.id = a5346247-3f30-470a-b4ab-732180786291
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 60 rows
+aliquot.id = 046d7386-95c8-4501-9e55-c85bec272a7a
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 46 rows
+aliquot.id = aa4a868a-df23-4eef-a618-e945aa2ce98a
+nrow(pcawg.vcf) = 53
+nrow(mutect.vcf) = 55
+nrow(dkvz.vcf) = 79
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 105 rows
+aliquot.id = 60aff7a0-4960-4ed1-922b-3233ccbfdba1
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 40 rows
+aliquot.id = 51458c86-0fdd-470e-b059-1ffbffc92a7f
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 33
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 48 rows
+aliquot.id = 02e5c36f-5bec-45e2-a048-875653b85ca1
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 46 rows
+aliquot.id = 9ebac79d-8b38-4469-837e-b834725fe6d5
+nrow(pcawg.vcf) = 72
+nrow(mutect.vcf) = 84
+nrow(dkvz.vcf) = 68
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 106 rows
+aliquot.id = 6bdf00f6-670f-466e-87fb-e853e41f000e
+nrow(pcawg.vcf) = 26
+nrow(mutect.vcf) = 32
+nrow(dkvz.vcf) = 41
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 65 rows
+aliquot.id = dd4fdb6a-8067-4b64-ab74-bbb0fec34ca9
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 44 rows
+aliquot.id = 7ccb9a4d-6f48-41c2-a630-27fde8c67d60
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = 1ac54c6e-a1e4-4f3b-b4a5-cdb327e0dca6
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 44 rows
+aliquot.id = 7b318282-5df4-42bc-b1e0-0e4a66ba9204
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 60
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 83 rows
+aliquot.id = 3b526846-72d6-4e10-b7cd-8cdb45a92a1c
+nrow(pcawg.vcf) = 79
+nrow(mutect.vcf) = 82
+nrow(dkvz.vcf) = 93
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 125 rows
+aliquot.id = e0aa815f-668a-4de9-bb32-3f215bb7f843
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 24
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 33 rows
+aliquot.id = 5255d645-d3d2-422e-8449-046cd21f4935
+nrow(pcawg.vcf) = 40
+nrow(mutect.vcf) = 46
+nrow(dkvz.vcf) = 38
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 82 rows
+aliquot.id = 8d67c121-37d0-4fc0-a349-2c9452589d65
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 54 rows
+aliquot.id = dc856038-f5f7-4dfc-a0a4-3e3a6b8d160f
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = f5bb7ae4-4bb4-4e87-b83c-bc8620584989
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 37 rows
+aliquot.id = 7cb71498-6ada-43c6-912b-bad4f93cf580
+nrow(pcawg.vcf) = 112
+nrow(mutect.vcf) = 114
+nrow(dkvz.vcf) = 123
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 167 rows
+aliquot.id = a5d5c238-0447-47fa-9a81-3b823cbdcea6
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 40
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 64 rows
+aliquot.id = 541f91bd-7e9d-4348-9e78-45b948d8967e
+nrow(pcawg.vcf) = 43
+nrow(mutect.vcf) = 49
+nrow(dkvz.vcf) = 56
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 87 rows
+aliquot.id = a492a32b-bf2f-4f8c-b06e-794a4baa2fe7
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 24
+nrow(dkvz.vcf) = 50
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 80 rows
+aliquot.id = 5f94cb62-4019-47ff-bf6a-eeda8e9e033c
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 33
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 39 rows
+aliquot.id = 0554ffe5-31f7-43f5-8372-2b73c9cf3527
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 36
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = d91f487e-0895-44ef-aeb1-a62bd576f8b0
+nrow(pcawg.vcf) = 29
+nrow(mutect.vcf) = 31
+nrow(dkvz.vcf) = 49
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 70 rows
+aliquot.id = ef3a0ccd-85bc-4e5f-a8c6-5a2e2d9e6717
+nrow(pcawg.vcf) = 52
+nrow(mutect.vcf) = 61
+nrow(dkvz.vcf) = 58
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 107 rows
+aliquot.id = 0fbd94b1-bb34-4620-841b-861a0b5e0c12
+nrow(pcawg.vcf) = 25
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 55
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 77 rows
+aliquot.id = 78100212-65aa-4365-8b64-4b33f77732d5
+nrow(pcawg.vcf) = 36
+nrow(mutect.vcf) = 39
+nrow(dkvz.vcf) = 45
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 71 rows
+aliquot.id = 71ef8379-03a0-4b81-92c9-1ba666fe4d7a
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 72 rows
+aliquot.id = a3edc9cc-f54a-4459-a5d0-097879c811e5
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 43
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 55 rows
+aliquot.id = 60e78c80-41a5-456a-9a81-9007d18fd72c
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 42
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 60 rows
+aliquot.id = 241abdfd-e6de-4830-a233-4bbc5f622725
+nrow(pcawg.vcf) = 28
+nrow(mutect.vcf) = 34
+nrow(dkvz.vcf) = 50
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 70 rows
+aliquot.id = 4cbe411b-b05e-46bd-bea8-126289a0866c
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 58 rows
+aliquot.id = 9df57388-7de1-4c90-910e-ef63a246dff1
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 51
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 74 rows
+aliquot.id = 88bc38ba-ad1d-431e-a67e-0a5a23678386
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 41 rows
+aliquot.id = fa54205f-7e51-4e5a-9f0a-5e8a2e40235f
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 27 rows
+aliquot.id = e97ea3d7-9fcd-4df1-9ea8-587cb3be75ec
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 43 rows
+aliquot.id = d4907a1b-8b06-47c5-8bca-c781d9cddaf8
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 30
+nrow(dkvz.vcf) = 36
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = 90b3c237-29a4-48b3-90b3-9f2c0ccb5928
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 36
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 58 rows
+aliquot.id = 2b6d4d66-7f0b-4bc0-b3d6-171956a937c5
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 38 rows
+aliquot.id = 88d5a8b2-daba-45ce-90bf-480fac85bf1d
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 33
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 44 rows
+aliquot.id = f4e926fd-006e-4c85-b71c-1433c325acb0
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 27
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 50 rows
+aliquot.id = c15a51cc-4fdc-4343-a410-13ddc238dac8
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 81 rows
+aliquot.id = 7981bbf3-dceb-4d89-900c-555967e97921
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 67 rows
+aliquot.id = 1a0ef226-41a5-4b56-9078-4b7834f0c976
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 63 rows
+aliquot.id = 4aa7eabc-0419-4897-b7af-5dcccfd6ac2f
+nrow(pcawg.vcf) = 104
+nrow(mutect.vcf) = 109
+nrow(dkvz.vcf) = 123
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 179 rows
+aliquot.id = 7ef9fd9b-d349-4ec3-ab4d-1a1d11c0204b
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 24
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 68 rows
+aliquot.id = 91b6fd6b-547a-47e4-8ecb-a6f1826ccfd3
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 31 rows
+aliquot.id = 3fb8f017-576f-4901-b8bf-3a58e5d43de3
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 55 rows
+aliquot.id = 29a00d78-b9bb-4c6b-b142-d5b8bfa63455
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = c9e7c629-7b57-4ede-b315-0cea8c97c48e
+nrow(pcawg.vcf) = 34
+nrow(mutect.vcf) = 41
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 60 rows
+aliquot.id = fdbd0277-ddbf-4cc5-8ec3-3644b9553627
+nrow(pcawg.vcf) = 33
+nrow(mutect.vcf) = 56
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 161 rows
+aliquot.id = 81bc7f0c-865d-4801-a935-2ab04170df53
+nrow(pcawg.vcf) = 137
+nrow(mutect.vcf) = 150
+nrow(dkvz.vcf) = 142
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 203 rows
+aliquot.id = 2e43e0ca-54ea-482e-acf2-0048d9187a5c
+nrow(pcawg.vcf) = 29
+nrow(mutect.vcf) = 35
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 55 rows
+aliquot.id = 96cca60e-17dc-44c3-90f7-1b57b0e08e5f
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 31
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = 1b0fe1d5-b286-4f49-ae92-94d9c6db9657
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = 7266ec7b-4824-4b88-910e-e9bfb848d55f
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = 441d2f21-b448-4fc8-8c54-9b85aca56237
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 31 rows
+aliquot.id = bbff7954-95ec-455c-b0bc-92f67a09ee77
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = 2c48eefe-2a08-47bf-8e4d-cbaab6777150
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 23 rows
+aliquot.id = da1ed4b9-f428-48aa-834d-1d9673999044
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 34 rows
+aliquot.id = 536dedba-46c4-4a21-b112-13c030b13069
+nrow(pcawg.vcf) = 52
+nrow(mutect.vcf) = 68
+nrow(dkvz.vcf) = 63
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 138 rows
+aliquot.id = efc39172-083c-4297-b922-3f58df781332
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 36 rows
+aliquot.id = fa9a3247-a465-4fdf-bb64-5afaa83a5d76
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 8
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 16 rows
+aliquot.id = 53e6a756-bdcc-4217-afe7-27d776159544
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 55 rows
+aliquot.id = 02c97e2b-914e-4afc-bf50-78f0cfbfa67b
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 29 rows
+aliquot.id = 72f82fbd-9838-4082-b605-bc3d80226f16
+nrow(pcawg.vcf) = 58
+nrow(mutect.vcf) = 60
+nrow(dkvz.vcf) = 86
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 125 rows
+aliquot.id = b04624d2-d8f8-4b51-be1b-72c73d8055f9
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 65 rows
+aliquot.id = bc395326-1656-4ef2-bb19-0cb29194b91c
+nrow(pcawg.vcf) = 80
+nrow(mutect.vcf) = 97
+nrow(dkvz.vcf) = 128
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 341 rows
+aliquot.id = ded2689b-8e37-480c-b37c-acc538e54ddf
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 4652ae03-b096-42d0-bdfa-3f6281d4f023
+nrow(pcawg.vcf) = 41
+nrow(mutect.vcf) = 55
+nrow(dkvz.vcf) = 49
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 80 rows
+aliquot.id = 33bcd589-80db-4a58-8f83-a48cb60e0fda
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 12
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 37 rows
+aliquot.id = cba4de91-cce7-4edc-8450-d0a52c959586
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 43 rows
+aliquot.id = 2bd9ccca-3fae-4b66-a762-6f30d6276222
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = 31c75873-abb4-4d88-9e2f-07497a6c892d
+nrow(pcawg.vcf) = 46
+nrow(mutect.vcf) = 53
+nrow(dkvz.vcf) = 53
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 74 rows
+aliquot.id = f94c4f69-8119-4eaf-97c1-5106890c14d4
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 52
+nrow(dkvz.vcf) = 24
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 79 rows
+aliquot.id = 569ff1b4-de87-4309-8484-80549aaf9485
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 51
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 67 rows
+aliquot.id = 5650dc4e-8bce-4716-9199-cd5750d7a888
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 44 rows
+aliquot.id = 7ccee959-1e87-4a39-b6b3-840ddcb94995
+nrow(pcawg.vcf) = 86
+nrow(mutect.vcf) = 100
+nrow(dkvz.vcf) = 106
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 159 rows
+aliquot.id = 2bf5b018-9f19-4fbd-9e1f-7d958aabe5d1
+nrow(pcawg.vcf) = 128
+nrow(mutect.vcf) = 135
+nrow(dkvz.vcf) = 90
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 150 rows
+aliquot.id = d5796835-d6cd-427e-a398-5fbef88b0648
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = 96ba50eb-3c12-41ad-ac7b-d23b2001fe44
+nrow(pcawg.vcf) = 35
+nrow(mutect.vcf) = 38
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 55 rows
+aliquot.id = 97c46ede-b280-4344-8dbb-e860c6472239
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 30
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 54 rows
+aliquot.id = 0b29c893-03bf-4131-b192-c14a2788d411
+nrow(pcawg.vcf) = 67
+nrow(mutect.vcf) = 69
+nrow(dkvz.vcf) = 65
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 90 rows
+aliquot.id = 6ad44218-d34e-4126-bf56-1be2140cd3fb
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = 4c4aa1b1-fda3-4c5b-b588-68aa727500ad
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 71 rows
+aliquot.id = 25c32aca-6738-43ef-a103-243f2f9a3b43
+nrow(pcawg.vcf) = 26
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 25
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 50 rows
+aliquot.id = c13fb736-614c-4d5f-83bf-2d7586f4fb53
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 33
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 57 rows
+aliquot.id = 46e166fe-3b20-49ad-98db-42c854c61c93
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 27
+nrow(dkvz.vcf) = 285
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 351 rows
+aliquot.id = cc7af465-22ed-485d-a78c-282b840bf7c9
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 48
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 89 rows
+aliquot.id = d05ea63c-86a3-463a-a790-2edaa74b4da7
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 34
+nrow(dkvz.vcf) = 360
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 453 rows
+aliquot.id = 5d9ff58c-5702-48fc-a66a-d1276327fd49
+nrow(pcawg.vcf) = 68
+nrow(mutect.vcf) = 70
+nrow(dkvz.vcf) = 82
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 116 rows
+aliquot.id = 5187e77d-f412-4303-8049-11d1aa1a0235
+nrow(pcawg.vcf) = 191
+nrow(mutect.vcf) = 199
+nrow(dkvz.vcf) = 166
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 250 rows
+aliquot.id = f283ed80-8302-4f26-99ed-ea20d101289d
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = ef002c3d-358f-4fc0-98f3-2f8b89de4374
+nrow(pcawg.vcf) = 30
+nrow(mutect.vcf) = 39
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 69 rows
+aliquot.id = 65d2dbc3-a163-4696-b246-47a430e66572
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 52
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 68 rows
+aliquot.id = e1df938f-1f23-4291-98ef-13db6debb796
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 46 rows
+aliquot.id = ac02c38e-5fca-4995-b0cc-39b6189976a3
+nrow(pcawg.vcf) = 35
+nrow(mutect.vcf) = 43
+nrow(dkvz.vcf) = 63
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 95 rows
+aliquot.id = bcef0b6c-6584-4090-9d28-ef784a7e5fbb
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 32 rows
+aliquot.id = d1804679-e728-4597-ac69-49554c087b9e
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 51
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 74 rows
+aliquot.id = 1c28e44a-6e6c-44ed-b58a-e3262c0e6759
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = 70dd8453-11d3-4105-a8d0-6a755c52495d
+nrow(pcawg.vcf) = 14
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 26 rows
+aliquot.id = 230f53ef-be3f-495e-9b95-b0f670bd6908
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 23 rows
+aliquot.id = a7a56d67-1bd7-4d69-9237-34c2d261261b
+nrow(pcawg.vcf) = 64
+nrow(mutect.vcf) = 92
+nrow(dkvz.vcf) = 224
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 376 rows
+aliquot.id = 7d7fff91-3f69-4123-b514-140ed3d9cd66
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 16
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 35 rows
+aliquot.id = 8c233a11-3b2e-4273-bbe1-b5a5f5a351d5
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 25
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 01b0848c-ae36-4ade-a3da-d297b003c99f
+nrow(pcawg.vcf) = 249
+nrow(mutect.vcf) = 240
+nrow(dkvz.vcf) = 211
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 305 rows
+aliquot.id = c0523251-3ac2-4292-bb00-9ae9ea9009f6
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 54 rows
+aliquot.id = efacd7d6-56cf-4f6a-87f0-1a7ab6b1a643
+nrow(pcawg.vcf) = 19
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 31 rows
+aliquot.id = e7048a93-a1ed-4cdc-a1ab-fa507408ca77
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 48 rows
+aliquot.id = 7f5fd36f-6e30-45ca-92a5-d8a8a8ee1bc2
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 14
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 23 rows
+aliquot.id = b54b9433-ec10-4cb5-a860-4555da64917b
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 36
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 49 rows
+aliquot.id = 6b20f942-7b89-497c-8a2e-ccce74d20ca9
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 13
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = 0fc63b79-7fff-441d-88fc-922d53c787ab
+nrow(pcawg.vcf) = 26
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 43 rows
+aliquot.id = 1327bbd4-a466-4e26-905f-cf91315f1cc8
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 23 rows
+aliquot.id = cb4608a7-6aec-4cba-b20f-489e214c9dbd
+nrow(pcawg.vcf) = 28
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 12
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 34 rows
+aliquot.id = 3933c60d-73d6-4f74-ae02-fd545fc1f092
+nrow(pcawg.vcf) = 36
+nrow(mutect.vcf) = 41
+nrow(dkvz.vcf) = 67
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 96 rows
+aliquot.id = af9cfac8-7fbe-49cb-aeca-8d68aea57994
+nrow(pcawg.vcf) = 41
+nrow(mutect.vcf) = 45
+nrow(dkvz.vcf) = 42
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 57 rows
+aliquot.id = 4a4e0397-8702-46ef-aaa8-3980f03a40bf
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 98
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 149 rows
+aliquot.id = 09e1fe3e-bfd8-4175-ac42-0e1bf0ba5523
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 48 rows
+aliquot.id = 6fc0cb07-9713-4355-8543-f85d1c5505c2
+nrow(pcawg.vcf) = 37
+nrow(mutect.vcf) = 37
+nrow(dkvz.vcf) = 52
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 76 rows
+aliquot.id = 78103d9b-0b8a-431e-bb58-5c99fbea12e4
+nrow(pcawg.vcf) = 162
+nrow(mutect.vcf) = 167
+nrow(dkvz.vcf) = 192
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 328 rows
+aliquot.id = 7c43c006-d917-4915-b304-65995b6c0d46
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 24
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 39c6c3b3-4683-4d11-984c-ed589188da65
+nrow(pcawg.vcf) = 33
+nrow(mutect.vcf) = 38
+nrow(dkvz.vcf) = 388
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 471 rows
+aliquot.id = 42f00950-09c9-461a-8423-d5b04a96af10
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 55 rows
+aliquot.id = 40378b7a-a65d-4510-aaba-a34c4058fac7
+nrow(pcawg.vcf) = 34
+nrow(mutect.vcf) = 53
+nrow(dkvz.vcf) = 46
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 86 rows
+aliquot.id = 4a88981e-e409-440f-9bf0-71ca1bab8b4e
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 26
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 43 rows
+aliquot.id = 52f43b72-15ea-40a0-a3b4-4bf22bc0bf25
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 38 rows
+aliquot.id = 170ad241-9e24-469b-b7ca-3fd783a89b21
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 46
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 72 rows
+aliquot.id = 631ab9d0-5400-400c-b0bc-c3e576bcfe06
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 58 rows
+aliquot.id = 3ed783cf-2248-44a1-a2a2-d6b6519b91ef
+nrow(pcawg.vcf) = 82
+nrow(mutect.vcf) = 92
+nrow(dkvz.vcf) = 69
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 164 rows
+aliquot.id = c741fb12-8160-43a7-bc70-2c545ea0031d
+nrow(pcawg.vcf) = 59
+nrow(mutect.vcf) = 114
+nrow(dkvz.vcf) = 40
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 304 rows
+aliquot.id = b80ca528-2c5f-400c-8df3-9c47869a64c2
+nrow(pcawg.vcf) = 22
+nrow(mutect.vcf) = 38
+nrow(dkvz.vcf) = 24
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 111 rows
+aliquot.id = 75cd90ef-e884-4812-bbf3-5a524d95147e
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 46 rows
+aliquot.id = 0972bfcf-c6c6-48cc-b820-cdfa6279a4f3
+nrow(pcawg.vcf) = 33
+nrow(mutect.vcf) = 44
+nrow(dkvz.vcf) = 48
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 80 rows
+aliquot.id = ffe4bb51-e98a-41a7-a4e1-c3970386889c
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 66 rows
+aliquot.id = 73058c80-607e-4b55-b112-8f8f6775d014
+nrow(pcawg.vcf) = 39
+nrow(mutect.vcf) = 40
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 68 rows
+aliquot.id = db2a1df8-487d-4dad-a347-5c5ed539d5ad
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 25 rows
+aliquot.id = 129459c1-38be-45da-bb87-18848c97c544
+nrow(pcawg.vcf) = 34
+nrow(mutect.vcf) = 52
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 71 rows
+aliquot.id = e7603fc8-9b73-4c17-86f9-46ca1bceeb1d
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 46 rows
+aliquot.id = b710b214-5666-4054-97ef-3b9ac2bd90ac
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = 2fdfb06c-0d2f-4e1d-9756-bcb08a7f90af
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 40 rows
+aliquot.id = 89195d56-1ef2-41df-b200-9f18e38f574a
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 38 rows
+aliquot.id = 9011cf17-0783-4f9d-b355-4f0fc1a2e78b
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 27
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 28f41a20-b6d6-4ecc-888f-72f779ad9af7
+nrow(pcawg.vcf) = 30
+nrow(mutect.vcf) = 31
+nrow(dkvz.vcf) = 57
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 83 rows
+aliquot.id = 0efee3f3-313b-44eb-b3b0-af975a1ded82
+nrow(pcawg.vcf) = 27
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = b5cabba2-30a4-458e-897c-00ec3fefa6d2
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 24
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 33 rows
+aliquot.id = 2b3837b3-ee29-4a08-848e-1206404da986
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = e5193d7e-e8b7-4098-bf98-8b3a62781d13
+nrow(pcawg.vcf) = 29
+nrow(mutect.vcf) = 37
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = 6867811f-ac89-47da-b5dc-1270033c36e7
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 16
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 43 rows
+aliquot.id = 60c33e32-7e19-4e71-b075-a63fcf27e660
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 39 rows
+aliquot.id = 2564a262-03e8-467b-9ea2-f3ab38d75ae1
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 27
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 57 rows
+aliquot.id = c3679262-63d7-463e-9501-6ab3f177aee8
+nrow(pcawg.vcf) = 14
+nrow(mutect.vcf) = 30
+nrow(dkvz.vcf) = 16
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = 9ffe694e-b488-489e-bdbe-0800e505eec4
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 38 rows
+aliquot.id = fe96d91c-3686-4125-af71-b8703a011ad4
+nrow(pcawg.vcf) = 27
+nrow(mutect.vcf) = 47
+nrow(dkvz.vcf) = 44
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 92 rows
+aliquot.id = 8be6b14d-286a-471b-a282-ab98bc6050c3
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 25
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = 3fba4880-cb7b-4ac5-ab5f-728614faa1ea
+nrow(pcawg.vcf) = 14
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 34 rows
+aliquot.id = 32fa6457-c8bd-4d26-8106-925baf13df68
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = 4c027164-12de-456f-b933-6bc91f70b46f
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 27
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 66290cc6-1f1f-4a0b-83d1-423952da4840
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = 644c669b-937b-4adc-81b9-6a1811cba9da
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 54 rows
+aliquot.id = 94652d14-2e4d-4f4a-a4f7-8df77df788c0
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 60 rows
+aliquot.id = 228fb827-c05e-494c-8a21-e1d925e100cb
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 41 rows
+aliquot.id = ca284012-bd06-47a3-8a9d-c6b185d87d85
+nrow(pcawg.vcf) = 78
+nrow(mutect.vcf) = 83
+nrow(dkvz.vcf) = 84
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 124 rows
+aliquot.id = 754d26af-f184-497c-856a-cd1ea7a5115c
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 64 rows
+aliquot.id = 7d04f401-3505-410c-8def-0348ecd8aae2
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 36 rows
+aliquot.id = 1776f326-b12f-4355-8107-80fa6fcd2159
+nrow(pcawg.vcf) = 17
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 44 rows
+aliquot.id = 183b04f5-107f-496c-8e9a-8263dd00cffa
+nrow(pcawg.vcf) = 40
+nrow(mutect.vcf) = 42
+nrow(dkvz.vcf) = 39
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 84 rows
+aliquot.id = e6eda5db-4d4f-418e-b0d4-ed9b3e5259d3
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 30
+nrow(dkvz.vcf) = 24
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 48 rows
+aliquot.id = 95cc9620-7686-4805-a96c-cf8e659847c3
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 36 rows
+aliquot.id = a6ebe0c0-8aab-4b9f-8328-4b795895a77d
+nrow(pcawg.vcf) = 29
+nrow(mutect.vcf) = 49
+nrow(dkvz.vcf) = 383
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 518 rows
+aliquot.id = ec77847e-48fd-4ba5-bc3e-3cd1b149b552
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 36
+nrow(dkvz.vcf) = 237
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 344 rows
+aliquot.id = 09cb8bc5-13ac-44ac-9b7d-6de143373570
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 41
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 78 rows
+aliquot.id = a3210fd0-344c-468e-8ff2-2d0869a2fb75
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 62 rows
+aliquot.id = 8282283d-247a-431d-9421-0fcc52f0a897
+nrow(pcawg.vcf) = 94
+nrow(mutect.vcf) = 106
+nrow(dkvz.vcf) = 109
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 160 rows
+aliquot.id = 39d38c06-3779-4ca4-b103-1d096f93dae8
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = 54195db3-94a9-4538-8bb8-9953d936acd4
+nrow(pcawg.vcf) = 157
+nrow(mutect.vcf) = 171
+nrow(dkvz.vcf) = 174
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 233 rows
+aliquot.id = bbdd7393-024b-4073-b5bc-ef7a68c15b8a
+nrow(pcawg.vcf) = 217
+nrow(mutect.vcf) = 228
+nrow(dkvz.vcf) = 247
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 344 rows
+aliquot.id = f4ada7a2-c4ac-4f89-ada7-4645861002cb
+nrow(pcawg.vcf) = 81
+nrow(mutect.vcf) = 88
+nrow(dkvz.vcf) = 81
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 130 rows
+aliquot.id = 9078333d-73d3-496a-9fc3-a94353b7e107
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 54 rows
+aliquot.id = f4e673a9-5b85-46e7-bcac-2ce6e1026896
+nrow(pcawg.vcf) = 37
+nrow(mutect.vcf) = 42
+nrow(dkvz.vcf) = 41
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 68 rows
+aliquot.id = 6297aa77-37a0-4f46-987b-32bd8653c0c2
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 39 rows
+aliquot.id = 368e592d-260c-4f58-81c4-a9f1e6177a4b
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 41
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 61 rows
+aliquot.id = b8270565-9e02-4d46-9534-08206bfd027a
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 38 rows
+aliquot.id = ecfe388a-99f5-44b9-9226-a6ae6d892538
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = d8de6de6-4cfe-4239-9ebd-3437aa65efb2
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 36
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 67 rows
+aliquot.id = 079bcb09-a075-4313-9a3e-dd67734a8c5d
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 41
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 75 rows
+aliquot.id = e4c8c7f0-5bac-4d59-91c4-c98207150548
+nrow(pcawg.vcf) = 91
+nrow(mutect.vcf) = 103
+nrow(dkvz.vcf) = 87
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 169 rows
+aliquot.id = d333b55b-8bac-4a99-9d23-3cc0c25057bf
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 25
+nrow(dkvz.vcf) = 42
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 62 rows
+aliquot.id = 1a5bf97e-3d49-4d3f-b385-ffa7a295be9c
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = 7c477f01-8000-49dc-a692-e47fc15e0b4f
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 25
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 35 rows
+aliquot.id = b4e5626b-44fe-4cdb-a7d5-42028e0dbc4d
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 12
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 31 rows
+aliquot.id = 16c6f975-48fd-4cda-946a-777cb922949d
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 41 rows
+aliquot.id = 9cfa4e8f-ea4d-433b-8c2c-54f66ecb7e43
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = 559c30f2-8ae7-43c8-819c-800261065e06
+nrow(pcawg.vcf) = 20
+nrow(mutect.vcf) = 28
+nrow(dkvz.vcf) = 40
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 72 rows
+aliquot.id = 59e2d6d1-debd-4796-ab0c-6a5673a990fc
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 13
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 27 rows
+aliquot.id = 0e7ac212-0469-4f17-9432-205ab1831257
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 47 rows
+aliquot.id = 4b5d9d8c-ff95-45f4-9287-2804e8a98ade
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 50 rows
+aliquot.id = a4beedc3-0e96-4e1c-90b4-3674dfc01786
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 49 rows
+aliquot.id = 5f13e9b8-6c8e-4fd7-aef1-da4e5d5e2a5e
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 34
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 94b5dc5a-701a-45e3-8f63-8231031a055a
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 56 rows
+aliquot.id = 69fe982d-6ab8-49b7-9efa-8349d60eb076
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 26
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = aa215f18-ae1f-4f0e-89dd-ac59ee8c8c44
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 56 rows
+aliquot.id = bf91afc4-aa2b-4365-80c5-b98c9d118e10
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 27 rows
+aliquot.id = 3728982b-4547-4249-bd42-72a91d3fda8c
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 13
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 29 rows
+aliquot.id = cef1fb1c-18fa-453a-b87f-295d3b0bc12b
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 29 rows
+aliquot.id = 5ee28a35-7aa0-48e3-9c14-daca7b0241fe
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 39 rows
+aliquot.id = 7ae3671f-bf98-4693-8f35-3b762c9121d4
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = 0363fe2c-d765-450e-8b1a-d13a23d9af2a
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 29 rows
+aliquot.id = dc4ba4bc-6333-4fe9-8805-e058cc9e6e18
+nrow(pcawg.vcf) = 68
+nrow(mutect.vcf) = 77
+nrow(dkvz.vcf) = 88
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 125 rows
+aliquot.id = 01c8e465-2b4e-4519-bdef-c3ac06b43eeb
+nrow(pcawg.vcf) = 15
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 17
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 39 rows
+aliquot.id = d404ac28-da11-4746-9c3b-cf0b1888f67b
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 23
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = 44406493-37f4-48c7-961b-8714be50773a
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = 5702affd-eafe-42a4-8f56-c1f22f8f184d
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 25
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 40 rows
+aliquot.id = 96e99cf0-707e-49f3-9ec6-cb4f90ecf7e4
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 35 rows
+aliquot.id = 5935dd9d-d411-48f8-8512-aa73a63878b0
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = 6dc43234-4f07-4c53-8b07-8d78d9dbad3b
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 23 rows
+aliquot.id = 00508f2b-36bf-44fc-b66b-97e1f3e40bfa
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 12
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 24 rows
+aliquot.id = c307688c-b1fa-47f6-a9e2-1ea41f7645b6
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 18 rows
+aliquot.id = 3bb25b72-ceb1-4169-891e-339f22cb0f03
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 26
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = fbea74b5-b1a8-4767-af7c-e179ce8da071
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 12
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 17 rows
+aliquot.id = b4860b5f-0a80-4fb2-81e1-4bafeb525b1c
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 14
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 29 rows
+aliquot.id = 8c4ebff2-8318-4046-98f5-da8f6b1a9e3b
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 36 rows
+aliquot.id = 1b7838c9-c685-41c3-b184-a2e40c7c4dc7
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 27
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 56 rows
+aliquot.id = 29127cde-548f-4c42-96cf-6f0020c3db9a
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 13
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 22 rows
+aliquot.id = 56425c2e-6bbf-4b20-ba07-79a526dd4603
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 8
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 18 rows
+aliquot.id = b5cc4a6d-93a9-497c-a7bb-a5db82edc176
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = 05c487aa-72d8-42e6-aa2b-b9b5ce273f5c
+nrow(pcawg.vcf) = 18
+nrow(mutect.vcf) = 22
+nrow(dkvz.vcf) = 30
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 61 rows
+aliquot.id = 2660825c-68f0-4631-948e-6da158edbe9e
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 25
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 44 rows
+aliquot.id = 3ae3ce4a-54ec-4c3b-83f2-845696ea0fa1
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 19 rows
+aliquot.id = 48b15122-b1e9-4c30-8fc5-70a07686779a
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 24
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = b8068cbb-4523-4ac9-ab17-edd4eb0e2975
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 43 rows
+aliquot.id = e541b5b9-546d-47bc-acd6-4006ce0eec1d
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 41
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 60 rows
+aliquot.id = 051cb117-16fd-459e-81e5-002eca2b7eea
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 6
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 14 rows
+aliquot.id = 606d7f5e-ff98-4245-a9ac-281f5074f97a
+nrow(pcawg.vcf) = 21
+nrow(mutect.vcf) = 23
+nrow(dkvz.vcf) = 38
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 52 rows
+aliquot.id = acb5e263-111b-43d8-9bd1-adb9a54e0fc0
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 38 rows
+aliquot.id = 274723ac-2bc1-4e2c-b31a-1907217b9f84
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = dc7faf84-4438-447b-abcf-a3af87043654
+nrow(pcawg.vcf) = 23
+nrow(mutect.vcf) = 31
+nrow(dkvz.vcf) = 35
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 65 rows
+aliquot.id = 6c8f3dc9-21bf-4859-9599-231ac040eb7d
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = de4d6f9f-d64a-41b9-a928-64e79b9f7d5f
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 14
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = df2d41c4-7e79-4a46-aa4a-2a11c051ac40
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 30
+nrow(dkvz.vcf) = 36
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 66 rows
+aliquot.id = b27b569a-2c79-4453-8a2d-41fd0b4dd28d
+nrow(pcawg.vcf) = 25
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = c9e7cff0-aec2-4ff2-8091-7cbea2bf5991
+nrow(pcawg.vcf) = 82
+nrow(mutect.vcf) = 88
+nrow(dkvz.vcf) = 82
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 118 rows
+aliquot.id = c766274a-3c1e-443f-9ed4-c0e2b9c904d1
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 48 rows
+aliquot.id = 0bafd9ae-64b3-492d-a6fd-12aa8edefcbe
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 9
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 23 rows
+aliquot.id = 8cbd1752-7eea-46d3-8623-09e96dfb1fdf
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 14
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 42 rows
+aliquot.id = 5174f450-0bf7-4237-a53e-844064f0e701
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 21
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 39 rows
+aliquot.id = 074fd614-5d9c-4bcc-96ad-351aa14387e3
+nrow(pcawg.vcf) = 24
+nrow(mutect.vcf) = 29
+nrow(dkvz.vcf) = 42
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 73 rows
+aliquot.id = 3189bc97-afd8-4daf-80c9-2d78a08228d3
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 18
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 36 rows
+aliquot.id = d6faafa5-7279-4dc3-be71-45af5c855b34
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 29
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 55 rows
+aliquot.id = b499032c-6cb8-4646-a95b-10af2a21a289
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 18
+nrow(dkvz.vcf) = 37
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = 8c443bd0-7987-44de-b312-5b859e6d13a9
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 20 rows
+aliquot.id = 79353875-9d86-4063-a8ea-1d998acb1e81
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 36 rows
+aliquot.id = 94244f28-4ba2-4aa6-a0fb-0cd9b94bf9cc
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 24 rows
+aliquot.id = 857a8354-9589-424e-98f4-98b9bfd6dcb0
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 25 rows
+aliquot.id = e3eb5217-50e4-49e2-a6fa-f847d091f3c9
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 31 rows
+aliquot.id = f89ef95e-6e39-420b-a3c2-ccebcc69ce3b
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = 4d2204f1-be84-4f58-b7e7-61ae9fbf6d25
+nrow(pcawg.vcf) = 13
+nrow(mutect.vcf) = 15
+nrow(dkvz.vcf) = 22
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 54 rows
+aliquot.id = 589e0aea-9057-4b8c-8af1-74c74fe46a38
+nrow(pcawg.vcf) = 16
+nrow(mutect.vcf) = 19
+nrow(dkvz.vcf) = 36
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 68 rows
+aliquot.id = b24feafa-f2e9-4498-8471-a9e42c80cc9f
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 31
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 53 rows
+aliquot.id = 958d4d1d-25e2-43f2-a18b-59b2c66f0c05
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 1
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 43 rows
+aliquot.id = dc57c2e7-4c5b-4e2b-93c6-f032fcebc2fa
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 28
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 51 rows
+aliquot.id = d515c7d2-2314-46bf-9736-ff3f3d2ab599
+nrow(pcawg.vcf) = 12
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 32 rows
+aliquot.id = 724bf2b8-a246-4b6f-85f8-95824c03896e
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 11
+nrow(dkvz.vcf) = 19
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 36 rows
+aliquot.id = 3ad44032-01fb-4f84-b880-f01bb13a4359
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = ee368301-b2f7-428f-9330-67c054c1a09d
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 16
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 31 rows
+aliquot.id = ed4b53cb-5473-4bc1-9d84-0b0ad93cbd57
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 10 rows
+aliquot.id = e07affb1-b6b2-40a4-9c54-0e72f5ea5045
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 7
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = 63a907ff-1042-4f9c-a385-55a32b3e103b
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 20
+nrow(dkvz.vcf) = 16
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 45 rows
+aliquot.id = 7243992d-0763-4b75-8066-e8e5309d0193
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = fe63d42b-d471-45b6-9bdf-1a3b55465d37
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 20
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 34 rows
+aliquot.id = 6e776415-ddf4-4060-953f-08ef22441234
+nrow(pcawg.vcf) = 52
+nrow(mutect.vcf) = 55
+nrow(dkvz.vcf) = 53
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 83 rows
+aliquot.id = 33b99e90-741d-43f2-804b-75721199a0dc
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 19 rows
+aliquot.id = 1eb1bc62-18f6-4bcb-a16d-aa6a91914031
+nrow(pcawg.vcf) = 10
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 31 rows
+aliquot.id = 4daa2708-d0db-40fe-a07a-763f003adcae
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 1
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 8 rows
+aliquot.id = 97f451e5-a1cc-4f29-8318-0e6ae74efe2f
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 13
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 20 rows
+aliquot.id = 35b951c0-edb0-47c4-9076-ede346ea7cb1
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12 rows
+aliquot.id = 5cbd429f-ffab-41ad-8016-422f1c922e99
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12 rows
+aliquot.id = 436af904-65b2-4196-ad8c-a4e98081ee41
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 1
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 11 rows
+aliquot.id = 8404ef5b-7a64-47fe-98f9-3f63619d2d99
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 1
+nrow(dkvz.vcf) = 1
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 4 rows
+aliquot.id = 8bda75a6-86b9-458e-948b-05049b4c52ce
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 17 rows
+aliquot.id = cc39b534-5ba1-4ea0-956b-676f6732beec
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 10 rows
+aliquot.id = 68956108-2606-4696-b038-462b6c432398
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 2
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 6 rows
+aliquot.id = d17c2123-d262-43f4-9d06-3547f991cde7
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 8 rows
+aliquot.id = 0624eb1d-3aff-4037-a3c5-fc363a9edd02
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 13
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 16 rows
+aliquot.id = 51dd1a39-7349-442c-b7e1-7850fb800569
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 0
+nrow(dkvz.vcf) = 2
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 14 rows
+aliquot.id = d8e2af63-afe0-4f15-88b4-78118cf68160
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 2
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = 9beb4126-0112-4c06-80a3-e5dd1c2b88d5
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 0
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 5 rows
+aliquot.id = 93be2990-bceb-45fd-aca5-3358d96e9d5a
+nrow(pcawg.vcf) = 45
+nrow(mutect.vcf) = 54
+nrow(dkvz.vcf) = 50
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 70 rows
+aliquot.id = d609ce92-9edd-4286-bd5f-b93304cae9a2
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 8
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = 86ae34f9-e16a-4593-8e55-b1296782bc1f
+nrow(pcawg.vcf) = 9
+nrow(mutect.vcf) = 21
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 33 rows
+aliquot.id = 906f6f1e-569d-4ce2-9273-1f305782f77f
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 6 rows
+aliquot.id = e23462f2-cb86-4a3e-8521-221f4bec247c
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12 rows
+aliquot.id = 706a1085-5994-4d04-b56b-d301c9ed5afa
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 1
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 9 rows
+aliquot.id = ed46bb2e-97e3-4914-a086-de80e00d6ee8
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 6
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 19 rows
+aliquot.id = 880e6970-0131-4966-b13e-8614d33f0df7
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 0
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 3 rows
+aliquot.id = 0ba8f2e2-935a-4123-86aa-6e7f5de85bf4
+nrow(pcawg.vcf) = 7
+nrow(mutect.vcf) = 126
+nrow(dkvz.vcf) = 6
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 131 rows
+aliquot.id = 6d3d5531-16b4-46ec-bd7e-394946855d62
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 7
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 20 rows
+aliquot.id = 5f00a760-fbc0-41f0-b92b-b3c553eac0e5
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 8
+nrow(dkvz.vcf) = 32
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 77 rows
+aliquot.id = b64173fc-abac-4695-902b-f0acf9444e9f
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 7
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 9 rows
+aliquot.id = 924bcc4a-c982-43bf-8bbb-641dc983d65e
+nrow(pcawg.vcf) = 11
+nrow(mutect.vcf) = 104
+nrow(dkvz.vcf) = 8
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 144 rows
+aliquot.id = c4c776f8-ee3f-4cce-beb9-8dcf262cdcdf
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 22 rows
+aliquot.id = ed1f5a41-921f-469a-bc04-306a5435e067
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 9 rows
+aliquot.id = f8d89ae2-2c7d-40ae-8d40-34b93b16efc9
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 6
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 11 rows
+aliquot.id = bd1ce02b-bfaf-4cde-aaac-06097a12e248
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 20 rows
+aliquot.id = 8efb116f-4ecf-4191-8ebf-90a94c1880cf
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 15 rows
+aliquot.id = cdc672cc-35df-4f10-88f1-d3e40dabf601
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 10
+nrow(dkvz.vcf) = 8
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 20 rows
+aliquot.id = 4d121008-0987-4142-a2b8-7dac58f3110a
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 14 rows
+aliquot.id = 6d2a5ee7-9e46-4c09-a982-7b61b5d9bdea
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 22 rows
+aliquot.id = 4f3c2c94-fa7f-4945-9dff-e4d4dac95f56
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 16
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 24 rows
+aliquot.id = 1bd74f92-47f6-427e-af6f-299c3a7fe023
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 17
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 21 rows
+aliquot.id = 3166f1ae-678d-42ae-9d44-d3d25d6860c7
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 16 rows
+aliquot.id = 391a949d-217a-472c-a6d4-80e548039684
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 9 rows
+aliquot.id = 209a9b10-7129-48fe-a899-d14ba17efe6f
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 16 rows
+aliquot.id = 34b0c838-bf6c-4d0f-8cd2-d2928adbb539
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 7
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12 rows
+aliquot.id = 14f41457-25c3-4979-8515-4f33322039a5
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 9 rows
+aliquot.id = 868c95ad-45df-4f8e-9553-b7c2c5679deb
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 12
+nrow(dkvz.vcf) = 14
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 25 rows
+aliquot.id = 72b62805-76f9-476a-b876-a781e69a2c90
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 2
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 15 rows
+aliquot.id = 571ce258-b453-4cac-b05e-05755791be84
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 9
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 22 rows
+aliquot.id = aa4bf69c-a1a6-48dc-96fc-3fe7d2680517
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 25 rows
+aliquot.id = 0609b182-0396-4755-b463-10f949c5b8bb
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 2
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 11 rows
+aliquot.id = c955387a-16e5-447c-8e69-e4c04a9861d5
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 9
+nrow(dkvz.vcf) = 6
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 18 rows
+aliquot.id = cc69fe94-0ecf-45ad-a03f-8fb7198e8657
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 15 rows
+aliquot.id = bf24366f-fd91-4d84-8b3d-eed80064250d
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 6
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 14 rows
+aliquot.id = 48fadd0f-6561-4294-bff4-d5e4f7dfe79f
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 5
+nrow(dkvz.vcf) = 7
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 19 rows
+aliquot.id = 4a698352-25e6-4137-bef8-b6520d5b1b95
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 11 rows
+aliquot.id = ae464652-2f8c-4d94-8b08-cd8f1d29256e
+nrow(pcawg.vcf) = 3
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 7 rows
+aliquot.id = 909f3c5d-89fc-419b-a654-75ac1dbb149f
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 1
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 9 rows
+aliquot.id = 147e3496-514e-4da7-be42-7cd9be78ed04
+nrow(pcawg.vcf) = 5
+nrow(mutect.vcf) = 13
+nrow(dkvz.vcf) = 15
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 40 rows
+aliquot.id = aa5907cb-3be3-4e23-982d-719417baeb37
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 1
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 13 rows
+aliquot.id = edc070db-b768-478f-ae75-4c4012bdc3fe
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 11 rows
+aliquot.id = 5f096d7b-a1ea-4cc2-af73-10108089ae84
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 9
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 17 rows
+aliquot.id = b16780b0-75ba-4304-87e0-33f1e321b622
+nrow(pcawg.vcf) = 6
+nrow(mutect.vcf) = 14
+nrow(dkvz.vcf) = 11
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 31 rows
+aliquot.id = cb56e4c2-2fff-4f09-be34-fbdaa3794b35
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 14
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 25 rows
+aliquot.id = b68f18e1-0117-420c-9405-e8d3a1e8caff
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 1
+nrow(dkvz.vcf) = 2
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 7 rows
+aliquot.id = 4d6bb438-86f0-4414-962f-2b1cebee4524
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12 rows
+aliquot.id = ba5667da-7688-4931-bdb7-d65f391caf60
+nrow(pcawg.vcf) = 4
+nrow(mutect.vcf) = 7
+nrow(dkvz.vcf) = 8
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 16 rows
+aliquot.id = 889fb525-5055-4408-a12e-17f1225c9d29
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 8 rows
+aliquot.id = a65bcd07-c47d-4bda-a2bf-21f68cef2f3b
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 16 rows
+aliquot.id = 6c642c0b-4dd0-406c-ac68-ea376802d61b
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 0
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 7 rows
+aliquot.id = ea121956-77f5-4da3-ab15-0b825469eafe
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 5
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 9 rows
+aliquot.id = 70990332-7702-45e2-84cb-8bbff773f160
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 4
+nrow(dkvz.vcf) = 6
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12 rows
+aliquot.id = d9338d73-1d5e-4808-91f2-b5a09f7342de
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 3
+nrow(dkvz.vcf) = 4
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 7 rows
+aliquot.id = 573ee34b-43a7-40d8-95ee-0ced4b46a7c8
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 7
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 14 rows
+aliquot.id = 0db9309e-7b95-4ae3-b0ed-dfd4f38d11b0
+nrow(pcawg.vcf) = 8
+nrow(mutect.vcf) = 16
+nrow(dkvz.vcf) = 10
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 24 rows
+aliquot.id = 2321c412-7730-4694-bc8f-199d7e51a7f8
+nrow(pcawg.vcf) = 2
+nrow(mutect.vcf) = 6
+nrow(dkvz.vcf) = 3
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 12 rows
+aliquot.id = 19aa8223-ee84-4b5c-b11a-6ca2a2680b3c
+nrow(pcawg.vcf) = 1
+nrow(mutect.vcf) = 2
+nrow(dkvz.vcf) = 6
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Writing bed file
+Writing vcf file: 8 rows
+aliquot.id = 13446fc4-9fa6-4bb3-a00a-b9265b41eb12
+nrow(pcawg.vcf) = 0
+nrow(mutect.vcf) = 0
+nrow(dkvz.vcf) = 0
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Joining, by = c("CHROM", "POS")
+Error in setnames(x, value) : 
+  Can't assign 6 names to a 0 column data.table
+Calls: <Anonymous> ... colnames<- -> names<- -> names<-.data.table -> setnames
+In addition: Warning messages:
+1: In FUN(newX[, i], ...) :
+  Row with more than one alternate allele: TT, GT
+2: In FUN(newX[, i], ...) :
+        CHROM         POS      REF_mt      ALT_mt      REF_dk      ALT_dk        "12" "  5761673"          NA          NA          NA          NA      REF_ms      ALT_ms      REF_sa      ALT_sa   REF_pcawg   ALT_pcawg        "CC"        "TT"        "CC"        "GT"        "CC"        "TT"        QUAL      FILTER         "."         "." 
+3: In FUN(newX[, i], ...) :
+  Row with more than one alternate allele: AA, AT
+4: In FUN(newX[, i], ...) :
+        CHROM         POS      REF_mt      ALT_mt      REF_dk      ALT_dk        "12" " 13357276"          NA          NA        "GG"        "AA"      REF_ms      ALT_ms      REF_sa      ALT_sa   REF_pcawg   ALT_pcawg          NA          NA        "GG"        "AT"          NA          NA        QUAL      FILTER          NA          NA 
+5: In FUN(newX[, i], ...) :
+  Row with more than one alternate allele: TT, TA
+6: In FUN(newX[, i], ...) :
+        CHROM         POS      REF_mt      ALT_mt      REF_dk      ALT_dk        "18" " 39453827"          NA          NA        "GC"        "TT"      REF_ms      ALT_ms      REF_sa      ALT_sa   REF_pcawg   ALT_pcawg          NA          NA        "GC"        "TA"          NA          NA        QUAL      FILTER          NA          NA 
+7: In FUN(if (length(d.call) < 2L) newX[, 1] else array(newX[, 1L],  :
+  Row with more than one reference allele: 
+8: In FUN(if (length(d.call) < 2L) newX[, 1] else array(newX[, 1L],  :
+   [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE[13] FALSE FALSE FALSE
+9: In FUN(if (length(d.call) < 2L) newX[, 1] else array(newX[, 1L],  :
+  Row with more than one alternate allele: 
+10: In FUN(if (length(d.call) < 2L) newX[, 1] else array(newX[, 1L],  :
+   [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE[13] FALSE FALSE FALSE
+Execution halted
