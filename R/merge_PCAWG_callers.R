@@ -10,6 +10,11 @@ merge_PCAWG_callers <- function(aliquot.id,
     pcawg.vcf.dir = pcawg.vcf.dir,
     verbose       = verbose)
 
+  if (nrow(joined.dbs) == 0) {
+    warning("No DBSs in ", aliquot.id)
+    return(data.frame("#CHROM" = 0, POS = 0, ALT = 0, num.callers = 0, which.callers = 0)[-1, ])
+  }
+
   merged.dbs <-
     t(apply(
       joined.dbs,
