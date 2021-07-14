@@ -17,9 +17,12 @@ merge_PCAWG_callers <- function(aliquot.id,
       FUN = merge_PCAWG_DBS_calls_one_row))
 
   merged.dbs <- data.table::data.table(merged.dbs)
-  merged.dbs$POS <- as.numeric(merged.dbs$POS)
   colnames(merged.dbs) <-
     c("#CHROM", "POS", "REF", "ALT", "num.callers", "which.callers")
+  merged.dbs$POS <- as.numeric(merged.dbs$POS)
+
+  merged.dbs <- merged.dbs[!is.na(merged.dbs$ALT), ]
+  merged.dbs <- merged.dbs[!is.na(merged.dbs$REF), ]
 
   if (verbose) message("Writing bed file")
   bed <- VCF_to_BED(

@@ -10,8 +10,20 @@ merge_PCAWG_DBS_calls_one_row <- function(row) {
   alt.ok <- which(!is.na(alt))
   ref2 <- unique(ref[ref.ok])
   alt2 <- unique(alt[alt.ok])
-  stopifnot(length(ref2) == 1)
-  stopifnot(length(alt2) == 1)
+  if (length(ref2) != 1) {
+    warning("Row with more than one reference allele: ",
+            paste(ref2, collapse = ", "))
+    bad.row <- utils::capture.output(print(row))
+    warning(bad.row)
+    rev2 <- row["REF_pcawg"]
+  }
+  if (length(alt2) != 1) {
+    warning("Row with more than one alternate allele: ",
+            paste(alt2, collapse = ", "))
+    bad.row <- utils::capture.output(print(row))
+    warning(bad.row)
+    alt2 <- row["ALT_pcawg"]
+  }
   rr <- c(row[c("CHROM", "POS")], REF = ref2, ALT = alt2, num.callers = length(ref.ok), which.caller = which.caller)
   return(rr)
 }
