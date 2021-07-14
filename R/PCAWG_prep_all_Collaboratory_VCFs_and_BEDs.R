@@ -3,7 +3,7 @@
 # The VCFs and BED files are protected data.
 PCAWG_prep_all_Collaboratory_VCFs_and_BEDs <- function(tt) {
   out.vcf.dir <- "~/mvv/PCAWG_all_Collaboratory_VCFs_and_BEDs"
-  prep_PCAWG_VCFs_and_BEDs_from_table(
+  PCAWG_prep_VCFs_and_BEDs_from_table(
     tt,
     out.dir = out.vcf.dir,
     indiv.vcf.dir = "~/collab.vcf/",
