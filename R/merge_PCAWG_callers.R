@@ -4,7 +4,7 @@ merge_PCAWG_callers <- function(aliquot.id,
                                 pcawg.vcf.dir,
                                 out.dir = ".",
                                 verbose = TRUE) {
-  joined.dbs <-  join_PCAWG_callers(
+  joined.dbs <-  PCAWG_join_callers(
     aliquot.id    = aliquot.id,
     indiv.vcf.dir = indiv.vcf.dir,
     pcawg.vcf.dir = pcawg.vcf.dir,

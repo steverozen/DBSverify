@@ -1,4 +1,4 @@
-join_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir, verbose = TRUE) {
+PCAWG_join_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir, verbose = TRUE) {
 
   if (verbose) message("aliquot.id = ", aliquot.id)
 
@@ -12,7 +12,9 @@ join_PCAWG_callers <- function(aliquot.id, indiv.vcf.dir, pcawg.vcf.dir, verbose
     grep("(\\.idx$)|(\\.tbi$)", input.vcfs, value = TRUE, invert = TRUE)
 
   if (length(input.vcfs) != 4) {
-    stop("Not enough input VCFs for aliquot id", aliquot.id)
+    message("Not enough input VCFs for aliquot id", aliquot.id)
+    # Data frame with 0 rows
+    retun(data.frame(1)[-1, , drop = FALSE])
   }
 
   br <- grep("\\.broad", input.vcfs, value = TRUE)
