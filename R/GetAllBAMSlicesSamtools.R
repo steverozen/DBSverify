@@ -47,7 +47,7 @@ GetAllBAMSlicesSamtools <- function(vcf,
 
     slice.filename <- file.path(where.to.put.slices,
                                 paste0(CHROM, "-", POS, ".sam"))
-    if ((verbose > 0) && ((v %% verbose) == 0)) {
+    if ((verbose > 1) && ((v %% verbose) == 0)) {
       message(v, ": ", slice.filename)
     }
 

@@ -11,6 +11,8 @@
 #' @param out.vcf.dir The path to the directory in which to put the "evaluated"
 #'   DBS VCF files.
 #'
+#' @param verbose If > 0 generate some progress messages.
+#'
 #' @details This is a specialized function for processing
 #' PCAWG data from the "Collaboratory" once the
 #' miniBAMs have been created in the Collaboratory and
@@ -28,7 +30,8 @@
 PCAWG_read_table_and_evaluate_DBS <- function(in.table,
                                               in.vcf.dir,
                                               minibam.dir,
-                                              out.vcf.dir = in.vcf.dir) {
+                                              out.vcf.dir = in.vcf.dir,
+                                              verbose     = 1) {
 
   tt <- data.table::fread(in.table)
 
@@ -52,14 +55,17 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
                             )
                           })
 
-  out.vcf.name   <- lapply(tt$aliquot_id,
-                           function(ai) {
-                             return(
-                               file.path(
-                                 in.vcf.dir,
-                                 paste0(ai, "_PCAWG_evaluated.vcf"))
-                             )
-                           })
+  out.vcf.name <-
+    apply(tt,
+          MARGIN = 1,
+          FUN = function(rrr) {
+            return(
+              file.path(
+                in.vcf.dir,
+                paste0(rrr["icgc_donor_id"], "_", rrr["aliquot_id"],
+                       "_PCAWG_evaluated.vcf"))
+            )
+          })
 
   for (ii in 1:nrow(tt)) {
     Read_DBS_VCF_and_BAMs_to_verify_DBSs(
@@ -67,7 +73,8 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
       Nbam.name     = Nbam.name[[ii]],
       Tbam.name     = Tbam.name[[ii]],
       outfile       = out.vcf.name[[ii]],
-      filter.status = NULL)
+      filter.status = NULL,
+      verbose       = verbose)
   }
 }
 
@@ -75,12 +82,13 @@ if (FALSE) {
 
 
   devtools::load_all("~/DBSverify")
-  debug(PCAWG_read_table_and_evaluate_DBS)
+  # debug(PCAWG_read_table_and_evaluate_DBS)
+  # debug(CreateBAMSliceFileSamtools)
   # debug(Read_DBS_VCF_and_BAMs_to_verify_DBSs)
   # debug(ICAMS:::ReadVCFs)
   PCAWG_read_table_and_evaluate_DBS(in.table = "~/DBSverify/data-raw/short_collaboratory_bams.csv",
                                     in.vcf.dir  = "~/mvv/short_test5/",
-                                    bamslice.dir = "~/mvv/bamSlice_folder/")
+                                    minibam.dir = "~/mvv/bamSlice_folder/")
 
 
 

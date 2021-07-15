@@ -14,7 +14,7 @@
 #'
 #' @keywords internal
 
-xCreateBAMSliceFileSamtools <-
+CreateBAMSliceFileSamtools <-
   function(BAM.name, CHROM, POS, padding = 10, save.file.path) {
     POS <- as.numeric(POS) # In case it was a character string.
     BAM.coord <- paste0(CHROM, ":", POS - padding, "-", POS + padding)
@@ -23,10 +23,23 @@ xCreateBAMSliceFileSamtools <-
     }
     status <- system2("samtools",
                       c("view", "-h", BAM.name, BAM.coord),
-                      stdout = save.file.path,
-                      wait = TRUE)
-    if (status == 127) stop("samtools: command not found")
-    if (status != 0) stop("samtools returned error status ", status)
+                      stdout = TRUE,
+                      wait = TRUE,
+                      stderr = TRUE)
+    status2 <- attr(status, "status")
+    errmsg <- attr(status, "errmsg")
+    if (!is.null(errmsg)) {
+      stop("samtools generated errmsg ", errmsg)
+    }
+    if (!is.null(status2)) {
+      if (status2 == 127) stop("samtools: command not found")
+      if (status2 != 0) stop("samtools returned error status ", status2)
+    }
+
+    if (!grepl(pattern = "^@", status[1])) {
+      message("POSSIBE PROBLEM, first line of sam slice does not start with @")
+    }
+    cat(status, sep = "\n", file = save.file.path)
 
     return(save.file.path)
   }

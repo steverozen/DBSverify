@@ -8,7 +8,8 @@ PCAWG_read_table_and_evaluate_DBS(
   in.table,
   in.vcf.dir,
   minibam.dir,
-  out.vcf.dir = in.vcf.dir
+  out.vcf.dir = in.vcf.dir,
+  verbose = 1
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ for testing .../DBSverify/data-raw/short_collaboratory_bams.csv.}
 
 \item{out.vcf.dir}{The path to the directory in which to put the "evaluated"
 DBS VCF files.}
+
+\item{verbose}{If > 0 generate some progress messages.}
 }
 \description{
 Read a table that specifies how to process VCFs and mini-BAMS to evaluate DBS calls, for PCAWG Collaboratory data.

@@ -131,7 +131,7 @@ Read_DBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
     }
   }
 
-if (verbose > 0) {
+  if (verbose > 0) {
     message("Normal BAM               ", Nbam.name)
     message("Tumor BAM                ", Tbam.name)
   }
