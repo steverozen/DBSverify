@@ -80,7 +80,7 @@ Read_SBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
     get.vaf.function <- NULL
     if (variant.caller == "PCAWG") {
       variant.caller <- "unknown"
-      get.vaf.function <- GetPCAWGVAF
+      # get.vaf.function <- GetPCAWGVAF
     }
   } else {
     stop("Unknown variant caller for merging SBSs into DBSs",
@@ -99,7 +99,7 @@ Read_SBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
     vcf.list <-ICAMS::ReadAndSplitVCFs(input.vcf.name,
                                        variant.caller   = variant.caller,
                                        num.of.cores     = 1,
-                                       get.vaf.function = get.vaf.function,
+                                       get.vaf.function = NULL, # get.vaf.function,
                                        max.vaf.diff     = 1,
                                        always.merge.SBS = TRUE)
 

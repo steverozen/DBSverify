@@ -1,4 +1,4 @@
-GetPCAWGVAF<-function(vcf){
+xx.GetPCAWGVAF<-function(vcf){
   tmp<-vcf[[8]]
   tmp<-stringr::str_split_fixed(tmp,"VAF=",2)[,2]
   tmp<-stringr::str_split_fixed(tmp,";",2)[,1]
