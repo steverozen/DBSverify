@@ -31,10 +31,10 @@ This is a specialized function for processing
 PCAWG data from the "Collaboratory" once the
 miniBAMs have been created in the Collaboratory and
 downloaded. The \code{in.table} and associated BED files
-were used to specify the contents of the mini BAMs.
+were used to specify the contents of the miniBAMs.
 The result consists of the "evaluated" DBS VCF files.
 The naming of the input and output VCF files and the mini BAMs is governed
-by the contents of \code{in.table}, wth the VCF file names
+by the contents of \code{in.table}, with the VCF file names
 incorporating the "aliquot_id" and the miniBAM names
 based on the icgc_donor_id and the
 T_Specimen ID and N_Specimen ID.
