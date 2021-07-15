@@ -26,7 +26,10 @@
 #'
 #' @param outfile If not \code{NULL} then write the "evaluated" VCF to \code{outfile};
 #'  otherwise write it to \code{paste0(input.vcf(vcf.name, "_evaluated.vcf")}. Must be
-#'  non-\code{NULL} if \code{} is not a file path.
+#'  non-\code{NULL} if \code{input.vcf} is not a file path.
+#'
+#' @param filter.status If not \code{NULL} only keep rows where the FILTER column
+#'  in the VCF is equal to \code{filter.status}.
 #'
 #' @details Creates a new VCF file.
 #'  This VCF file has no data rows if there were no DBSs to analyze.
@@ -82,7 +85,8 @@ Read_DBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
                                                  unlink.slice.dir = TRUE,
                                                  exclude.SBSs     = TRUE,
                                                  verbose          = 0,
-                                                 outfile          = NULL) {
+                                                 outfile          = NULL,
+                                                 filter.status    = "PASS") {
 
   CheckBAM(Nbam.name)
   CheckBAM(Tbam.name)
@@ -103,7 +107,8 @@ Read_DBS_VCF_and_BAMs_to_verify_DBSs <- function(input.vcf,
     vcf.list <-ICAMS::ReadAndSplitVCFs(input.vcf.name,
                                        variant.caller   = "unknown",
                                        num.of.cores     = 1,
-                                       alwaysa.merge.SBS = FALSE)
+                                       always.merge.SBS = FALSE,
+                                       filter.status    = filter.status)
 
     input.vcf <- vcf.list$DBS[[1]]
 

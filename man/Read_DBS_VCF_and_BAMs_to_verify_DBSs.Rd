@@ -13,7 +13,8 @@ Read_DBS_VCF_and_BAMs_to_verify_DBSs(
   unlink.slice.dir = TRUE,
   exclude.SBSs = TRUE,
   verbose = 0,
-  outfile = NULL
+  outfile = NULL,
+  filter.status = "PASS"
 )
 }
 \arguments{
@@ -44,6 +45,9 @@ generated every \code{verbose} slices.}
 \item{outfile}{If not \code{NULL} then write the "evaluated" VCF to \code{outfile};
 otherwise write it to \code{paste0(input.vcf(vcf.name, "_evaluated.vcf")}. Must be
 non-\code{NULL} if \code{} is not a file path.}
+
+\item{filter.status}{If not \code{NULL} only keep rows where the FILTER column
+in the VCF is equal to \code{filter.status}.}
 }
 \value{
 Invisibly, a list with the elements
