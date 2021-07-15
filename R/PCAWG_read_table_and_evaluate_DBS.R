@@ -6,7 +6,7 @@
 #'
 #' @param in.vcf.dir The path to the directory containing the DBS VCF files.
 #'
-#' @param minbam.dir The path to the directory containing the mini BAMs.
+#' @param minibam.dir The path to the directory containing the mini BAMs.
 #'
 #' @param out.vcf.dir The path to the directory in which to put the "evaluated"
 #'   DBS VCF files.
@@ -27,7 +27,7 @@
 
 PCAWG_read_table_and_evaluate_DBS <- function(in.table,
                                               in.vcf.dir,
-                                              minbam.dir,
+                                              minibam.dir,
                                               out.vcf.dir = in.vcf.dir) {
 
   tt <- data.table::fread(in.table)

@@ -7,7 +7,7 @@
 PCAWG_read_table_and_evaluate_DBS(
   in.table,
   in.vcf.dir,
-  minbam.dir,
+  minibam.dir,
   out.vcf.dir = in.vcf.dir
 )
 }
@@ -18,7 +18,7 @@ for testing .../DBSverify/data-raw/short_collaboratory_bams.csv.}
 
 \item{in.vcf.dir}{The path to the directory containing the DBS VCF files.}
 
-\item{minbam.dir}{The path to the directory containing the mini BAMs.}
+\item{minibam.dir}{The path to the directory containing the mini BAMs.}
 
 \item{out.vcf.dir}{The path to the directory in which to put the "evaluated"
 DBS VCF files.}
