@@ -4,7 +4,7 @@
 PCAWG_prep_all_Collaboratory_VCFs_and_BEDs_cd <- function() {
   out.vcf.dir <- "~/mvv/PCAWG_all_Collaboratory_VCFs_and_BEDs"
   tt          <-  "~/DBSverify/data-raw/4e7cdeda-6dc1-4f17-b853-72a68e5aa7e1.test.row.csv"
-  prep_PCAWG_VCFs_and_BEDs_from_table(
+  PCAWG_prep_VCFs_and_BEDs_from_table(
     tt,
     out.dir = ".",
     indiv.vcf.dir = "~/collab.vcf/",
