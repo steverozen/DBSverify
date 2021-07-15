@@ -40,7 +40,7 @@ and \code{T.slice.dir} before return.}
 
 \item{outfile}{If not \code{NULL} then write the "evaluated" VCF to \code{outfile};
 otherwise write it to \code{paste0(input.vcf(vcf.name, "_evaluated.vcf")}. Must be
-non-\code{NULL} if \code{} is not a file path.}
+non-\code{NULL} if \code{input.vcf} is not a file path.}
 
 \item{verbose}{If > 0 print a message when starting the number of slices
 generated every \code{verbose} slices.}
