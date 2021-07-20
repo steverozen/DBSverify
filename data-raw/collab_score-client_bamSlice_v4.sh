@@ -19,7 +19,7 @@
 # is not fully specified, just the "alliquot id" is provided. The code
 # below addes a suffix to get the file name.)
 #
-# Output: Two miniBAMs for each row in the MASTER_LINK file, one create from
+# Output: Two miniBAMs for each row in the MASTER_LINK file, one created from
 # the tumor BAM file and one created from the normal BAM file; each miniBAM
 # contains the genomic regions specified in the BED file.
 #
