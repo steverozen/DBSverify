@@ -1,15 +1,29 @@
 #!/bin/bash
 
-# This script runs in linux shell on the ICGC Cancer Collaboratory.
+# This script runs in the linux shell on the ICGC Cancer Collaboratory.
 # It fetches tumor and normal BAM files using the "SCORE" client, and
-# the runs sambamba on each tumor-normal pair to create a miniBAM for
-# later download.
+# then runs sambamba on each tumor-normal pair to create corresponding
+# miniBAMs for ater download.
 #
-# Input: A CSV file, each line of which specifies a VCF file to use and
+# Input:
+#
+# 1. A CSV file, each line of which specifies a BED file to use and
 # the "object ID"s and file names of the corresponding tumor and normal
-# BAM files.
+# BAM files. The name of the file is in variable MASTER_LINK below,
+# currently "collaboratory_bams_2021_07_16.csv"; this file is in
+# the steverozen/DBSverify github repo in the data-raw folder.
 #
-# Output:
+# 2.One BED file for each row in the MASTER_LINK file; the BED file
+# specifies the positons to snip out of the tumour and normal BAM files to
+# create a miniBAM with only the regions of interest. (The BED file
+# is not fully specified, just the "alliquot id" is provided. The code
+# below addes a suffix to get the file name.)
+#
+# Output: Two miniBAMs for each row in the MASTER_LINK file, one create from
+# the tumor BAM file and one created from the normal BAM file; each miniBAM
+# contains the genomic regions specified in the BED file.
+#
+# Note: this script does not download the miniBAMS to a "local" computer.
 
 #Pre-req:
 #0) latest sambamba installed in the instance
