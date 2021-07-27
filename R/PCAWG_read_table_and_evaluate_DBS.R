@@ -85,7 +85,7 @@ if (FALSE) {
   # debug(PCAWG_read_table_and_evaluate_DBS)
   # debug(CreateBAMSliceFileSamtools)
   # debug(Read_DBS_VCF_and_BAMs_to_verify_DBSs)
-  # debug(ICAMS:::ReadVCFs)
+  # debug(ICAMS::ReadVCFs)
   PCAWG_read_table_and_evaluate_DBS(in.table = "~/DBSverify/data-raw/short_collaboratory_bams.csv",
                                     in.vcf.dir  = "~/mvv/short_test5/",
                                     minibam.dir = "~/mvv/bamSlice_folder/")
