@@ -11,7 +11,7 @@ HMF_prep_1_BED_and_DBS_VCF <- function(in.vcf,
   num.orignal.dbs  <- 0
   num.adjacent.sbs <- 0
 
-  vcf <- ICAMS:::ReadVCFs(file             = file.path(input.vcf.dir, in.vcf),
+  vcf <- ICAMS::ReadVCFs(file             = file.path(input.vcf.dir, in.vcf),
                           variant.caller   = "unknown",
                           filter.status    = "PASS")
 
@@ -38,8 +38,11 @@ HMF_prep_1_BED_and_DBS_VCF <- function(in.vcf,
   }
   sbs <- vcf[which(nchar(vcf$REF) == 1), ]
   if (nrow(sbs) > 0 ) {
-    vvv <- ICAMS:::SplitSBSVCF(sbs, always.merge.SBS = TRUE)
-    dbs.from.sbs <- vvv$DBS.vcf
+    vvv <- ICAMS::SplitListOfVCFs(
+      list(SBSvcf = sbs),
+      always.merge.SBS = TRUE,
+      variant.caller = "unknown")
+    dbs.from.sbs <- vvv$DBS[[1]]
     if (nrow(dbs.from.sbs > 0)) {
       dbs.from.sbs <- dbs.from.sbs[ , c("CHROM", "POS", "REF", "ALT")]
       num.adjacent.sbs <- nrow(dbs.from.sbs)
