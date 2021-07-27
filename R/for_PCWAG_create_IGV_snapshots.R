@@ -1,10 +1,14 @@
 # Test script for creating IGV snapshots; creates a snapshot for each variant
-# in each tumour.
+# in each tumour. This is a development function and has various
+# file paths hard coded.
 
 # WARNING -- I cannot figure out how to specify the genome using the genome batch command.
-#
+# IGV remembers the last genome version used, so you need to start IGV and select the
+# right genome version before running the code below.
 
 if (FALSE) {
+
+  # These are the commands to generate the snapshots
 
   master.file <- "~/DBSverify/data-raw/short_collaboratory_bams.csv"
 
@@ -40,9 +44,9 @@ for.testing.process.one.row <- function(row, igv.path) {
                              Tbam.name = Tbam.name,
                              out.dir   = new.dir,
                              igv.script.name = igv.script.name,
-                             genome    = "hg19.genome") # Different in Linux versus Windows
+                             genome    = "hg19.genome") # This does not work; cannot figure out how to specify the genome
 
-  foo <- system2(igv.path, args = c(igv.path, "-b", igv.script.name), wait = TRUE) # , env = c(DISPLAY = "localhost:10.0"))
+  foo <- system2(igv.path, args = c(igv.path, "-b", igv.script.name), wait = TRUE)
   # convertGraph::convertGraph()
   # TraMineRextras::convert.g(path = new.dir, from = "pdf", to = "png")
   # qpdf::pdf_combine(input = dir(new.dir, pattern = "\\.*pdf"), output = path(new.dir, "combined.pdf"))
