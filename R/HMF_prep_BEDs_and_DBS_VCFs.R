@@ -3,8 +3,10 @@ if (FALSE) {
   # This is a test command for a small subset of HMF VCFs
   foo <- HMF_prep_BEDs_and_DBS_VCFs(input.vcf.dir = "~/mvv/HMF-VCFs/",
                                     out.bed.dir = "~/mvv/HMF-VCFs-out/",
-                                    out.vcf.dir = "~/mvv/HMF-VCFs-out/"
-                                    )
+                                    out.vcf.dir = "~/mvv/HMF-VCFs-out/")
+  # Subsequently can $ diff ~/mvv/HMF-VCFs-out{,-DBS-VCF-regress}
+  # We cannot make these VCFs part of the standard tests because they are
+  # protected data.
 
   # This was the command used to generate the DBS-only VCF
   # and BED files for Hartwig Medication Foundation (HMF)
