@@ -23,9 +23,9 @@ test_that("Test GetAllBAMSlicesSamtools use tempfile", {
           bam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam"))
     }
 
-    cat("\nTest timing:\n", names(stime), "\n", stime, "\n")
-    cat(round(sum(stime[1:2]) / nrow(dbs.vcf), digits = 3),
-        "CPU seconds per DBS\n")
+    # cat("\nTest timing:\n", names(stime), "\n", stime, "\n")
+    # cat(round(sum(stime[1:2]) / nrow(dbs.vcf), digits = 3),
+    #    "CPU seconds per DBS\n")
 
     sams <- dir(outdir, pattern = ".sam")
     for (ss in sams) {
