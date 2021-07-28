@@ -1,4 +1,4 @@
-test_that("No read support at all from SBS VCF", {
+test_that("No read support at all from SBS VCF 1", {
   xx <- DBSverify::Read_SBS_VCF_and_BAMs_to_verify_DBSs(
     input.vcf = "input/1-30.vcf",
     Nbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
@@ -14,7 +14,7 @@ test_that("No read support at all from SBS VCF", {
   expect_equal(old, new)
 })
 
-test_that("No read support at all from DBS VCF", {
+test_that("No read support at all from DBS VCF 2", {
   xx <- DBSverify::Read_DBS_VCF_and_BAMs_to_verify_DBSs(
     input.vcf = "input/1-30-DBS.vcf",
     Nbam.name = "input/HepG2_AA1_DBSlocs_Tumor.bam",
