@@ -16,7 +16,7 @@ PCAWG_prep_VCFs_and_BEDs_from_table <- function(table.name,
 
 if (FALSE) {
   out.vcf.dir <- "~/mvv/short_test5"
-  tt <-     "./data-raw/short_collaboratory_bams.csv"
+  tt <-     "~/DBSverify/data-raw/short_collaboratory_bams.csv"
   PCAWG_prep_VCFs_and_BEDs_from_table(
     tt,
     out.dir = out.vcf.dir,
@@ -35,7 +35,8 @@ if (FALSE) {
       Nbam.name = file.path(bam.dir, N.bam.root),
       Tbam.name = file.path(bam.dir, T.bam.root),
       verbose   = 1,
-      outfile   = file.path(out.vcf.dir, paste0(rr$aliquot_id, "_evaluated.vcf"))
+      outfile   = file.path(out.vcf.dir, paste0(rr$aliquot_id, "_evaluated.vcf")),
+      filter.status = NULL
     )
   }
 
