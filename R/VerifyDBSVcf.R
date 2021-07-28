@@ -1,4 +1,4 @@
-#' Check whether analysis of individual reads supports DBSs in a VCF.
+#' Given a VCF and the locations of a tumor and normal BAM files check whether analysis of individual reads supports DBSs calls.
 #'
 #' @param vcf An in-memory representation of a "variant call file", VCF, as a \code{data.frame}.
 #'
@@ -41,10 +41,14 @@ VerifyDBSVcf <- function(vcf,
   if (nrow(vcf) == 0) return(vcf)
 
   vcf$ID <- IDVector(vcf)
-  vcf<-vcf[!duplicated(vcf$ID), ]
+  dups <- duplicated(vcf$ID)
+  if (sum(dups) > 9) {
+    warning("DBS ", vcf$ID[dups], " was duplicated")
+  }
+  vcf<-vcf[!dups, ]
   rownames(vcf)<-vcf$ID
 
-  vcf$Format<-paste0("WtReads:pos1reads:pos2reads:MutReads")
+  # vcf$Format<-paste0("WtReads:pos1reads:pos2reads:MutReads")
 
   GetAllBAMSlicesSamtools(vcf                 = vcf,
                           bam.name            = Nbam.name,
