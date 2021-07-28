@@ -2,7 +2,7 @@
 % Please edit documentation in R/VerifyDBSVcf.R
 \name{VerifyDBSVcf}
 \alias{VerifyDBSVcf}
-\title{Check whether analysis of individual reads supports DBSs in a VCF.}
+\title{Given a VCF and the locations of a tumor and normal BAM files check whether analysis of individual reads supports DBSs calls.}
 \usage{
 VerifyDBSVcf(
   vcf,
@@ -38,6 +38,6 @@ An in-memory VCF based on the input \code{vcf} with the additional columns
 as described in \code{\link{Read_DBS_VCF_and_BAMs_to_verify_DBSs}}.
 }
 \description{
-Check whether analysis of individual reads supports DBSs in a VCF.
+Given a VCF and the locations of a tumor and normal BAM files check whether analysis of individual reads supports DBSs calls.
 }
 \keyword{internal}

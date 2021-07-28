@@ -4,21 +4,27 @@
 \alias{ReadSamfile}
 \title{Read a "SAM file", discarding some reads that cannot be interpreted for our purposes}
 \usage{
-ReadSamfile(filename, check.CIGAR = TRUE)
+ReadSamfile(filename)
 }
 \arguments{
 \item{filename}{The name of the SAM file to read.}
-
-\item{check.CIGAR}{Include only reads for which the CIGAR string
-is only \code{\\d+M} (one or more digits followed M, and nothing else before or after).
-This means there are no insertions or deletions in the read
-versus the reference and there is no soft clipping.}
 }
 \value{
-A \code{data.frame} with \code{colnames} for the first 11
-columns, with \code{colnames} as specified in
+A a list with the elements:
+\itemize{
+\item \code{good.reads}, \code{data.frame} with
+with column names for the
+first 11 columns as specified in
 https://en.wikipedia.org/wiki/SAM_(file_format)
-and one row per read.
+with one row per read. The result contains only the
+reads that meet certain conditions.
+\item \code{total.depth}, the initial depth including
+"bad" reads
+\item \code{low.mapq.reads}, the number of reads
+excluded from \code{good.reads} because of low
+map quality.
+\item \code{not.sure...}
+}
 }
 \description{
 Read a "SAM file", discarding some reads that cannot be interpreted for our purposes
@@ -32,6 +38,13 @@ Only keep reads that satisfy certain conditions:
 \item Mate pair maps to same chromosome
 \item Mapping quality >= 30
 \item "FLAG" < 256
+\item The CIGAR string
+is only \code{\\d+M} (one or more digits followed M, and nothing
+else before or after).
+This means there are no insertions or deletions in the read
+versus the reference and there is no soft clipping.
+This function cannot keep track of read locations after insertions
+or deletions.
 }
 }
 \keyword{internal}

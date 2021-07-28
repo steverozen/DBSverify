@@ -2,7 +2,7 @@
 % Please edit documentation in R/Read_DBS_VCF_and_BAMs_to_verify_DBSs.R
 \name{Read_DBS_VCF_and_BAMs_to_verify_DBSs}
 \alias{Read_DBS_VCF_and_BAMs_to_verify_DBSs}
-\title{Determine whether sequencing reads in fact support DBSs present in a VCF file.}
+\title{Determine whether sequencing reads in fact support (candidate) DBSs present in a VCF file.}
 \usage{
 Read_DBS_VCF_and_BAMs_to_verify_DBSs(
   input.vcf,
@@ -54,12 +54,12 @@ Invisibly, a list with the elements
 \enumerate{
 \item The name of the DBS-only VCF file created.
 \item The in-memory representation of the DBS VCF as a \code{data.table}.
-\item The name of the directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
-\item The name of the directory with the tumor sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
+\item The name of the directory with the normal SAM slices, if \code{unlink.slice.dir} is \code{FALSE}.
+\item The name of the directory with the tumor SAM slices, if \code{unlink.slice.dir} is \code{FALSE}.
 }
 }
 \description{
-Determine whether sequencing reads in fact support DBSs present in a VCF file.
+Determine whether sequencing reads in fact support (candidate) DBSs present in a VCF file.
 }
 \details{
 Creates a new VCF file.
@@ -68,7 +68,6 @@ Otherwise, this VCF contains the additional columns.
 Any SBSs or indels in the input are silently ignored,
 and no attempt is made to merge adjacent SBSs.
 \enumerate{
-\item \code{Format} contains the fixed string \code{"WtReads:pos1reads:pos2reads:MutReads"}.
 \item \code{NreadSupport} With regard to the two positions of the DBS in
 the normal BAM, a string with 4 numbers separated by ":", with the numbers
 indicating respectively:
@@ -84,6 +83,13 @@ of reads that have the alternative alleles at both positions of the DBS.
 }
 \item \code{TreadSupport} Information analogous to that in \code{NreadSupport}, for the
 tumor BAM.
+\item \code{num_bad_mapped_reads} The total number of tumor reads with MAPQ < 30
+or with a mate on a different chromosome. If there are many badly mapped
+reads in the slice the slice may represent a segmental duplication.
+\item \code{num_bad_mapped_DBS_reads} The number of tumor reads with the
+putative DBS but with MAPQ < 30 or a mate on a different chromosome.
+If many badly mapped reads support DBSs the DBS might results from
+mismapped reads in a segmental duplication.
 \item \code{DBSconclusion} A string that describes whether the DBSs is
 believable (\code{"True DBS"}), or if the DBS is not
 believable, a string that describes
