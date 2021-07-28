@@ -18,8 +18,10 @@ https
 icgc
 indel
 indels
+MAPQ
 miniBAM
 miniBAMs
+mismapped
 Mut
 mutect
 PCAWG
@@ -29,6 +31,7 @@ Strelka
 nd
 sam
 samtools
+segmental
 steverozen
 tumour
 unlink
