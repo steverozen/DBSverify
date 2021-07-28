@@ -1,3 +1,8 @@
+jig <- function(old, new) {
+  View(dplyr::full_join(old, new))
+  View(new)
+}
+
 basic.test <- function(input.vcf.root, unlink.me = TRUE) {
   vcf.name <- paste0("input/", input.vcf.root, ".vcf")
   xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
@@ -9,6 +14,7 @@ basic.test <- function(input.vcf.root, unlink.me = TRUE) {
   new <- data.table::fread(xx$evaluated.vcf.name)
   old <- data.table::fread(paste0(xx$evaluated.vcf.name, ".regress"))
   if (unlink.me) unlink(xx$evaluated.vcf.name)
+  # jig(old, new)
   expect_equal(old, new)
 }
 
@@ -18,7 +24,7 @@ basic.test <- function(input.vcf.root, unlink.me = TRUE) {
 #  Originally HepG2_AA1_20uM_SL_cl1_SNVresult.vcf
 
 test_that("True DBS",
-          basic.test("1-74823446")) #ok
+          basic.test("1-74823446")) # ok
 
 test_that("True DBS, requires discarding some reads",
           basic.test("1-116218637")) # ok
@@ -33,16 +39,13 @@ test_that("True DBS",
           basic.test("6-98489243")) # ok
 
 test_that("True DBS",
-          basic.test("7-131714192")) # bad
+          basic.test("7-131714192")) # ok
 
 test_that("Neither position supported",
-          basic.test("8-106268966")) # ok Investigate -- lots of reads discarded because of CIGAR
+          basic.test("8-106268966")) # ok Possibly investigate -- lots of reads discarded because of CIGAR
 
 test_that("Adjacent SBSs - 2nd pos only in some reads, DBS in other reads",
           basic.test("10-59377023")) # ok
 
 test_that("2nd position overlaps germline SNP",
-          basic.test("15-94501219")) # bad
-
-
-
+          basic.test("15-94501219")) #xxxxxx bad
