@@ -6,11 +6,16 @@ SummarizeReadSupportFromSlices <- function(vcf, N.slice.dir, T.slice.dir) {
     REF   <- vcf[v, "REF"]
     ALT   <- vcf[v, "ALT"]
 
-    vcf[v, "NreadSupport"] <-
-      Slice2ReadSupport(N.slice.dir, CHROM = CHROM, POS = POS, REF = REF, ALT = ALT)
+    rsN <- Slice2ReadSupport(N.slice.dir,
+                             CHROM = CHROM, POS = POS, REF = REF, ALT = ALT)
+    vcf[v, "NreadSupport"] <- rsN$read.support
 
-    vcf[v, "TreadSupport"] <-
-      Slice2ReadSupport(T.slice.dir, CHROM = CHROM, POS = POS, REF = REF, ALT = ALT)
+    rsT <- Slice2ReadSupport(T.slice.dir,
+                             CHROM = CHROM, POS = POS, REF = REF, ALT = ALT)
+    vcf[v, "TreadSupport"]             <- rsT$read.support
+    vcf[v, "num_bad_mapped_reads"]     <- rsT$num.bad.mapped.reads
+    vcf[v, "num_bad_mapped_DBS_reads"] <- rsT$num.bad.mapped.DBS.reads
+
   }
   return(vcf)
 }

@@ -17,19 +17,36 @@ Slice2ReadSupport <- function(slice.dir, CHROM, POS, REF, ALT) {
   stopifnot(!is.na(REF))
   stopifnot(!is.na(ALT))
 
-  sam.df <- ReadSamfile(file.path(slice.dir,paste0(CHROM, "-", POS, ".sam")))
+  sorted.reads <- ReadSamfile(file.path(slice.dir,paste0(CHROM, "-", POS, ".sam")))
 
-  if (nrow(sam.df) == 0) {
-    return("0:0:0:0")
+  good.reads <- sorted.reads$good.reads
+
+  bad.mapped.reads <- rbind(sorted.reads$reads.with.bad.MAPQ,
+                            sorted.reads$reads.with.bad.Mate_CHROM)
+
+  if (nrow(bad.mapped.reads) > 0 ) {
+    bad.categories <-
+      CategorizeReads(sam = bad.mapped.reads, POS = POS, REF = REF, ALT = ALT)
+    num.bad.mapped.DBS.reads <- sum(bad.categories == "Mut read")
+  } else {
+    num.bad.mapped.DBS.reads <- 0
   }
 
-  categories <- CategorizeReads(sam = sam.df, POS = POS, REF = REF, ALT = ALT)
+  if (nrow(good.reads) == 0) {
+    return(list(read.support             = "0:0:0:0",
+                num.bad.mapped.reads     = nrow(bad.mapped.reads),
+                num.bad.mapped.DBS.reads = num.bad.mapped.DBS.reads))
+  }
+
+  categories <- CategorizeReads(sam = good.reads, POS = POS, REF = REF, ALT = ALT)
 
   read.support <-paste0(sum(categories == "WT read"),":",
                         sum(categories == "Read supports only 1st position"),":",
                         sum(categories == "Read supports only 2nd position"),":",
                         sum(categories == "Mut read"))
 
-  return(read.support)
+  return(list(read.support             = read.support,
+              num.bad.mapped.reads     = nrow(bad.mapped.reads),
+              num.bad.mapped.DBS.reads = num.bad.mapped.DBS.reads))
 
 }

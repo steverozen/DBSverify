@@ -1,4 +1,4 @@
-#' Determine whether sequencing reads in fact support DBSs present in a VCF file.
+#' Determine whether sequencing reads in fact support (candidate) DBSs present in a VCF file.
 #'
 #' @param input.vcf If a character string, then the path to a VCF file; otherwise
 #'   A a single VCF "file" as a data.frame or similar object.
@@ -37,8 +37,6 @@
 #'  Any SBSs or indels in the input are silently ignored,
 #'  and no attempt is made to merge adjacent SBSs.
 #'
-#'  1. \code{Format} contains the fixed string \code{"WtReads:pos1reads:pos2reads:MutReads"}.
-#'
 #'  1. \code{NreadSupport} With regard to the two positions of the DBS in
 #'     the normal BAM, a string with 4 numbers separated by ":", with the numbers
 #'     indicating respectively:
@@ -58,6 +56,15 @@
 #'  1. \code{TreadSupport} Information analogous to that in \code{NreadSupport}, for the
 #'     tumor BAM.
 #'
+#'  1. \code{num_bad_mapped_reads} The total number of tumor reads with MAPQ < 30
+#'     or with a mate on a different chromosome. If there are many badly mapped
+#'     reads in the slice the slice may represent a segmental duplication.
+#'
+#'  1. \code{num_bad_mapped_DBS_reads} The number of tumor reads with the
+#'     putative DBS but with MAPQ < 30 or a mate on a different chromosome.
+#'     If many badly mapped reads support DBSs the DBS might results from
+#'     mismapped reads in a segmental duplication.
+#'
 #'  1. \code{DBSconclusion} A string that describes whether the DBSs is
 #'     believable (\code{"True DBS"}), or if the DBS is not
 #'     believable, a string that describes
@@ -69,9 +76,9 @@
 #'
 #' 1. The in-memory representation of the DBS VCF as a \code{data.table}.
 #'
-#' 1. The name of the directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
+#' 1. The name of the directory with the normal SAM slices, if \code{unlink.slice.dir} is \code{FALSE}.
 #'
-#' 1. The name of the directory with the tumor sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
+#' 1. The name of the directory with the tumor SAM slices, if \code{unlink.slice.dir} is \code{FALSE}.
 #'
 #' @md
 #' @export
