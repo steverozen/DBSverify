@@ -21,9 +21,12 @@ Description: DBSverify stands for "Doublet Base Substitution verify". The
              base mutations on homologous chromosomes, or adjacent 
              mutations that occurred on the same chromosome but at 
              detectably different times. Many somatic mutation callers do
-             not call DBSs at all, and those that do sometime make 
+             not call DBSs at all, and those that do sometimes make 
              obvious errors, such as calling DBSs that consist of a 
              germline SNP next to a somatic single base mutation.
+             Because of the way the functionality of this package is used,
+             the main function for most users will be 
+             Read_DBS_VCF_and_BAMs_to_verify_DBSs.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

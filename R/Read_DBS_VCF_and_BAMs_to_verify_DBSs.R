@@ -80,8 +80,6 @@
 #' which depends on classification of individual reads in
 #' \code{\link{ReadSamfile}}. They include:
 #'
-#' * Criterion 1
-#'
 #'
 #' @return Invisibly, a list with the elements
 #'

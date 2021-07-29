@@ -11,7 +11,7 @@
 #' @param max.half.support.T.reads Do not tolerate more than this number of reads in the tumor
 #'   that support one but not both mutated positions.
 #'
-#' @return A vcf with the field \code{DBSconclusion} populated.
+#' @return A VCF with the field \code{DBSconclusion} populated.
 #'
 #' @keywords internal
 

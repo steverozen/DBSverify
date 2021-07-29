@@ -19,7 +19,7 @@ partial germline variant.}
 that support one but not both mutated positions.}
 }
 \value{
-A vcf with the field \code{DBSconclusion} populated.
+A VCF with the field \code{DBSconclusion} populated.
 }
 \description{
 Examines every row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are real.

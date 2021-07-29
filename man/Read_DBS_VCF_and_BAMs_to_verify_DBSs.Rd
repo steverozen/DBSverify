@@ -105,7 +105,4 @@ that nevertheless have high MAPQ (mapping quality). The code that
 implements these criteria is in \code{\link{DBS_conclusion_1_row}},
 which depends on classification of individual reads in
 \code{\link{ReadSamfile}}. They include:
-\itemize{
-\item Criterion 1
-}
 }
