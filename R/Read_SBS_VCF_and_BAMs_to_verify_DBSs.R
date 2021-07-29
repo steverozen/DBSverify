@@ -1,51 +1,17 @@
-#' Agressively merge SBSs into DBSs then determine whether sequencing reads in fact support DBSs.
+#' Aggressively merge SBSs into DBSs then determine whether sequencing reads in fact support DBSs.
 #'
 #' @param variant.caller One of \code{"strelka"}, \code{"PCAWG"},
 #'  or \code{"unknown"}.
 #'  Merging adjacent SBS is done by \code{\link[ICAMS]{ReadAndSplitVCFs}}.
-#'  Do not use this for callers that
 #'
 #' @inheritParams Read_DBS_VCF_and_BAMs_to_verify_DBSs
 #'
 #' @details Note: argument \code{input.vcf} must be a file path.
 #'  This function creates a new VCF file.
-#'  This VCF file has no data rows if there were no DBSs to analyze.
-#'  Otherwise, this VCF contains the additional columns
+#'  See \code{\link{Read_DBS_VCF_and_BAMs_to_verify_DBSs}}
+#'  for details.
 #'
-#'  1. \code{Format} contains the fixed string \code{"WtReads:pos1reads:pos2reads:MutReads"}.
-#'
-#'  1. \code{NreadSupport} With regard to the two positions of the DBS in
-#'     the normal BAM, a string with 4 numbers separated by ":", with the numbers
-#'     indicating respectively:
-#'
-#'     * the number of reads that are reference sequence at
-#'     both positions of the DBS,
-#'
-#'     * the number of reads that that have the alternative
-#'     allele only at the 1st position of the DBS,
-#'
-#'     * the number of reads that
-#'     have the alternative allele only at the second position of the DBS, and
-#'
-#'     * the number
-#'     of reads that have the alternative alleles at both positions of the DBS.
-#'
-#'  1. \code{TreadSupport} Information analogous to that in \code{NreadSupport}, for the
-#'     tumor BAM.
-#'
-#'  1. \code{DBSconclusion} A string that describes whether the DBSs is
-#'     believable (\code{"True DBS"}), and if not, a string that describes
-#'     why not.
-#'
-#' @return Invisibly, a list with the elements
-#'
-#' 1. The name of the DBS-only VCF file created.
-#'
-#' 1. The in-memory representation of the DBS VCF as a \code{data.table}.
-#'
-#' 1. The directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
-#'
-#' 1. The directory with the tumor sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
+#' @return  Same as \code{\link{Read_DBS_VCF_and_BAMs_to_verify_DBSs}}.
 #'
 #' @md
 #' @export

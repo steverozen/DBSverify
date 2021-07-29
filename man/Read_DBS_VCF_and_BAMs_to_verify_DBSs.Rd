@@ -64,7 +64,7 @@ Determine whether sequencing reads in fact support (candidate) DBSs present in a
 \details{
 Creates a new VCF file.
 This VCF file has no data rows if there were no DBSs to analyze.
-Otherwise, this VCF contains the additional columns.
+Otherwise, this VCF contains some additional columns.
 Any SBSs or indels in the input are silently ignored,
 and no attempt is made to merge adjacent SBSs.
 \enumerate{
@@ -94,5 +94,18 @@ mismapped reads in a segmental duplication.
 believable (\code{"True DBS"}), or if the DBS is not
 believable, a string that describes
 why not.
+}
+
+The decision in \code{DBSconclusion} is based on multiple criteria.
+I also suggest relying on any available upstream filtering of SBSs
+that get merged into DBSs, as well as upstream filtering of DBSs.
+It is difficult to capture all the possible characteristics of
+likely miscalled DBSs, especially if they stem from mismapped reads
+that nevertheless have high MAPQ (mapping quality). The code that
+implements these criteria is in \code{\link{DBS_conclusion_1_row}},
+which depends on classification of individual reads in
+\code{\link{ReadSamfile}}. They include:
+\itemize{
+\item Criterion 1
 }
 }

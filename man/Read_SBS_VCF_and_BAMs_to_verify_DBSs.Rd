@@ -2,7 +2,7 @@
 % Please edit documentation in R/Read_SBS_VCF_and_BAMs_to_verify_DBSs.R
 \name{Read_SBS_VCF_and_BAMs_to_verify_DBSs}
 \alias{Read_SBS_VCF_and_BAMs_to_verify_DBSs}
-\title{Agressively merge SBSs into DBSs then determine whether sequencing reads in fact support DBSs.}
+\title{Aggressively merge SBSs into DBSs then determine whether sequencing reads in fact support DBSs.}
 \usage{
 Read_SBS_VCF_and_BAMs_to_verify_DBSs(
   input.vcf,
@@ -26,8 +26,7 @@ A a single VCF "file" as a data.frame or similar object.}
 
 \item{variant.caller}{One of \code{"strelka"}, \code{"PCAWG"},
 or \code{"unknown"}.
-Merging adjacent SBS is done by \code{\link[ICAMS]{ReadAndSplitVCFs}}.
-Do not use this for callers that}
+Merging adjacent SBS is done by \code{\link[ICAMS]{ReadAndSplitVCFs}}.}
 
 \item{N.slice.dir}{Directory for the slices of the normal BAM.
 Created if necessary.}
@@ -46,41 +45,14 @@ non-\code{NULL} if \code{input.vcf} is not a file path.}
 generated every \code{verbose} slices.}
 }
 \value{
-Invisibly, a list with the elements
-\enumerate{
-\item The name of the DBS-only VCF file created.
-\item The in-memory representation of the DBS VCF as a \code{data.table}.
-\item The directory with the normal sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
-\item The directory with the tumor sam slices, if \code{unlink.slice.dir} is \code{FALSE}.
-}
+Same as \code{\link{Read_DBS_VCF_and_BAMs_to_verify_DBSs}}.
 }
 \description{
-Agressively merge SBSs into DBSs then determine whether sequencing reads in fact support DBSs.
+Aggressively merge SBSs into DBSs then determine whether sequencing reads in fact support DBSs.
 }
 \details{
 Note: argument \code{input.vcf} must be a file path.
 This function creates a new VCF file.
-This VCF file has no data rows if there were no DBSs to analyze.
-Otherwise, this VCF contains the additional columns
-\enumerate{
-\item \code{Format} contains the fixed string \code{"WtReads:pos1reads:pos2reads:MutReads"}.
-\item \code{NreadSupport} With regard to the two positions of the DBS in
-the normal BAM, a string with 4 numbers separated by ":", with the numbers
-indicating respectively:
-\itemize{
-\item the number of reads that are reference sequence at
-both positions of the DBS,
-\item the number of reads that that have the alternative
-allele only at the 1st position of the DBS,
-\item the number of reads that
-have the alternative allele only at the second position of the DBS, and
-\item the number
-of reads that have the alternative alleles at both positions of the DBS.
-}
-\item \code{TreadSupport} Information analogous to that in \code{NreadSupport}, for the
-tumor BAM.
-\item \code{DBSconclusion} A string that describes whether the DBSs is
-believable (\code{"True DBS"}), and if not, a string that describes
-why not.
-}
+See \code{\link{Read_DBS_VCF_and_BAMs_to_verify_DBSs}}
+for details.
 }
