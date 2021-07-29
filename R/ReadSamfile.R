@@ -45,6 +45,12 @@ ReadSamfile <- function(filename) {
   # SAM file headers start with "@"; discard them and keep the
   # lines that contains reads.
   read.lines <- sam.lines[-grep("^@", sam.lines)]
+  dups <- duplicated(read.lines)
+  if (any(dups)) {
+    warning("\nSAM file ", filename, " duplicated reads: ",
+         paste(read.lines[dups], sep = "\n"), "\n\n"
+    )
+  }
 
   possible.good.reads <- as.data.frame(stringr::str_split_fixed(read.lines, "\t", 16))
   colnames(possible.good.reads)[1:11] <-
