@@ -58,16 +58,24 @@ DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.half.support.T.r
     return("Neither position supported")
   }
 
+  T.dbs <- T.read.counts[dbs]
   if (sum(T.read.counts[c(pos1, pos2)]) > max.half.support.T.reads) {
     return("Adjacent SBSs")
   } else {
-    if (T.read.counts[dbs] == 0) {
+    if (T.dbs == 0) {
       return("0 tumor reads support the DBS")
     }
-    if (T.read.counts[dbs] == 1) {
+    if (T.dbs == 1) {
       return("Only 1 tumor read supports the DBS")
     }
-    # At thiis point T.read.counts[dbs] > 1)
+    # At this point T.dbs > 1) and N.read.counts[dbs] %in% 0:1
+    if (as.numeric(row["num_bad_mapped_reads"]) >= sum(T.read.counts)) {
+      return("Too many badly mapped tumor reads")
+    }
+    if (as.numeric(row["num_bad_mapped_DBS_reads"]) >= T.dbs) {
+      return("Too many badly mapped DBS reads")
+    }
+
     if (N.read.counts[dbs] == 0) {
       return("True DBS")
     }
@@ -76,7 +84,7 @@ DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.half.support.T.r
       # as in the normal?
       pp <- stats::fisher.test(
         matrix(c(N.read.counts[wt], 1,
-                 T.read.counts[wt], T.read.counts[dbs]),
+                 T.read.counts[wt], T.dbs),
                ncol = 2),
         alt = "g")$p.value
       if (pp > p.cutoff) {
