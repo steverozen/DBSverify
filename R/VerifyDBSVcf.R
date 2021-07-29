@@ -42,7 +42,7 @@ VerifyDBSVcf <- function(vcf,
 
   vcf$ID <- IDVector(vcf)
   dups <- duplicated(vcf$ID)
-  if (sum(dups) > 9) {
+  if (any(dups)) {
     warning("DBS ", vcf$ID[dups], " was duplicated")
   }
   vcf<-vcf[!dups, ]
