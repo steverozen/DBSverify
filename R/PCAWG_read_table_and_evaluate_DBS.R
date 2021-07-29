@@ -79,7 +79,7 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
 }
 
 if (FALSE) {
-
+  # bam.dir <- "~/mvv/collab_minibam"
 
   devtools::load_all("~/DBSverify")
   # debug(PCAWG_read_table_and_evaluate_DBS)
@@ -90,6 +90,31 @@ if (FALSE) {
                                     in.vcf.dir  = "~/mvv/short_test5/",
                                     minibam.dir = "~/mvv/bamSlice_folder/")
 
+
+  # Checking results
+  # DO52612
+  nn <- data.table::fread("~/mvv/short_test5/DO52611_f82d213f-9ba5-7b6b-e040-11ac0c486882_PCAWG_evaluated.vcf")
+  oo <- data.table::fread("~/mvv/short_test5/f82d213f-9ba5-7b6b-e040-11ac0c486882_evaluated.vcf")
+  mismatch <- which(nn != oo)
+  unlist(oo)[mismatch]
+  unlist(nn)[mismatch]
+
+  ff <- function(eval.vcf.name) {
+    location <- "~/mvv/short_test5"
+    nn <- data.table::fread(file.path(location, eval.vcf.name))
+    old.vcf <- gsub("DO....._", "", eval.vcf.name)
+    old.vcf <- gsub("_PCAWG", "", old.vcf)
+    oo <- data.table::fread(file.path(old.vcf))
+    mismatch <- which(oo != nn)
+    print(unlist(oo)[mismatch])
+    print("")
+    print(unlist(nn)[mismatch])
+    return(list(oo = oo, nn = nn))
+  }
+
+  ff("DO52611_f82d213f-9ba5-7b6b-e040-11ac0c486882_PCAWG_evaluated.vcf")
+  ff("DO52610_f221c897-6ad0-0df9-e040-11ac0c4813ef_PCAWG_evaluated.vcf")
+  ff("DO52608_f8696c79-b165-92a6-e040-11ac0c4804bf_PCAWG_evaluated.vcf")
 
 
 
