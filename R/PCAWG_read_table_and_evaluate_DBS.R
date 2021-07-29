@@ -45,7 +45,6 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
 
   Nbam.name <- apply(tt, MARGIN = 1, make.bam.name, "N_Specimen ID")
 
-
   in.vcf.name   <- lapply(tt$aliquot_id,
                           function(ai) {
                             return(
