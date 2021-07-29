@@ -1,4 +1,4 @@
-#' Read a "SAM file", discarding some reads that cannot be interpreted for our purposes
+#' Read a "SAM file", discarding some reads that cannot be interpreted for our purposes.
 #'
 #' @details
 #' SAM stands for "Sequence Alignment Map", a text file that
@@ -31,13 +31,22 @@
 #' * \code{total.depth}, the initial depth including
 #' "bad" reads
 #'
-#' * \code{low.mapq.reads}, the number of reads
-#' excluded from \code{good.reads} because of low
-#' map quality.
+#' * \code{reads.with.bad.FLAG}. These are reads
+#'  with FLAG >= 256, which marks reads that
+#' (i) are "not primary alignment"
+#' (ii) failed vendor QC
+#' (iii) are PCR or optical duplicates
+#' (iv) are supplementary alignments (e.g. split, split /inverted read).
+#'  See https://broadinstitute.github.io/picard/explain-flags.html
 #'
-#' * \code{not.sure...}
+#' * \code{reads.with.bad.CIGAR}, reads with CIGAR string
+#'  that indicates an indel in the read or clipping.
 #'
-#' @keywords internal
+#' * \code{reads.with.bad.MAPQ}, reads with MAPQ < 30.
+#'
+#' * \code{reads.with.bad.Mate_CHROM}, reads with a
+#'   mate on a different chromosome.
+
 
 ReadSamfile <- function(filename) {
   sam.lines <- readLines(filename)

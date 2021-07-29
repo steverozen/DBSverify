@@ -7,7 +7,7 @@
 Slice2ReadSupport(slice.dir, CHROM, POS, REF, ALT)
 }
 \arguments{
-\item{slice.dir}{The directory containing the sam / bam slices.}
+\item{slice.dir}{The directory containing the SAM slices.}
 
 \item{CHROM}{The chromosome identifier.}
 
@@ -20,4 +20,3 @@ Slice2ReadSupport(slice.dir, CHROM, POS, REF, ALT)
 \description{
 Calculate the support for a putative DBS from the SAM slice containing the overlapping reads.
 }
-\keyword{internal}

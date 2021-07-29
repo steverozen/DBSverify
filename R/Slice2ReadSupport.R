@@ -1,6 +1,6 @@
 #' Calculate the support for a putative DBS from the SAM slice containing the overlapping reads.
 #'
-#' @param slice.dir The directory containing the sam / bam slices.
+#' @param slice.dir The directory containing the SAM slices.
 #'
 #' @param CHROM The chromosome identifier.
 #'
@@ -9,8 +9,6 @@
 #' @param REF The reference variant.
 #'
 #' @param ALT The alternate variant.
-#'
-#' @keywords internal
 
 Slice2ReadSupport <- function(slice.dir, CHROM, POS, REF, ALT) {
 

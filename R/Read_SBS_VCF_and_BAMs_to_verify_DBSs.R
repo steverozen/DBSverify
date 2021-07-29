@@ -2,7 +2,7 @@
 #'
 #' @param variant.caller One of \code{"strelka"}, \code{"PCAWG"},
 #'  or \code{"unknown"}.
-#'  Merging adjacent SBS is done by \code{\link[ICAMS]{ReadAndSplitVCFs}}.
+#'  Merging adjacent SBS is done by \code{ReadAndSplitVCFs} in the ICAMS package.
 #'
 #' @inheritParams Read_DBS_VCF_and_BAMs_to_verify_DBSs
 #'

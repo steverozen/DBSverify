@@ -26,7 +26,7 @@ A a single VCF "file" as a data.frame or similar object.}
 
 \item{variant.caller}{One of \code{"strelka"}, \code{"PCAWG"},
 or \code{"unknown"}.
-Merging adjacent SBS is done by \code{\link[ICAMS]{ReadAndSplitVCFs}}.}
+Merging adjacent SBS is done by \code{ReadAndSplitVCFs} in the ICAMS package.}
 
 \item{N.slice.dir}{Directory for the slices of the normal BAM.
 Created if necessary.}
