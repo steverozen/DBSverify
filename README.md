@@ -20,12 +20,12 @@ obvious errors, such as calling DBSs that consist of a
 germline SNP next to a somatic single base mutation.
 
 The main function is *Read_DBS_VCF_and_BAMs_to_verify_DBSs*
-if you have already called DBSs. If you have a variants
-caller that does not call DBSs you can combine adjacent
-SBSs as candidate DBSs and then
-verify the candidate DBSs using *Read_SBS_VCF_and_BAMs_to_verify_DBSs*.
+if you have a VCF with already-called DBSs. If you have a variant
+caller that does not call DBSs you can use
+*Read_SBS_VCF_and_BAMs_to_verify_DBSs* to combine adjacent
+SBSs to be analyzed as DBSs.
 
 To install
 
-remotes::install_github("steverozen/DBSverify", ref = "master")
+remotes::install_github("steverozen/DBSverify")
 
