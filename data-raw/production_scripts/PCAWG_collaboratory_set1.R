@@ -1,3 +1,5 @@
+#!/usr/local/bin/Rscript
+
 library(DBSverify)
 
 PCAWG_read_table_and_evaluate_DBS(
