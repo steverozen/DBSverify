@@ -1,8 +1,12 @@
 #' @keywords internal
 
-CheckBAM <- function(bam.name) {
+CheckBAM <- function(bam.name, must.succeed = TRUE) {
   if (!file.exists(bam.name)) {
-    stop("BAM file ", bam.name, " does not exist" )
+    if (must.succeed) {
+      stop("BAM file ", bam.name, " does not exist" )
+    } else {
+      return(FALSE)
+    }
   }
 
   index <- paste0(bam.name, ".bai")
@@ -10,4 +14,5 @@ CheckBAM <- function(bam.name) {
     stop("BAM index file ", index, " does not exist; run samtools index" )
   }
 
+  return(TRUE)
 }
