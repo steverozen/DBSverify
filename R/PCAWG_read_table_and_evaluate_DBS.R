@@ -13,12 +13,12 @@
 #'
 #' @param bam.suffix String to add to end of BAM file name; depends on
 #'   the conventions used by the script (run on the Collaboratory)
-#'   that generated the minibams.
+#'   that generated the miniBAMs.
 #'
 #' @param verbose If > 0 generate some progress messages.
 #'
 #' @details This is a specialized function for processing
-#' PCAWG data from the ICGC (Internation Cancer
+#' PCAWG data from the ICGC (International Cancer
 #' Genome) "Collaboratory" cloud computing system, once the
 #' miniBAMs have been created in the Collaboratory and
 #' downloaded. The \code{in.table} and associated BED files
