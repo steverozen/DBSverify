@@ -9,6 +9,7 @@ PCAWG_read_table_and_evaluate_DBS(
   in.vcf.dir,
   minibam.dir,
   out.vcf.dir = in.vcf.dir,
+  bam.suffix = "_dbs_srt",
   verbose = 1
 )
 }
@@ -24,6 +25,10 @@ for testing .../DBSverify/data-raw/short_collaboratory_bams.csv.}
 \item{out.vcf.dir}{The path to the directory in which to put the "evaluated"
 DBS VCF files.}
 
+\item{bam.suffix}{String to add to end of BAM file name; depends on
+the conventions used by the script (run on the Collaboratory)
+that generated the minibams.}
+
 \item{verbose}{If > 0 generate some progress messages.}
 }
 \description{
@@ -31,7 +36,8 @@ Read a table that specifies how to process VCFs and mini-BAMS to evaluate DBS ca
 }
 \details{
 This is a specialized function for processing
-PCAWG data from the "Collaboratory" once the
+PCAWG data from the ICGC (Internation Cancer
+Genome) "Collaboratory" cloud computing system, once the
 miniBAMs have been created in the Collaboratory and
 downloaded. The \code{in.table} and associated BED files
 were used to specify the contents of the miniBAMs.

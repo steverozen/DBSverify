@@ -18,7 +18,8 @@
 #' @param verbose If > 0 generate some progress messages.
 #'
 #' @details This is a specialized function for processing
-#' PCAWG data from the "Collaboratory" once the
+#' PCAWG data from the ICGC (Internation Cancer
+#' Genome) "Collaboratory" cloud computing system, once the
 #' miniBAMs have been created in the Collaboratory and
 #' downloaded. The \code{in.table} and associated BED files
 #' were used to specify the contents of the miniBAMs.
