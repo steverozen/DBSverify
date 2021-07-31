@@ -46,10 +46,13 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
     return(rx)
   }
 
+  # Get a vector of the tumor BAM names based on tt.
   Tbam.name <- apply(tt, MARGIN = 1, make.bam.name, "T_Specimen ID")
 
+  # Get a vector of the normal BAM names based on tt.
   Nbam.name <- apply(tt, MARGIN = 1, make.bam.name, "N_Specimen ID")
 
+  # Get a vector of the input VCF file names based tt.
   in.vcf.name   <- lapply(tt$aliquot_id,
                           function(ai) {
                             return(
@@ -58,7 +61,7 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
                                 paste0(ai, "_merged_PCAWG_DBS.vcf"))
                             )
                           })
-
+  # Get a vector of the output VCF file names based on tt.
   out.vcf.name <-
     apply(tt,
           MARGIN = 1,
@@ -73,16 +76,22 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
 
   for (ii in 1:nrow(tt)) {
     if (!CheckBAM(Nbam.name[[ii]], must.succeed = FALSE)) {
-      message("Skipping ", in.vcf.name[[ii]], "; no corresponding BAMs")
+      message("Skipping ", in.vcf.name[[ii]], "; no correspondin normal BAM")
       next
     }
-    Read_DBS_VCF_and_BAMs_to_verify_DBSs(
-      input.vcf     = in.vcf.name[[ii]],
-      Nbam.name     = Nbam.name[[ii]],
-      Tbam.name     = Tbam.name[[ii]],
-      outfile       = out.vcf.name[[ii]],
-      filter.status = NULL,
-      verbose       = verbose)
+    if (!CheckBAM(Tbam.name[[ii]], must.succeed = FALSE)) {
+      message("Skipping ", in.vcf.name[[ii]], "; no corresponding tumor BAM")
+      next
+    }
+    try(
+      Read_DBS_VCF_and_BAMs_to_verify_DBSs(
+        input.vcf     = in.vcf.name[[ii]],
+        Nbam.name     = Nbam.name[[ii]],
+        Tbam.name     = Tbam.name[[ii]],
+        outfile       = out.vcf.name[[ii]],
+        filter.status = NULL,
+        verbose       = verbose)
+    )
   }
 }
 
