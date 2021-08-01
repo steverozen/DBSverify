@@ -77,7 +77,7 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
 
   for (ii in 1:nrow(tt)) {
     if (!CheckBAM(Nbam.name[[ii]], must.succeed = FALSE)) {
-      message("Skipping ", in.vcf.name[[ii]], "; no correspondin normal BAM")
+      message("Skipping ", in.vcf.name[[ii]], "; no corresponding normal BAM")
       next
     }
     if (!CheckBAM(Tbam.name[[ii]], must.succeed = FALSE)) {
