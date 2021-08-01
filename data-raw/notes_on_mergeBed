@@ -1,0 +1,12 @@
+notes on merging bed files
+
+/gpfs/public/tools/bedtools/bedtools-v2.25.0/mergeBed
+
+example w/ possible dups
+
+ ~/mvv/PCAWG_all_Collaboratory_VCFs_and_BEDs//00b9d0e6-69dc-4345-bffd-ce32880c8eef_merged_PCAWG_DBS.vcf
+
+
+
+/gpfs/public/tools/bedtools/bedtools-v2.25.0/sortBed -i ~/mvv/PCAWG_all_Collaboratory_VCFs_and_BEDs//00b9d0e6-69dc-4345-bffd-ce32880c8eef_merged_PCAWG_DBS.bed > s1.bed
+/gpfs/public/tools/bedtools/bedtools-v2.25.0/mergeBed -i s1.bed > m1.bed
