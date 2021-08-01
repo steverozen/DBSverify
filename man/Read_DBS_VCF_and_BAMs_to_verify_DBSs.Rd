@@ -104,5 +104,22 @@ likely miscalled DBSs, especially if they stem from mismapped reads
 that nevertheless have high MAPQ (mapping quality). The code that
 implements these criteria is in \code{\link{DBS_conclusion_1_row}},
 which depends on classification of individual reads in
-\code{\link{ReadSamfile}}. They include:
+\code{\link{ReadSamfile}}. The filtering of reads in the
+input SAM files is described in the documentation for \code{\link{ReadSamfile}}.
+
+Once the reads to analyze are selected, additional criteria include
+\itemize{
+\item There must be >= 5 normal reads at the site of the putative tumor DBS.
+\item The normal reads at each separate position of the DBS must have
+<  20\% variant calls.
+\item < 2 normal reads have the DBS.
+\item At least 2 tumor reads have the DBS.
+\item There are more well-mapped tumor reads than badly mapped
+tumor reads at the site of the DBS.
+\item There are more well-mapped tumor reads than badly mapped
+tumor reads that contain the DBS.
+\item If 1 normal read supports the DBS, then
+there must be a statistically greater proportion of
+tumor reads supporting the DBS (by Fisher's test).
+}
 }

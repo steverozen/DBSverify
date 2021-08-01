@@ -2,7 +2,7 @@
 % Please edit documentation in R/DBS_conclusion_1_row.R
 \name{DBS_conclusion_1_row}
 \alias{DBS_conclusion_1_row}
-\title{Examine 1 row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decide which DBSs are real.}
+\title{Examine 1 row of a DBS-only VCF that was already processed by \code{\link{Slice2ReadSupport}} to decide if the DBS is likely real.}
 \usage{
 DBS_conclusion_1_row(row, germlineCutOff = 0.2, max.half.support.T.reads = 1)
 }
@@ -22,5 +22,5 @@ that support one but not both mutated positions.}
 A character string indicating the conclusion about the putative DBS.
 }
 \description{
-Examine 1 row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decide which DBSs are real.
+Examine 1 row of a DBS-only VCF that was already processed by \code{\link{Slice2ReadSupport}} to decide if the DBS is likely real.
 }

@@ -40,6 +40,7 @@ dbs.cats <- ICAMS::VCFsToDBSCatalogs(
 
 ICAMS::PlotCatalogToPdf(dbs.cats$catDBS78, "collab-set1-DBS.pdf")
 
+
 if (FALSE) {
   # ask nanhai to debug
 all.output <- ICAMS::VCFsToCatalogs(
