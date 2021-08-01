@@ -2,7 +2,7 @@
 % Please edit documentation in R/DBSConclusion.R
 \name{DBSConclusion}
 \alias{DBSConclusion}
-\title{Examines every row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are real.}
+\title{Examines every row of of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are likely real.}
 \usage{
 DBSConclusion(vcf, germlineCutOff = 0.2, max.half.support.T.reads = 1)
 }
@@ -22,6 +22,6 @@ that support one but not both mutated positions.}
 A VCF with the field \code{DBSconclusion} populated.
 }
 \description{
-Examines every row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are real.
+Examines every row of of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decides which DBSs are likely real.
 }
 \keyword{internal}

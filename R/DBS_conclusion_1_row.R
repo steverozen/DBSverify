@@ -1,4 +1,4 @@
-#' Examine 1 row of DBS VCF already processed by \code{\link{Slice2ReadSupport}} and decide which DBSs are real.
+#' Examine 1 row of a DBS-only VCF that was already processed by \code{\link{Slice2ReadSupport}} to decide if the DBS is likely real.
 #'
 #' @param row One row of a DBS VCF (as a \code{data.frame})
 #' already processed by \code{\link{Slice2ReadSupport}}  (so that the fields
