@@ -8,5 +8,5 @@ PCAWG_read_table_and_evaluate_DBS(
   minibam.dir = "~/mvv/collab-minibams-set1/",
   out.vcf.dir = "~/mvv/collab-minibams-set1-output-VCFs-bis/")
 
-# Just in options(warn = 1) didn't work
+# Just in case options(warn = 1) didn't work
 warnings()
