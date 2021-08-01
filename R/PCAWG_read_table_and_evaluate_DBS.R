@@ -39,6 +39,8 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
                                               bam.suffix = "_dbs_srt",
                                               verbose     = 1) {
 
+  options(warn = 1) # Print warnings as they occur
+
   tt <- data.table::fread(in.table)
 
   make.bam.name <- function(rrr, which.spec.id) {
