@@ -13,7 +13,7 @@
 #'
 #' @return A character string indicating the conclusion about the putative DBS.
 
-DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.half.support.T.reads = 1) {
+DBS_conclusion_1_row <- function(row, germlineCutOff = 0.1, max.half.support.T.reads = 1) {
   wt   <- 1
   pos1 <- 2
   pos2 <- 3
@@ -31,10 +31,7 @@ DBS_conclusion_1_row <- function(row, germlineCutOff = 0.2, max.half.support.T.r
 
   T.read.counts <-
     as.numeric(unlist(strsplit(row["TreadSupport"], ":", fixed = TRUE)))
-  #if (N.read.prop[pos1] >= germlineCutOff &&
-  #    N.read.prop[pos2] >= germlineCutOff) {
-  #  return("DBS overlaps germline SNPs")
-  # }
+
   if (N.read.prop[pos1] >= germlineCutOff) {
     return("DBS overlaps germline SNP")
   }

@@ -85,18 +85,19 @@
 #'
 #' * There must be >= 5 normal reads at the site of the putative tumor DBS.
 #'
-#' * The normal reads at each separate position of the DBS must have
-#'  <  20% variant calls.
+#' * At each separate position of the DBS, the normal reads
+#'  must have <  10% of the variant in the DBS at that position.
 #'
-#' *  < 2 normal reads have the DBS.
+#' *  < 2 normal reads support the DBS.
 #'
-#' * At least 2 tumor reads have the DBS.
+#' * At least 2 tumor reads support the DBS.
 #'
 #' * There are more well-mapped tumor reads than badly mapped
 #' tumor reads at the site of the DBS.
 #'
 #' * There are more well-mapped tumor reads than badly mapped
-#' tumor reads that contain the DBS.
+#' tumor reads that contain the DBS. (\code{\link{ReadSamfile}
+#' keeps track of the well-mapped and badly mapped reads).
 #'
 #' * If 1 normal read supports the DBS, then
 #' there must be a statistically greater proportion of

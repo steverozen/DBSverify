@@ -72,11 +72,14 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
             return(
               file.path(
                 out.vcf.dir,
-                paste0(rrr["icgc_donor_id"], "_", rrr["aliquot_id"],
+                paste0(rrr["icgc_donor_id"], "_",
+                       rrr["T_Specimen ID"], "_",
+                       rrr["aliquot_id"],
                        "_PCAWG_evaluated.vcf"))
             )
           })
 
+  success.count <- 0
   for (ii in 1:nrow(tt)) {
     if (!CheckBAM(Nbam.name[[ii]], must.succeed = FALSE)) {
       message("Skipping ", in.vcf.name[[ii]], "; no corresponding normal BAM")
@@ -87,15 +90,18 @@ PCAWG_read_table_and_evaluate_DBS <- function(in.table,
       next
     }
     try(
-      Read_DBS_VCF_and_BAMs_to_verify_DBSs(
+      {Read_DBS_VCF_and_BAMs_to_verify_DBSs(
         input.vcf     = in.vcf.name[[ii]],
         Nbam.name     = Nbam.name[[ii]],
         Tbam.name     = Tbam.name[[ii]],
         outfile       = out.vcf.name[[ii]],
         filter.status = NULL,
         verbose       = verbose)
+        success.count <- success.count + 1
+      }
     )
   }
+  message("Processed ", success.count, " rows of ", in.table)
 }
 
 if (FALSE) {
@@ -124,6 +130,9 @@ if (FALSE) {
   ff("~/mvv/short_test5/DO52606_f856fa85-fdb8-c0b0-e040-11ac0d480b4e_PCAWG_evaluated.vcf")
   ff("~/mvv/short_test5/DO52612_f8467ec8-2d61-ba21-e040-11ac0c483584_PCAWG_evaluated.vcf")
 
-
+  PCAWG_read_table_and_evaluate_DBS(in.table = "~/DBSverify/data-raw/production_scripts/DO45096.tsv",
+                                    in.vcf.dir  = "~/mvv/PCAWG_all_Collaboratory_VCFs_and_BEDs/",
+                                    minibam.dir = "~/mvv/collab-minibams-set1/",
+                                    out.vcf.dir = ".")
 
 }

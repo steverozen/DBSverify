@@ -4,7 +4,7 @@
 \alias{DBS_conclusion_1_row}
 \title{Examine 1 row of a DBS-only VCF that was already processed by \code{\link{Slice2ReadSupport}} to decide if the DBS is likely real.}
 \usage{
-DBS_conclusion_1_row(row, germlineCutOff = 0.2, max.half.support.T.reads = 1)
+DBS_conclusion_1_row(row, germlineCutOff = 0.1, max.half.support.T.reads = 1)
 }
 \arguments{
 \item{row}{One row of a DBS VCF (as a \code{data.frame})

@@ -24,7 +24,7 @@ PCAWG_filter_DBS <- function(VCF.file) {
               pcawg.vcf      = pcawg.vcf,
               orig.n.dbs     = orig.n.dbs,
               orig.pcawg.dbs = orig.pcawg.dbs,
-              good.n.dbs     = nrow(vcf)))
+              good.n.dbs     = nrow(final.vcf)))
 }
 # debug(PCAWG_filter_DBS)
 xx <- lapply(vcfs, PCAWG_filter_DBS)
@@ -37,6 +37,11 @@ dbs.cats <- ICAMS::VCFsToDBSCatalogs(
   ref.genome = "hg19",
 )
 
+xxx <- lapply(xx, function(xx) c(xx$orig.pcawg.dbs, xx$good.n.dbs))
+yy <- matrix(unlist(xxx), nrow = 2)
+colnames(yy) <- paste0(jj$icgc_donor_id, "_", jj$`T_Specimen ID`)
+yy <- t(yy)
+y2<-yy[order(yy[,1]-yy[,2],decreasing = T),]
 
 ICAMS::PlotCatalogToPdf(dbs.cats$catDBS78, "collab-set1-DBS.pdf")
 

@@ -45,13 +45,15 @@ Only keep reads that satisfy certain conditions:
 \itemize{
 \item Mate pair maps to same chromosome
 \item Mapping quality >= 30
-\item "FLAG" < 256
+\item "FLAG" < 256 (see info on the return value
+element \code{reads.with.bad.FLAG}, below).
 \item The CIGAR string
 is only \code{\\d+M} (one or more digits followed M, and nothing
 else before or after).
 This means there are no insertions or deletions in the read
-versus the reference and there is no soft clipping.
-This function cannot keep track of read locations after insertions
-or deletions.
+versus the reference and there is no soft clipping. Insertions
+or deletions or clipping shift the read within the
+SAM file, after which this function cannot keep track of the
+DBS location.
 }
 }
