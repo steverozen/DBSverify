@@ -49,21 +49,25 @@
 #' * \code{reads.with.bad.Mate_CHROM}, reads with a
 #'   mate on a different chromosome.
 
-
 ReadSamfile <- function(filename) {
   sam.lines <- readLines(filename)
 
   # SAM file headers start with "@"; discard them and keep the
   # lines that contains reads.
   read.lines <- sam.lines[-grep("^@", sam.lines)]
+
+  # Perfectly duplicated reads arise during generation of miniBAMs when
+  # reads overlap more than one DBS position. We need to
+  # remove these.
   dups <- duplicated(read.lines)
   if (any(dups)) {
-    warning("\nSAM file ", filename, " duplicated reads: ",
-         paste(read.lines[dups], sep = "\n"), "\n\n"
-    )
+    # For development we log this information.
+    message("dup reads in SAM file ", filename)
+    read.lines <- read.lines[!dups, ]
   }
 
-  possible.good.reads <- as.data.frame(stringr::str_split_fixed(read.lines, "\t", 16))
+  possible.good.reads <-
+    as.data.frame(stringr::str_split_fixed(read.lines, "\t", 16))
   colnames(possible.good.reads)[1:11] <-
     c("QNAME", "FLAG", "CHROM", "POS", "MAPQ", "CIGAR", "Mate_CHROM",
       "Mate_POS", "InsertSize", "SEQ", "QUAL")
@@ -73,7 +77,8 @@ ReadSamfile <- function(filename) {
     message("ReadSamfile: starting with ", nrow(possible.good.reads), " reads")
   }
 
-  possible.good.reads$FLAG <- suppressWarnings(as.numeric(possible.good.reads$FLAG))
+  possible.good.reads$FLAG <-
+    suppressWarnings(as.numeric(possible.good.reads$FLAG))
   # remove weird rows if required
   bad.flags <- is.na(possible.good.reads$FLAG)
   reads.with.bad.FLAG <- possible.good.reads[bad.flags, ]

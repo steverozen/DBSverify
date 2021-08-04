@@ -1,4 +1,12 @@
 #' Specialized function for processing PCAWG Collaboratory BAMS
+#'
+#' @param only.multiple.tumors.per.normal If \code{TRUE} only generate output
+#'   for tumors from donors with multiple tumor VCF? files.
+#'
+#' @details This function is unfinished; it would need to be completed to generate
+#' a table with bed files and instructions for miniBAMs for tumor BAMS.
+#' However, this is not necessary as we already have the
+#' necessary miniBAMs for donors with single tumor samples.
 
 PCAWG_prep_BAM_list_and_BEDs <- function(only.multiple.tumors.per.normal = TRUE) {
   tt <- data.table::fread("~/DBSverify/data-raw/production_scripts/collaboratory_bams_2021_07_16.csv")
@@ -26,7 +34,7 @@ PCAWG_prep_BAM_list_and_BEDs <- function(only.multiple.tumors.per.normal = TRUE)
 
   make.normal.beds.and.table <- function(xx.row) {
    if ((nrow(xx.row) == 1) && only.multiple.tumors.per.normal) return(NULL);
-   View(xx.row)
+   # View(xx.row)
     # browser()
     n.spec.id <- unique(xx.row$`N_Specimen ID`)
     nbam.id   <- unique(xx.row$`N_Object ID`)
@@ -47,14 +55,16 @@ PCAWG_prep_BAM_list_and_BEDs <- function(only.multiple.tumors.per.normal = TRUE)
       vcf$start   <- vcf$POS - 10
       vcf$end     <- vcf$POS + 11
       colnames(vcf)[1] <- "chrom"
-      vcf.granges <- makeGRangesFromDataFrame(
+      vcf.granges <- GenomicRanges::makeGRangesFromDataFrame(
         vcf,
         ignore.strand = TRUE)
       if (ii == 1) {
         final.granges <- vcf.granges
       } else {
         final.granges <-
-          reduce(unlist(GRangesList(vcf.granges, final.granges)))
+          GenomicRanges::reduce(
+            unlist(
+              GenomicRanges::GRangesList(vcf.granges, final.granges)))
       }
     }
     NBAM.bed.name <- paste0(donor.id, "_", n.spec.id, "_NBAM.bed")

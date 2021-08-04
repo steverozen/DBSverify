@@ -1,6 +1,6 @@
 Package: DBSverify
 Title: Analyze Next Generation Sequencing Data to Verify Somatic Double-BaseSubstituion (DBS) Calls
-Version: 0.8
+Version: 0.9
 Authors@R: 
     person(given = "Steven George",
            family = "Rozen",
@@ -34,11 +34,12 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports:
     stringr,
-    ICAMS (>= 2.3.17),
+    ICAMS (>= 3.0.0),
     data.table
 Suggests: 
+    dplyr,
+    GenomicRanges,
     spelling,
     testthat,
-    dplyr,
     tibble
 Language: en-US
