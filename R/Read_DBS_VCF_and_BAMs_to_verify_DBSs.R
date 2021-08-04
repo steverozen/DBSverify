@@ -96,14 +96,14 @@
 #' tumor reads at the site of the DBS.
 #'
 #' * There are more well-mapped tumor reads than badly mapped
-#' tumor reads that contain the DBS. (\code{\link{ReadSamfile}
+#' tumor reads that contain the DBS. (\code{\link{ReadSamfile}}
 #' keeps track of the well-mapped and badly mapped reads).
 #'
 #' * If 1 normal read supports the DBS, then
 #' there must be a statistically greater proportion of
 #' tumor reads supporting the DBS (by Fisher's test).
 #'
-#' #' * There must be >= 5 normal reads at the site of the putative tumor DBS.
+#' * There must be >= 5 normal reads at the site of the putative tumor DBS.
 #'
 #' * At each separate position of the DBS, the normal reads
 #'  must have <  10% of the variant in the DBS at that position.

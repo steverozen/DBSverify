@@ -62,5 +62,78 @@ Invisibly, a list with the elements
 Determine whether sequencing reads in fact support (candidate) DBSs present in a VCF file.
 }
 \details{
+Creates a new VCF file.
+This VCF file has no data rows if there were no DBSs to analyze.
+Otherwise, this VCF contains some additional columns.
+Any SBSs or indels in the input are silently ignored,
+and no attempt is made to merge adjacent SBSs.
+\enumerate{
+\item \code{NreadSupport} With regard to the two positions of the DBS in
+the normal BAM, a string with 4 numbers separated by ":", with the numbers
+indicating respectively:
+\itemize{
+\item the number of reads that are reference sequence at
+both positions of the DBS,
+\item the number of reads that that have the alternative
+allele only at the 1st position of the DBS,
+\item the number of reads that
+have the alternative allele only at the second position of the DBS, and
+\item the number
+of reads that have the alternative alleles at both positions of the DBS.
+}
+\item \code{TreadSupport} Information analogous to that in \code{NreadSupport}, for the
+tumor BAM.
+\item \code{num_bad_mapped_reads} The total number of tumor reads with MAPQ < 30
+or with a mate on a different chromosome. If there are many badly mapped
+reads in the slice the slice may represent a segmental duplication.
+\item \code{num_bad_mapped_DBS_reads} The number of tumor reads with the
+putative DBS but with MAPQ < 30 or a mate on a different chromosome.
+If many badly mapped reads support DBSs the DBS might results from
+mismapped reads in a segmental duplication.
+\item \code{DBSconclusion} A string that describes whether the DBSs is
+believable (\code{"True DBS"}), or if the DBS is not
+believable, a string that describes
+why not.
+}
 
+The decision in \code{DBSconclusion} is based on multiple criteria.
+I also suggest relying on any available upstream filtering of SBSs
+that get merged into DBSs, as well as upstream filtering of DBSs.
+It is difficult to capture all the possible characteristics of
+likely miscalled DBSs, especially if they stem from mismapped reads
+that nevertheless have high MAPQ (mapping quality). The code that
+implements these criteria is in \code{\link{DBS_conclusion_1_row}},
+which depends on classification of individual reads in
+\code{\link{ReadSamfile}}. The filtering of reads in the
+input SAM files is described in the documentation for \code{\link{ReadSamfile}}.
+
+Once the reads to analyze are selected, additional criteria include
+\itemize{
+\item There must be >= 5 normal reads at the site of the putative tumor DBS.
+\item At each separate position of the DBS, the normal reads
+must have <  10\% of the variant in the DBS at that position.
+\item < 2 normal reads support the DBS.
+\item At least 2 tumor reads support the DBS.
+\item There are more well-mapped tumor reads than badly mapped
+tumor reads at the site of the DBS.
+\item There are more well-mapped tumor reads than badly mapped
+tumor reads that contain the DBS. (\code{\link{ReadSamfile}}
+keeps track of the well-mapped and badly mapped reads).
+\item If 1 normal read supports the DBS, then
+there must be a statistically greater proportion of
+tumor reads supporting the DBS (by Fisher's test).
+\item There must be >= 5 normal reads at the site of the putative tumor DBS.
+\item At each separate position of the DBS, the normal reads
+must have <  10\% of the variant in the DBS at that position.
+\item < 2 normal reads support the DBS.
+\item At least 2 tumor reads support the DBS.
+\item There are more well-mapped tumor reads than badly mapped
+tumor reads at the site of the DBS.
+\item There are more well-mapped tumor reads than badly mapped
+tumor reads that contain the DBS. (\code{\link{ReadSamfile}}
+keeps track of the well-mapped and badly mapped reads).
+\item If 1 normal read supports the DBS, then
+there must be a statistically greater proportion of
+tumor reads supporting the DBS (by Fisher's test).
+}
 }
