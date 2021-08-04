@@ -1,12 +1,14 @@
-#' Specialized function for processing PCAWG Collaboratory BAMS
+#' Specialized function for processing PCAWG Collaboratory BAMS.
+#'
+#' This function is unfinished; it would need to be completed to generate
+#' a table with bed files and instructions for miniBAMs for tumor BAMS.
+#' However, this is not necessary as we already have the
+#' necessary miniBAMs for donors with single tumor samples.
 #'
 #' @param only.multiple.tumors.per.normal If \code{TRUE} only generate output
 #'   for tumors from donors with multiple tumor VCF? files.
 #'
-#' @details This function is unfinished; it would need to be completed to generate
-#' a table with bed files and instructions for miniBAMs for tumor BAMS.
-#' However, this is not necessary as we already have the
-#' necessary miniBAMs for donors with single tumor samples.
+#' @keywords internal
 
 PCAWG_prep_BAM_list_and_BEDs <- function(only.multiple.tumors.per.normal = TRUE) {
   tt <- data.table::fread("~/DBSverify/data-raw/production_scripts/collaboratory_bams_2021_07_16.csv")

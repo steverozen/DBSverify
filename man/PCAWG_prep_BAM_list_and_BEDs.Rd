@@ -2,17 +2,18 @@
 % Please edit documentation in R/PCAWG_prep_BAM_list_and_BEDs.R
 \name{PCAWG_prep_BAM_list_and_BEDs}
 \alias{PCAWG_prep_BAM_list_and_BEDs}
-\title{Specialized function for processing PCAWG Collaboratory BAMS}
+\title{Specialized function for processing PCAWG Collaboratory BAMS.}
 \usage{
 PCAWG_prep_BAM_list_and_BEDs(only.multiple.tumors.per.normal = TRUE)
 }
 \arguments{
 \item{only.multiple.tumors.per.normal}{If \code{TRUE} only generate output
-for tumors from donors with multiple tumor VCF? files.
-
-This function is unfinished; it needs to be completed to generate
-a table with bed files and instructions for miniBAMs for tumor BAMS.}
+for tumors from donors with multiple tumor VCF? files.}
 }
 \description{
-Specialized function for processing PCAWG Collaboratory BAMS
+This function is unfinished; it would need to be completed to generate
+a table with bed files and instructions for miniBAMs for tumor BAMS.
+However, this is not necessary as we already have the
+necessary miniBAMs for donors with single tumor samples.
 }
+\keyword{internal}

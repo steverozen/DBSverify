@@ -63,7 +63,7 @@ ReadSamfile <- function(filename) {
   if (any(dups)) {
     # For development we log this information.
     message("dup reads in SAM file ", filename)
-    read.lines <- read.lines[!dups, ]
+    read.lines <- read.lines[!dups]
   }
 
   possible.good.reads <-
