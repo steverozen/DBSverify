@@ -1,6 +1,6 @@
 # DBSverify
 
-This an alpha version.
+This an beta version.
 
 DBSverify stands for "Doublet Base Substitution verify". 
 
