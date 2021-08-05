@@ -4,9 +4,7 @@ This ia a beta version.
 
 DBSverify stands for "Doublet Base Substitution verify". 
 
-
-DBSverify stands for "Doublet Base Substitution verify". The
-main function is Read_DBS_VCF_and_BAMs_to_verify_DBSs. This
+The main function is Read_DBS_VCF_and_BAMs_to_verify_DBSs. This
 reads a VCF (variant call format) file containing somatic 
 DBS mutations and examines the supporting reads in the 
 corresponding tumor and normal BAM files to assess wither 
