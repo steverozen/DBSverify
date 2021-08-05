@@ -1,4 +1,4 @@
-# Check number of bams expected frmo output vcf
+# Check number of bams expected from output vcf
 
 check.num.bams <- function(my.dir) {
     vcf <- dir(my.dir, pattern = ".vcf")
