@@ -1,5 +1,5 @@
 test_that("Long test of Read_SBS_VCF_and_BAMs_to_verify_DBSs on input/HepG2_AA1.vcf -- full set of 636 DBSs", {
-  # skip_if(Sys.getenv("DO_LONG_TEST") != "y")
+  skip_if(Sys.getenv("DO_LONG_TEST") != "y")
   Sys.time()
   stime <- system.time(
     xx <- Read_SBS_VCF_and_BAMs_to_verify_DBSs(
