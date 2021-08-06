@@ -4,7 +4,7 @@ This is a beta version.
 
 DBSverify stands for "Doublet Base Substitution verify". 
 A "Doublet Base Substitution" is the simultaneous mutation
-of adjacent bases, for example mutations from TA to GA and
+of adjacent bases, for example mutations from TA to GT and
 from TC to AA, which are often caused by the carcinogen 
 aristolochic acid.
 
