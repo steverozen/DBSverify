@@ -28,9 +28,9 @@ Description: DBSverify stands for "Doublet Base Substitution verify".
              not call DBSs at all, and those that do sometimes make 
              obvious errors, such as calling DBSs that consist of a 
              germline SNP next to a somatic single base mutation.
-             Because of the way the functionality of this package is used,
-             the main function for most users will be 
-             Read_DBS_VCF_and_BAMs_to_verify_DBSs.
+             The output of Read_DBS_VCF_and_BAMs_to_verify_DBSs is a new
+             VCF file with an assessment of whether each DBSs is
+             likely real or not.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
