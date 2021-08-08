@@ -25,7 +25,10 @@ The main function is *Read_DBS_VCF_and_BAMs_to_verify_DBSs*
 if you have a VCF with already-called DBSs. If you have a variant
 caller that does not call DBSs you can use
 *Read_SBS_VCF_and_BAMs_to_verify_DBSs* to combine adjacent
-SBSs to be analyzed as DBSs.
+SBSs to be analyzed as DBSs. The output of 
+Read_DBS_VCF_and_BAMs_to_verify_DBSs is a new
+VCF file with an assessment of whether each DBSs is
+likely real or not.
 
 To install
 
