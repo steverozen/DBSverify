@@ -23,29 +23,28 @@ PCAWG_catalogs_from_one_VCF_directory <-
     num.orig.dbs <- unlist(lapply(xx, `[[`, "orig.pcawg.dbs"))
     num.good.dbs <- unlist(lapply(xx, `[[`, "good.n.dbs"))
 
-    names(final.vcf.list) <- PCAWG7:::map_SP_ID_to_tumor_type(jj$`T_Specimen ID`) # Check that map_... exported,then fix :::
-    names(pcawg.vcf.list) <- names(final.vcf.list)
+    my.names <- PCAWG7:::map_SP_ID_to_tumor_type(jj$`T_Specimen ID`) # Check that map_... exported,then fix :::
+    names(final.vcf.list) <- my.names
+    names(pcawg.vcf.list) <- my.names
     deltas <- (num.orig.dbs - num.good.dbs)
-    names(deltas) <- names(final.vcf.list)
-    cc <- cbind(num.orig.dbs, num.good.dbs, deltas, num.good.dbs / num.orig.dbs)
-    colnames(cc) <- c("Num_orig_PCAWG_DBS", "Num_good_DBS", "Difference", "Ratio")
-    cc <- cc[order(cc[, "Difference"])]
+    names(deltas) <- my.names
+    cc <- cbind(my.names, num.orig.dbs, num.good.dbs, deltas, num.good.dbs / num.orig.dbs)
+    colnames(cc) <- c("PCAWG_ID", "Num_orig_PCAWG_DBS", "Num_good_DBS", "Difference", "Ratio")
+    cc <- cc[order(as.numeric(cc[, "Difference"]), decreasing = TRUE), ]
 
     dbs.cats <- ICAMS::VCFsToDBSCatalogs(
       final.vcf.list,
       ref.genome = "hg19",
     )
 
-    xxx <- lapply(xx, function(xx) c(xx$orig.pcawg.dbs, xx$good.n.dbs))
-    yy <- matrix(unlist(xxx), nrow = 2)
-    colnames(yy) <- paste0(jj$icgc_donor_id, "_", jj$`T_Specimen ID`)
-    yy <- t(yy)
-    y2<-yy[order(yy[,1]-yy[,2],decreasing = T),]
+    c78 <- dbs.cats$catDBS78
+    c78 <- c78[ , order(colnames(c78))]
 
-    ICAMS::WriteCatalog(dbs.cats$catDBS78,
+    ICAMS::WriteCatalog(c78,
                         file.path(output.dir, "DBS78.csv"))
-    ICAMS::PlotCatalogToPdf(dbs.cats$catDBS78,
+    ICAMS::PlotCatalogToPdf(c78,
                             file.path(output.dir, "DBS78.pdf"))
+
     data.table::fwrite(data.table::data.table(cc),
                        file.path(output.dir, "summary.csv"))
   }
